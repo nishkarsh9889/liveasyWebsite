@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+  scroll-behavior: smooth;
+  --green: #09B778;
+  --blue: #152968;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#021420;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: 100ms ease-in-out;
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+    padding-right:2rem;
+    font-weight: 400;
+}
+
+#hero{
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("img/hero-img.jpg") !important;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--green);
+    border: 1.4px solid var(--green);
+    border-radius: 4px;
+    padding: 0.6rem 0;
+    font-weight: 400;
+    width: 16rem;
+    text-align:center;
+
+}
+#hero a:not(:first-child){
+    margin-left: 1rem;
+}
+#hero a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+#hero h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#services .line, #products .line, #about .line, #contact .line{
+    border-top: 4px solid var(--green);
+    width: 8rem;
+}
+
+#services img{
+    height: 24rem;
+}
+
+#services h1{
+    color: var(--blue);
+}
+
+#products #shipper{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
+    /* font-size: 1rem; */
+    padding: 0.4rem 2rem;
+}
+
+#products  #transporter{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid #665D5D;
+    color: #665D5D;
+    /* font-size: 1rem; */
+    padding: 0.4rem 2rem;
+}
+
+#products .p-desc{
+    display: flex;
+    justify-content: space-around;
+}
+
+#products img{
+    height: 22rem;
+}
+
+#products .p-desc h4, #products .p-desc p{
+    width: 26rem;
+}
+
+#products .btn{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--green);
+    border-radius: 4px;
+    padding: 0.6rem 3.6rem;
+    font-weight: 400;
+}
+
+#products .btn:hover{
+    background-color: transparent;
+    border: 1.4px solid var(--green);
+    color: var(--green);
+}
+
+.bg{
+    height: 75rem;
+    background-color: #021420;
+}
+
+#contact input, #contact textarea{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 0.2rem;
+    height: 2.4rem;
+    width: 36%;
+    padding-left: 0.6rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+#contact textarea{
+    padding: 0.6rem 0 0 0.6rem;
+}
+
+#contact input[type=submit]{
+    background-color: var(--green);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 36%;
+    height: 2.4rem;
+}
+
+input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+    font-size: 0.8rem;
+}
+
+footer .logo{
+    color: var(--blue);
+    margin-top: 1rem;
+}
+
+footer .nav-links h6:not(:first-child){
+    padding: 0 1rem;
+}
+
+footer .nav-links div{
+    border-left: 2px solid var(--green);
+    height: 1.4rem;
+}
+
+footer .social i{
+    color: var(--green);
+    margin-top: 0.4rem;
+}
+
+footer .india img{
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+footer .row .policy a{
+    color: black;
+    text-decoration: none;  
+    margin-right: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 720px){
+
+    #hero{
+        height: 80vh;
+        padding: 0 2.4rem;
+    }
+    #hero .btn_style{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hero .btn_style a:last-child{
+        margin-top: 0.6rem;
+        margin-left: 0;
+    }
+
+    #services div{
+        flex-direction: column;
+    }
+
+    #services .s1, #services .s3{
+        flex-direction: column-reverse;
+    } 
+    #services img{
+        height: 14rem;
+        margin: 0 2rem;
+    }
+
+    #services h1{
+        margin: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    #products #products-btns .shipper,#products #products-btns .transporter{
+        font-size: 1rem;
+    }
+    
+    #products .p-desc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #products .p-desc h4{
+        font-size: 1.2rem;
+        width: 20rem;
+        margin-top: 1rem;
+    } 
+
+    #products .p-desc p, #products .p-desc a{
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+
+    #products img{
+        height: 10rem;
+        width: 5rem;
+    }
+
+    .bg{
+        height: 114rem;
+    }
+    .bg p{
+        font-size: 0.8rem;
+    }
+
+    #contact input,#contact textarea, #contact input[type=submit]{
+        width: 100%;
+    }
+    footer .logo{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    footer .nav-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    footer h6{
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    footer .nav-links h6:first-child{
+        padding-left: 1rem;
+    }
+    footer .nav-links div{
+        display: none;
+    }
+    footer .social{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    footer .social i{
+        margin-top: 1rem;
+    }
+    footer .india,footer .policy{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .policy{
+        margin-top: 1rem;
+    }
+
+}

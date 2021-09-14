@@ -13,6 +13,7 @@ html {
 body{
     font-family: 'Poppins', sans-serif;
     position: relative;
+    
 }
 h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
@@ -133,7 +134,7 @@ header{
 }
 
 .bg{
-    height: 75rem;
+    height: 78rem;
     background-color: #021420;
 }
 
@@ -168,6 +169,29 @@ input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10
     font-size: 0.8rem;
 }
 
+#contact .faqs button{
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: left;
+    margin-top:1rem;
+    padding:0 0 0.4rem 0.4rem;
+}
+
+#contact .faqs p{
+    color: rgb(197, 197, 197);
+}
+
+#contact .faqs .scroll{
+        height: 14rem;
+        overflow-y: auto;  
+        margin-top: 1rem;
+        scrollbar-color: auto;
+}
+
 footer .logo{
     color: var(--blue);
     margin-top: 1rem;
@@ -188,8 +212,8 @@ footer .social i{
 }
 
 footer .india img{
-    height: 2rem;
-    margin-left: 1rem;
+    height: 1.4rem;
+    margin-left: 0.8rem;
 }
 
 footer .row .policy a{
@@ -198,7 +222,40 @@ footer .row .policy a{
     margin-right: 1rem;
 }
 
-@media (min-width: 320px) and (max-width: 720px){
+@media (min-width: 760px) and (max-width: 1024px){
+
+    .bg{
+        height: 84rem;
+    }
+   
+    #contact input,#contact textarea, #contact input[type=submit]{
+        width: 60%;
+    }
+
+    footer .nav-links{
+        flex-direction: column;
+        margin-top: -1rem;
+    }
+
+    footer h6{
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    footer .nav-links{
+        padding: 0;
+    }
+
+    footer .nav-links h6:first-child{
+        padding-left: 1rem;
+    }
+
+    footer .nav-links div{
+        display: none;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 740px){
 
     #hero{
         height: 80vh;
@@ -222,7 +279,7 @@ footer .row .policy a{
         flex-direction: column-reverse;
     } 
     #services img{
-        height: 14rem;
+        height: 16rem;
         margin: 0 2rem;
     }
 
@@ -253,12 +310,12 @@ footer .row .policy a{
     }
 
     #products img{
-        height: 10rem;
-        width: 5rem;
+        height: 14rem;
+        width: 7rem;
     }
 
     .bg{
-        height: 114rem;
+        height: 96rem;
     }
     .bg p{
         font-size: 0.8rem;
@@ -267,6 +324,26 @@ footer .row .policy a{
     #contact input,#contact textarea, #contact input[type=submit]{
         width: 100%;
     }
+
+    #contact .faqs button{
+        text-decoration: none;
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+        text-align: left;
+        margin-top:1rem;
+        padding:0 0 0.4rem 0.4rem;
+    }
+
+    #contact .faqs .scroll{
+            height: 18rem;
+            overflow-y: auto;
+            margin-top: 1rem;
+            scrollbar-color: white;
+    }
+
     footer .logo{
         justify-content: center;
         margin-top: 2rem;
@@ -276,7 +353,7 @@ footer .row .policy a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: -1rem;
     }
 
     footer h6{
@@ -290,7 +367,7 @@ footer .row .policy a{
         display: none;
     }
     footer .social{
-        margin-top: 2rem;
+        margin-top: 1.4rem;
         text-align: center;
     }
     footer .social i{
@@ -299,9 +376,6 @@ footer .row .policy a{
     footer .india,footer .policy{
         justify-content: center;
         align-items: center;
-    }
-    footer .policy{
-        margin-top: 1rem;
     }
 
 }

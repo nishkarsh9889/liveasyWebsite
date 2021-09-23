@@ -33,6 +33,11 @@ header{
     
 }
 
+.navbar{
+    padding-left: 4.3rem;
+    padding-right: 4rem;
+}
+
 .navbar .navbar-nav .nav-link{
     color: white;
     padding-right:2rem;
@@ -257,9 +262,13 @@ footer .row .policy a{
 
 @media (min-width: 320px) and (max-width: 740px){
 
+    .navbar{
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
     #hero{
         height: 80vh;
-        padding: 0 2.4rem;
+        padding: 0 2rem;
     }
     #hero .btn_style{
         flex-direction: column;
@@ -321,6 +330,10 @@ footer .row .policy a{
         font-size: 0.8rem;
     }
 
+    form{
+        padding-right: 0.4rem;
+    }
+
     #contact input,#contact textarea, #contact input[type=submit]{
         width: 100%;
     }
@@ -338,7 +351,7 @@ footer .row .policy a{
     }
 
     #contact .faqs .scroll{
-            height: 18rem;
+            height: 14rem;
             overflow-y: auto;
             margin-top: 1rem;
             scrollbar-color: white;

@@ -44,15 +44,15 @@ header{
     font-weight: 400;
 }
 
-#hero{
+#online-truck-booking{
     height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url("img/hero-img.jpg") !important;
+    url("img/online-truck-booking-hero-img.jpg") !important;
     background-size: cover;
     background-position: center;
 }
 
-#hero a{
+#online-truck-booking a{
     text-decoration: none;
     font-size: 1rem;
     color: var(--green);
@@ -64,15 +64,15 @@ header{
     text-align:center;
 
 }
-#hero a:not(:first-child){
+#online-truck-booking a:not(:first-child){
     margin-left: 1rem;
 }
-#hero a:hover{
+#online-truck-booking a:hover{
     background-color: var(--green);
     color: white;
 }
 
-#hero h1{
+#online-truck-booking h1{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -266,16 +266,16 @@ footer .row .policy a{
         padding-right: 1.6rem;
         padding-left: 1.6rem;
     }
-    #hero{
+    #online-truck-booking{
         height: 80vh;
         padding: 0 2rem;
     }
-    #hero .btn_style{
+    #online-truck-booking .btn_style{
         flex-direction: column;
         justify-content: center;
     }
 
-    #hero .btn_style a:last-child{
+    #online-truck-booking .btn_style a:last-child{
         margin-top: 0.6rem;
         margin-left: 0;
     }

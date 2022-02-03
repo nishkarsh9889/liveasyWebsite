@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://liveasy.net.in/</title>
+  <link>http://liveasy.net.in/</link>
+
+<item>
+     <link>http://liveasy.net.in/</link>
+     <title>Book Trucks &amp; Loads Online| Track Your Fleet| Truck Management-Liveasy</title>
+     <description>Book a truck for your loads for the fastest delivery at affordable rates with GPS tracking.
+    Transport and Ship easy with Liveasy!</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

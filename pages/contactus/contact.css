@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+*{
+    font-family: 'Poppins';
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+section{
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    color: rgb(255, 253, 253);
+    font-family: 'Poppins';
+    font-style: Medium;
+    margin-left: 2%;
+    color: #032086;
+    margin-top: 1%;
+}
+.nav-links ul{
+    display:flex;
+}
+.nav-links ul li{
+    list-style:none;
+}
+.nav-links li a{
+    font-size: larger;
+    color: black;
+    text-align: center;
+}
+.nav-links li span{
+    padding:15px 33px;
+    border-radius: 29px;
+}
+.nav-links li span:hover{
+    background-color: #032086;
+}
+.nav-links li a:hover{
+    color: aliceblue;
+}
+.dots-heading{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 30px;
+    position: relative;
+}
+.dots-heading h2{
+    margin-bottom: -2%;
+}
+.dot{
+    border-radius: 50%;
+}
+#grey{
+    height: 15px;
+    width: 15px;
+    background-color: rgba(3, 32, 134, 0.4);
+    margin-left: 45%;
+    margin-bottom: 1%;
+}
+#blue{
+    height: 25px;
+    width: 25px;
+    background-color: #032086;
+    margin-left: 58%;
+
+}
+#green{
+    background-color: #09B778;
+    margin-left: 37%;
+    height: 19px;
+    width: 19px;
+
+}
+#gren{
+    height: 10px;
+    width: 10px;
+    background-color: #35E8BD;
+    margin-left: 54%;
+    margin-top: 1%;
+}
+
+.contact{
+    background-color: #032086;
+    width: 50%;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 60px 60px;
+    color: #fff;
+    height: fit-content;
+}
+.contact h4{
+    margin-left: 10%;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.or{
+    text-align: center;
+    margin-top: 4%;
+}
+.email{
+    margin-top: 5%;
+}
+#email{
+    margin-left:10% ;
+    border-radius: 12px;
+    width: 40%;
+    height: 40px;
+    padding: 14px;
+}
+.message{
+    margin-top: 2%;
+}
+#msg{
+    margin-left: 6.2%;
+    width: 40%;
+    height: 140px;
+    border-radius: 12px;
+    padding: 14px;
+}
+#submit{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin-left: 28%;
+    margin-top: 2%;
+} 
+  .log{
+    float: left;
+    padding: 10px;
+  }
+  .social{
+    margin-top: 7%;
+  }
+
+  @media screen and (max-width:1200px){
+    .nav-links li span .box{
+        padding: 0;
+    }
+    .contact{
+        width: 75%;
+    }
+}
+@media (min-width: 320px) and (max-width: 740px){
+    .nav-links li span{
+        padding:4px 16px;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 21px;
+    }
+    .lap{
+        margin-left: 0%;
+    }
+    .dots-heading{
+        margin-top: 12%;
+        font-size: 23px;
+    }
+    .contact{
+        width: 85%;
+        padding: 20px 20px;
+        height: 450px;
+        margin-top: 9%;
+    }
+    .or{
+        margin-top: 2%;
+    }
+    .email{
+        margin-top: 1%;
+        font-size: 14.5px;
+    }
+    .message{
+        font-size: 14.5px;
+    }
+    .social{
+        margin-top: 4%;
+    }
+    #email{
+        margin-left: 38px;
+        width: 55%;
+    }
+    #msg{
+        margin-left: 10px;
+        width: 55%;
+    }
+
+}
+
+

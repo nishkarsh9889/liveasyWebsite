@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+*{
+    font-family: 'Poppins';
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+div.heading{
+    width: 100%;
+}
+.heading h2{
+    text-align: center;
+    font-size:40px;
+    margin-top: 4%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    color: rgb(255, 253, 253);
+    font-family: 'Poppins';
+    font-style: Medium;
+    margin-left: 2%;
+    color: #032086;
+    margin-top: 1%;
+}
+.nav-links ul{
+    display:flex;
+}
+.nav-links ul li{
+    list-style:none;
+}
+.nav-links li a{
+    font-size: larger;
+    color: black;
+    text-align: center;
+}
+.nav-links li span{
+    padding:15px 33px;
+    border-radius: 29px;
+
+}
+.nav-links li span:hover{
+    background-color: #032086;
+}
+.nav-links li a:hover{
+    color: aliceblue;
+}
+div.heading{
+    width: 100%;
+}
+.heading h2{
+    text-align: center;
+    font-size:40px;
+    margin-top: 4%;
+}
+.text{
+    text-align: center;
+}
+.text p{
+    font-size: 27px;
+    color: #000000;
+    margin: 2%;
+}
+.trucks{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.truck1{
+    width: 30%;
+}
+.truck2{
+    width: 30%;
+}
+.best{
+    text-align: center;
+    background-color: #152968;
+    color: #fff;
+    margin-top: 10%;
+    padding: 30px;
+}
+.best h2{
+    margin-top: 4%;
+    font-size: 30px;
+}
+.best p{
+    font-size: 28px;
+    margin-top: 4%;
+    text-transform: none;
+    margin-bottom: 4%;
+}
+.best a{
+    color: #FF7F09;
+}
+.text{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: none;
+    text-decoration: none;
+}
+.logistic{
+    margin-top: 10%;
+    width: 100%;
+    height:auto;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    vertical-align: middle;
+    flex-flow: wrap;
+}
+.lap{
+    margin-left: 9%;
+}
+.lap img{
+    width: 100%;
+}
+.content{
+    width:40%;
+    margin-top: 6%;
+    
+}
+.content h2{
+    color: #000000;
+    font-size: 40px;
+}
+.content h3{
+    margin-top: 5%;
+    font-size: 27px;
+    color: #152968;
+}
+
+@media screen and (max-width:1200px){
+    .nav-links li span .box{
+        padding: 0;
+    }
+}
+@media (min-width: 320px) and (max-width: 740px){
+    .nav-links li span{
+        padding:4px 16px;
+        border-radius: 12px;
+        font-size: 12px;
+
+    }
+    .logo{
+        font-size: 21px;
+    }
+    .lap{
+        margin-left: 0%;
+    }
+    .heading h2{
+        margin-top: 12%;
+        font-size: 30px;
+    }
+    .text p{
+        margin-top: 12%;
+        font-size: 17px;
+        margin-bottom: 20%;
+    }
+    .best p{
+        margin-top: 12%;
+        font-size: 16px;
+    }
+    .content h2{
+        font-size: 29px;
+    }
+}

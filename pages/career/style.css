@@ -1,42 +1,41 @@
 body{
     height: auto;
 }
-.career .heading{
+.head{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.career .nav{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    margin-left: 62%;
+.logo{
+    font-size: 35px;
+    color: rgb(255, 253, 253);
+    font-family: 'Poppins';
+    font-style: Medium;
+    margin-left: 2%;
+    color: #032086;
+    margin-top: 1%;
 }
-.career .nav h2{
-    font-size: 1.7vw;
-    margin-top: 0.2vw;
+.nav-links ul{
+    display:flex;
 }
-.career .heading .nav .con,.career .heading .nav .nav1{
-    width: 12vw;
-    height: 3vw;
-    background-color:#fff;
-    color:#000;
-    border-radius: 32px;
-    margin-top: 5%;
+.nav-links ul li{
+    list-style:none;
+}
+.nav-links li a{
+    font-size: larger;
+    color: black;
     text-align: center;
 }
-.career .heading .nav .con:hover,.career .heading .nav .nav1:hover{
-    color: #fff;
+.nav-links li span{
+    padding:15px 33px;
+    border-radius: 29px;
+
+}
+.nav-links li span:hover{
     background-color: #032086;
 }
-.career .heading .nav a{
-    text-decoration: none;
-    margin-top: 1%;
-}
-.career .heading h1{
-    color:#032086;
-    font-size: 2.5vw;
-    margin-top: 1%;
-    margin-left: 2%;
+.nav-links li a:hover{
+    color: aliceblue;
 }
 .career h1{
     text-align: center;

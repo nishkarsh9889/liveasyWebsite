@@ -1,0 +1,276 @@
+html {
+  scroll-behavior: smooth;
+  --green: #09B778;
+  --blue: #152968;
+}
+.footerr{
+    background-color: #000;
+    height: auto;
+  }
+.line{
+    border-top: 4px solid var(--green);
+    width: 8rem;
+}
+  #contact{
+    height: auto;
+  }
+  #contact .faqs button{
+        text-decoration: none;
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: 2px solid var(--green);
+        width: 100%;
+        text-align: left;
+        margin-top:1rem;
+        padding:0 0 0.4rem 0.4rem;
+  }
+  #contact .faqs p{
+    font-size: 0.8rem;
+    color: #fff;
+    margin-left: 3%;
+  }
+  #query1{
+    margin-left: 4%;
+  }
+  .down-app{
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .down-app h1{
+    margin-top: 6vh;
+  }
+  #contact .down-app .btn{
+    text-decoration: underline;
+    font-size: 1rem;
+    color: white;
+    background-color:rgba(217, 217, 217, 0.2);
+    fill: solid;
+    border-radius: 20px;
+    height: 3.5rem;
+    padding: 1rem 3.6rem;
+    font-weight: 400;
+    margin-left: 15vw;
+    margin-top: 6vh;
+  }
+  
+  
+  @media (min-width: 280px) and (max-width: 740px){
+    #contact .down-app .btn{
+      height: 2rem;
+      font-size: 0.4rem;
+      padding: 0.4rem 1.2rem;
+    }
+
+  }
+  
+  
+  
+  
+  .foot{
+    margin-top: 5%;
+    background-color: black;
+    height: auto;
+    width: 100%;
+  }
+  .foot h4{
+    color: #fff;
+  }
+  .foot .foot1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .foot .foot1 .left-part .logoo{
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
+  }
+  .foot .foot1 .left-part .logoo img{
+    height: 2.5vw;
+  }
+  .foot .foot1 .left-part{
+    margin-top: 3%;
+    width: 25%;
+  }
+  .foot .foot1 .left-part .logoo .loggg{
+    margin-top: -4%;
+    margin-left: 5%;
+  }
+  .foot .foot1 .left-part .logoo h1
+  {
+    margin-top: 20%;
+    font-size: 1.7vw;
+    color: #fff;
+  }
+  .foot .foot1 .left-part .social{
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+  .foot .foot1 .left-part .social .logos{
+    width: 15%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -3%;
+  }
+  .foot .foot1 .left-part .social .logos img{
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+  .foot .foot1 .left-part .social h3{
+    font-size: 1.3vw;
+    color: #fff;
+  }
+  .foot .right-part{
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .foot .right-part h4{
+    font-size: 1.2vw;
+  }
+  .foot .right-part h6{
+    padding: 1vw;
+    font-size: 0.8vw;
+  }
+  .foot .right-part a{
+    color:#B7B7B7;
+  }
+  .foot .linel{
+    border-left: 2px solid green;
+    height: 10vw;
+    margin-top:3vw;
+  }
+  .foot .linen{
+    margin-top: 3%;
+    border-top: 1px solid #B7B7B7;
+    width: 70vw;
+    margin-left: 15vw;
+  }
+  .foot h5{
+    margin-top: 3%;
+    font-size: 1vw;
+    text-align: center;
+    color: #B7B7B7;
+  }
+  .appd .plays{
+    margin-top: 40%;
+    text-align: center;
+    width: 15vw;
+    height: 3vw;
+    border-radius: 60px;
+    background: #D9D9D933;
+  }
+  .appd .plays img{
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: 280px) and (max-width: 740px){
+
+    .foot .foot1{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .foot .right-part{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    .foot .right-part h4{
+      font-size: 0.5rem;
+    }
+    .foot .right-part h6{
+      padding: 1vw;
+      font-size: 0.3rem;
+    }
+    .foot .linel{
+      border-left: 2px solid green;
+      height: 20vw;
+      margin-top:6% ;
+    }
+    .foot .foot1 .left-part .logoo img{
+      margin-top: 20%;
+      height: 4.5vw;
+    }    
+    .foot .foot1 .left-part .logoo h1{
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .foot .foot1 .left-part .social{
+      margin-top: 5%;
+      margin-left: 25%;
+    }
+    .foot .left-part{
+      display: flex;
+      flex-direction: row;
+    }
+    .foot .foot1 .left-part .social{
+      display: flex;
+      flex-direction: row;
+      margin-left: 100%;
+      margin-top: 10%;
+    }
+    .foot .foot1 .left-part .social .logos img{
+      width: 2.5vw;
+      height: 2.5vw;
+    }
+    .foot .foot1 .left-part .social h3{
+      font-size: 0.6rem;
+      color: #fff;
+    }
+    .foot .foot1 .left-part .social .logos{
+      margin-top: 5%;
+      margin-left: -35%;
+    }
+    .foot h5{
+      font-size: 0.4rem;
+    }
+    #hq{
+      font-size: 5.6rem;
+    }
+    #contact .faqs button{
+      font-size: 0.8rem;
+    }
+    #contact .faqs p{
+      font-size: 0.5rem;
+      color: #fff;
+    }
+    .appd .plays{
+      margin-top: 40%;
+      text-align: center;
+      width: 30vw;
+      height: 7vw;
+      border-radius: 60px;
+      background: #D9D9D933;
+    }
+    .appd .plays img{
+      width: 20px;
+      height: 20px;
+    }
+    .appd .plays a{
+      font-size: 0.55rem;
+    }
+  }
+  @media(min-width:750px) and (max-width:1080px) {
+    .appd .plays{
+      margin-top: 40%;
+      text-align: center;
+      width: 20vw;
+      height: 5vw;
+      border-radius: 60px;
+      background: #D9D9D933;
+    }
+    .appd .plays img{
+      width: 40px;
+      height: 40px;
+    }
+    .appd .plays a{
+      font-size: 0.7rem;
+    }
+  }

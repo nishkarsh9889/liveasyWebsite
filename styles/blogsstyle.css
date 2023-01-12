@@ -1,0 +1,172 @@
+.first {
+  background:white;
+  height: auto;
+}
+.logo-title {
+  color: black;
+}
+nav ul a {
+  color: black;
+}
+.mobile-nav-icon {
+  color: black;
+}
+.active {
+  background-color: white;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.title h1
+{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.blogs-main-content
+{
+    padding: 5% 12%;
+}
+.blog-intro
+{
+    background-color: #f0f0f0;
+    margin-bottom: 3rem;
+    display: flex;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    height: auto;
+}
+.blog-intro-left
+{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blog-intro-left img
+{
+    width: 70%;
+    height: 80%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    
+}
+.blog-intro-right
+{
+    width: 60%;
+    padding: 20px;
+}
+.blog-intro-right h2
+{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.blog-intro-right a
+{
+    text-decoration: none;
+    color: #09b778;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.blog-intro-right a:hover
+{
+    text-decoration: underline;
+}
+.blog-intro-right button
+{
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 910px) and (min-width: 600px) {
+    .title h1
+    {
+        font-size: 2.2rem;
+    }
+    .blog-intro-right h2
+    {
+        font-size: 1.5rem;
+    }
+    .blog-intro-right p
+    {
+        font-size: 1rem;
+    }
+    .blog-intro-right a
+    {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blogs-main-content
+    {
+        padding: 5% 5%;
+    }
+    .blog-intro
+    {
+        flex-direction: column;
+    }
+    .blog-intro-left
+    {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-intro-left img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+    .blog-intro-right
+    {
+        width: 100%;
+        padding: 20px;
+    }
+    .title h1
+    {
+        font-size: 2rem;
+    }
+    .blog-intro-right h2
+    {
+        font-size: 1.5rem;
+    }
+    .blog-intro-right p
+    {
+        font-size: 0.9rem;
+    }
+    .blog-intro-right a
+    {
+        font-size: 0.9rem;
+    }
+
+}

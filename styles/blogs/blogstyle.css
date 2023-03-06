@@ -101,6 +101,9 @@ nav ul a {
     font-size: 1.8rem !important;
     width: 100% !important;
   }
+  .title img {
+    width: 70%;
+  }
   .blog-content h1 {
     font-size: 2rem;
   }
@@ -113,6 +116,9 @@ nav ul a {
   .blog-content h3 {
     font-size: 1.4rem;
   }
+  .blog-content img {
+    width: 65%;
+  }
   .h3-p-ul li {
     font-size: 1.1rem;
   }
@@ -124,6 +130,9 @@ nav ul a {
   .long-title {
     font-size: 1.6rem !important;
     width: 100% !important;
+  }
+    .title img {
+    width: 80%;
   }
   .blog-content {
     padding: 5% 5%;
@@ -140,6 +149,9 @@ nav ul a {
   .blog-content h3 {
     font-size: 1.2rem;
     margin-left: 2rem;
+  }
+  .blog-content img {
+    width: 70%;
   }
   .h3-p-ul li {
     font-size: 1rem;

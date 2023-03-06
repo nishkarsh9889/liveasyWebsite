@@ -40,7 +40,6 @@ nav {
   -moz-transition: 0.3;
   -ms-transition: 0.3;
   -o-transition: 0.3;
-  text-decoration: none;
 }
 .logo-title:hover {
   cursor: pointer;

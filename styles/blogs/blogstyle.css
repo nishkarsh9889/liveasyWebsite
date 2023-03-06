@@ -28,13 +28,16 @@ nav ul a {
   font-weight: 500;
 }
 .title img {
-  width: 43.75rem;
-  height: 28.125rem;
+  width: 55%;
+  height: auto;
   margin: 0 2rem 2rem 2rem;
   border-radius: 10%;
   -webkit-border-radius: 20px;
 }
-
+.long-title {
+  font-size: 2.2rem !important;
+  width: 82%;
+}
 .blog-content {
   padding: 5% 12%;
 }
@@ -94,6 +97,13 @@ nav ul a {
   .title h1 {
     font-size: 2.2rem;
   }
+  .long-title {
+    font-size: 1.8rem !important;
+    width: 100% !important;
+  }
+  .title img {
+    width: 70%;
+  }
   .blog-content h1 {
     font-size: 2rem;
   }
@@ -106,6 +116,9 @@ nav ul a {
   .blog-content h3 {
     font-size: 1.4rem;
   }
+  .blog-content img {
+    width: 65%;
+  }
   .h3-p-ul li {
     font-size: 1.1rem;
   }
@@ -114,8 +127,14 @@ nav ul a {
   .title h1 {
     font-size: 2rem;
   }
-  .blog-content
-  {
+  .long-title {
+    font-size: 1.6rem !important;
+    width: 100% !important;
+  }
+    .title img {
+    width: 80%;
+  }
+  .blog-content {
     padding: 5% 5%;
   }
   .blog-content h1 {
@@ -131,14 +150,16 @@ nav ul a {
     font-size: 1.2rem;
     margin-left: 2rem;
   }
+  .blog-content img {
+    width: 70%;
+  }
   .h3-p-ul li {
     font-size: 1rem;
   }
-  .h3-p{
+  .h3-p {
     margin-left: 3.5rem !important;
   }
-  .h3-p-ul
-  {
+  .h3-p-ul {
     margin-left: 4.5rem !important;
     width: 70%;
   }

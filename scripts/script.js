@@ -67,38 +67,51 @@ shipper.addEventListener('click', () => {
 
 
 //feedback slider
-const leftbtn = document.getElementById('leftbtn');
-const rightbtn = document.getElementById('rightbtn');
-const feedbacks = document.querySelectorAll('.customerfeedback');
+let newFeedbacks = document.querySelectorAll('.new-feedback');
+let currentNewFeedbackIndex = 0;
+let feedbackTimer;
+let newFeedbacksLeftBtn = document.querySelector('.new-feedback-left-slider button');
+let newFeedbacksRightBtn = document.querySelector('.new-feedback-right-slider button');
 
-let counter = 0;
-feedbacks[counter].classList.add('show');
-for (let i = 1; i < feedbacks.length; i++) {
-    feedbacks[i].classList.add('hide');
+function displayNextFeedback() {
+    const currentNewFeedback = newFeedbacks[currentNewFeedbackIndex];
+    currentNewFeedback.style.display = 'none';
+    currentNewFeedbackIndex = (currentNewFeedbackIndex + 1) % newFeedbacks.length;
+    const nextFeedback = newFeedbacks[currentNewFeedbackIndex];
+    nextFeedback.style.display = 'block';
 }
 
-leftbtn.addEventListener('click', () => {
-    feedbacks[counter].classList.remove('show');
-    feedbacks[counter].classList.add('hide');
-    counter--;
-    if (counter < 0) {
-        counter = feedbacks.length - 1;
-    }
-    feedbacks[counter].classList.remove('hide');
-    feedbacks[counter].classList.add('show');
-});
+function displayPreviousFeedback() {
+    const currentNewFeedback = newFeedbacks[currentNewFeedbackIndex];
+    currentNewFeedback.style.display = 'none';
+    currentNewFeedbackIndex = (currentNewFeedbackIndex - 1 + newFeedbacks.length) % newFeedbacks.length;
+    const previousFeedback = newFeedbacks[currentNewFeedbackIndex];
+    previousFeedback.style.display = 'block';
+}
 
-rightbtn.addEventListener('click', () => {
-    feedbacks[counter].classList.remove('show');
-    feedbacks[counter].classList.add('hide');
-    counter++;
-    if (counter > feedbacks.length - 1) {
-        counter = 0;
-    }
-    feedbacks[counter].classList.remove('hide');
-    feedbacks[counter].classList.add('show');
-});
+function startFeedbackTimer() {
+    feedbackTimer = setInterval(displayNextFeedback, 5000);
+}
 
+function stopFeedbackTimer() {
+    clearInterval(feedbackTimer);
+}
+
+function handleLeftButtonClick() {
+    stopFeedbackTimer();
+    displayPreviousFeedback();
+}
+
+function handleRightButtonClick() {
+    stopFeedbackTimer();
+    displayNextFeedback();
+}
+
+newFeedbacks.forEach(newFeedback => newFeedback.style.display = 'none');
+newFeedbacks[currentNewFeedbackIndex].style.display = 'block';
+newFeedbacksLeftBtn.addEventListener('click', handleLeftButtonClick);
+newFeedbacksRightBtn.addEventListener('click', handleRightButtonClick);
+startFeedbackTimer();
 
 //faq slider
 const plus = document.querySelectorAll('.plus');

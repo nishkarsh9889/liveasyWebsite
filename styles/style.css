@@ -6,13 +6,39 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('../assets/loading.gif') no-repeat center center;
+  z-index: 9999;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation: fadeInAnimation ease 1s;
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .first {
-  background: rgba(0, 0, 0, 0.4) url("../assets/main-bg.jpeg") no-repeat center
-    center/cover;
+  background: rgba(0, 0, 0, 0.4) url("../assets/main-bg.jpeg") no-repeat center center/cover;
   height: 100vh;
   background-blend-mode: darken;
 }
-::-moz-selection { /* Code for Firefox */
+
+::-moz-selection {
+  /* Code for Firefox */
   color: #071645;
   background: #09b778;
 }
@@ -21,6 +47,7 @@
   color: #071645;
   background: #09b778;
 }
+
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -51,6 +78,7 @@ nav {
   padding: 1.5rem 2.5rem;
   width: 100%;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -61,6 +89,7 @@ nav {
   height: 45px;
   margin-right: 20px;
 }
+
 .logo-title {
   font-size: 25px;
   font-weight: 700;
@@ -72,20 +101,25 @@ nav {
   -o-transition: 0.3;
   text-decoration: none;
 }
+
 .logo-title:hover {
   cursor: pointer;
 }
+
 nav ul {
   /* not bullets */
   list-style: none;
 }
+
 .nav-items {
   display: flex;
   align-items: center;
 }
+
 .nav-item {
   margin: 0 20px;
 }
+
 .nav-item-btn {
   display: flex;
   align-items: center;
@@ -103,6 +137,7 @@ nav ul {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
+
 nav ul a {
   text-decoration: none;
   color: #fff;
@@ -114,12 +149,15 @@ nav ul a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
+
 .nav-item-btn:hover {
   background-color: #09b778;
 }
+
 .nav-item-btn:hover a {
   color: #fff;
 }
+
 nav ul a:hover {
   color: #09b778;
 }
@@ -127,9 +165,11 @@ nav ul a:hover {
 .selected-nav {
   color: #09b778;
 }
+
 .non-selected-nav {
   color: #fff;
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -141,16 +181,19 @@ header {
   height: 40px;
   color: #fff;
 }
+
 .mobile-nav-icon:hover {
   cursor: pointer;
   color: #09b778;
 }
+
 .mobile-navbar-btn {
   display: none;
   background: transparent;
   padding-right: 2.5rem;
   cursor: pointer;
 }
+
 .mobile-nav-icon[name="close-outline"] {
   display: none;
 }
@@ -167,6 +210,7 @@ header {
   font-size: 22px;
   text-transform: uppercase;
 }
+
 .main-content h1 {
   font-weight: 700;
   font-family: "roboto", sans-serif;
@@ -175,11 +219,13 @@ header {
   font-size: 2.5rem;
   margin-top: 10px;
 }
+
 .main-content-btn {
   padding-top: 1.5rem;
   display: flex;
   gap: 1rem;
 }
+
 .main-content-btn-1,
 .main-content-btn-2 {
   background: transparent;
@@ -211,12 +257,15 @@ header {
 .main-content-btn-1:hover {
   background-color: #09b778;
 }
+
 .main-content-btn-2:hover {
   background-color: #09b778;
 }
+
 .main-content-btn-1:hover a {
   color: #fff;
 }
+
 .main-content-btn-2:hover a {
   color: #fff;
 }
@@ -228,9 +277,11 @@ header {
   flex-wrap: wrap;
   margin: 5% 8%;
 }
+
 .stats div {
   text-align: left;
 }
+
 .circle {
   width: 50px;
   height: 50px;
@@ -250,6 +301,7 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .circle img {
   width: 20px;
   height: 20px;
@@ -260,6 +312,7 @@ header {
   font-weight: 600;
   margin-top: 10px;
 }
+
 .stats p {
   font-size: 1.2rem;
   font-weight: 500;
@@ -272,15 +325,18 @@ header {
   flex-wrap: wrap;
   margin: 5% 8%;
 }
+
 .left {
   width: 50%;
   text-align: left;
   padding: 5%;
 }
+
 .right {
   width: 50%;
   text-align: center;
 }
+
 .right img {
   width: 45%;
   height: 47%;
@@ -290,12 +346,14 @@ header {
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
 }
+
 .brief-about-us .left h3 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #09b778;
 }
+
 .brief-about-us .left h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -307,6 +365,7 @@ header {
   font-weight: 500;
   margin-top: 5px;
 }
+
 .brief-about-us .left button {
   margin-top: 20px;
   background-color: #09b778;
@@ -319,6 +378,7 @@ header {
   height: auto;
   width: auto;
 }
+
 .learn-more {
   text-decoration: none;
   padding: 2rem 2.4rem;
@@ -330,9 +390,11 @@ header {
   justify-content: center;
   text-decoration: none;
 }
+
 .learn-more:hover {
   color: black;
 }
+
 .choose {
   width: 100%;
   background-color: #001251;
@@ -343,15 +405,18 @@ header {
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
 }
+
 .content {
   padding-bottom: 20px;
 }
+
 .content h3 {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #09b778;
 }
+
 .content h2 {
   font-size: 1.6rem;
   font-weight: 600;
@@ -365,6 +430,7 @@ header {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
 .box {
   background-color: #1d3073;
   width: 30%;
@@ -383,16 +449,19 @@ header {
   top: 10px;
   left: 10px;
 }
+
 .box-icon img {
   height: 30px;
   width: auto;
 }
+
 .box-content h3 {
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
   margin-top: 8px;
 }
+
 .box-content p {
   font-size: 1rem;
   font-weight: 500;
@@ -403,6 +472,7 @@ header {
 .works {
   padding: 5% 12%;
 }
+
 .content-works {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -415,6 +485,7 @@ header {
   /* flex-wrap: wrap; */
   /* make it wrap in responsive condition */
 }
+
 .track {
   text-align: left;
   padding: 5%;
@@ -433,22 +504,26 @@ header {
   font-weight: 600;
   margin-top: 5px;
 }
+
 .track .number img {
   width: 50px;
   height: auto;
   margin-right: 20px;
   margin-top: 10px;
 }
+
 .track .details h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .track .details p {
   font-size: 1.2rem;
   font-weight: 500;
   color: #7b8197;
   margin-top: 5px;
 }
+
 .right-work img {
   height: auto;
   width: auto;
@@ -473,10 +548,12 @@ header {
   margin: 0 auto;
   display: block;
 }
+
 .product-left {
   padding: 5%;
   width: 60%;
 }
+
 .product-right {
   padding: 5%;
   width: 100%;
@@ -485,9 +562,11 @@ header {
 #transporter-details {
   display: flex;
 }
+
 #shipper-details {
   display: flex;
 }
+
 #transporter,
 #shipper {
   width: 50%;
@@ -498,6 +577,7 @@ header {
   font-weight: 500;
   color: #7b8197;
 }
+
 /* transporter and shipper hover */
 #transporter:hover,
 #shipper:hover {
@@ -506,10 +586,12 @@ header {
   border: 1px solid #09b778;
   cursor: pointer;
 }
+
 #transporter {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+
 #shipper {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -522,6 +604,7 @@ header {
   text-transform: uppercase;
   color: #09b778;
 }
+
 .product-content h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -533,6 +616,7 @@ header {
   font-weight: 600;
   margin-top: 5px;
 }
+
 .product-right p {
   font-size: 1.2rem;
   font-weight: 500;
@@ -577,14 +661,17 @@ header {
   color: #09b778 !important;
   border: 3px solid #09b778 !important;
 }
+
 .product-btn-active:hover {
   color: white !important;
   background-color: #09b778 !important;
   border: 3px solid #09b778 !important;
 }
+
 .product-active {
   display: flex !important;
 }
+
 .product-inactive {
   display: none !important;
 }
@@ -605,6 +692,7 @@ header {
   text-transform: uppercase;
   color: #09b778;
 }
+
 .feedback .contents h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -617,23 +705,27 @@ header {
 h2 span {
   color: #898989;
 }
+
 .faqs {
   background-color: #071645;
   border-radius: 1rem;
   padding: 5% 12%;
 }
+
 .faqoutline h3 {
   color: #09b778;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .faqoutline h2 {
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 5px;
 }
+
 .faqoutline {
   padding: 0 0 5% 0;
 }
@@ -641,11 +733,13 @@ h2 span {
 .faqoutline h2 span {
   color: #09b778;
 }
+
 .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .question p {
   color: white;
   font-size: 1.1rem;
@@ -653,6 +747,7 @@ h2 span {
   margin-top: 5px;
   text-align: left;
 }
+
 .answerexpand button {
   background-color: transparent;
   border: none;
@@ -669,23 +764,28 @@ h2 span {
   flex-direction: column;
   margin: 10px;
 }
+
 .answerexpand button:hover {
   cursor: pointer;
 }
+
 .answerexpand {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .answerexpand button ion-icon {
   color: white;
   font-size: 2rem;
   font-weight: 600;
   text-align: left;
 }
+
 .answer {
   transition: 0.3s;
 }
+
 .answer p {
   color: white;
   font-size: 1rem;
@@ -699,6 +799,7 @@ h2 span {
   -o-transition: 0.3s;
   padding-bottom: 3%;
 }
+
 /* hr should be one liner lite */
 hr {
   border: 0;
@@ -712,6 +813,7 @@ footer {
   display: flex;
   transition: 0.3s;
 }
+
 footer .leftfooter {
   width: 30%;
 }
@@ -736,6 +838,7 @@ footer .rightfooter {
   object-fit: contain;
   padding: 5px;
 }
+
 .branding .logo {
   display: flex;
   align-items: center;
@@ -750,6 +853,7 @@ footer .rightfooter {
   transition: 0.3s;
   padding: 5px;
 }
+
 .branddetails p {
   color: #535353;
   font-size: 1rem;
@@ -763,12 +867,14 @@ footer .rightfooter {
   -o-transition: 0.3s;
   padding-bottom: 3%;
 }
+
 .socialmedias {
   display: flex;
   align-items: left;
   transition: 0.3s;
   padding: 5px 0;
 }
+
 .facebook,
 .twitter,
 .instagram,
@@ -787,6 +893,7 @@ footer .rightfooter {
   transition: 0.3s;
   margin: 0 5px;
 }
+
 .facebook:hover,
 .twitter:hover,
 .instagram:hover,
@@ -816,6 +923,7 @@ footer .rightfooter {
   transition: 0.3s;
   padding: 5px 0;
 }
+
 .last {
   background-color: #001251;
   height: 40px;
@@ -823,15 +931,16 @@ footer .rightfooter {
   align-items: center;
   transition: 0.3s;
 }
+
 .last p {
   padding: 0 12%;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 300;
 }
+
 /* new feedback section */
-.new-feedbacks
-{
+.new-feedbacks {
   display: flex;
   padding: 5% 12%;
   transition: 0.3s;
@@ -840,15 +949,15 @@ footer .rightfooter {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.new-feedbacks-container
-{
+
+.new-feedbacks-container {
   display: flex;
   width: 90%;
   align-items: center;
   justify-content: space-around;
 }
-.new-feedback
-{
+
+.new-feedback {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -864,8 +973,9 @@ footer .rightfooter {
   width: 100%;
   margin: 0 1rem;
 }
-.new-feedback-left-slider button, .new-feedback-right-slider button
-{
+
+.new-feedback-left-slider button,
+.new-feedback-right-slider button {
   width: auto;
   height: 100%;
   background-color: transparent;
@@ -886,8 +996,9 @@ footer .rightfooter {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.new-feedback-left-slider button ion-icon, .new-feedback-right-slider button ion-icon
-{
+
+.new-feedback-left-slider button ion-icon,
+.new-feedback-right-slider button ion-icon {
   font-size: 2rem;
   color: #001251;
   transition: 0.3s;
@@ -896,43 +1007,43 @@ footer .rightfooter {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.new-customer-name h1
-{
+
+.new-customer-name h1 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #001251;
 }
-.new-feedback-left-slider button:hover
-{
+
+.new-feedback-left-slider button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.new-feedback-right-slider button:hover
-{
+
+.new-feedback-right-slider button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.new-star-rating
-{
+
+.new-star-rating {
   display: flex;
   margin: 5px 0;
 }
-.new-star-rating p
-{
+
+.new-star-rating p {
   margin-right: 5px;
   font-weight: 500;
 }
-.feedback-details p
-{
+
+.feedback-details p {
   font-size: 0.9rem;
   font-weight: 300;
 }
-.new-feedback-left-slider button:hover ion-icon
-{
+
+.new-feedback-left-slider button:hover ion-icon {
   color: #09b778;
 }
-.new-feedback-right-slider button:hover ion-icon
-{
+
+.new-feedback-right-slider button:hover ion-icon {
   color: #09b778;
 }
 
@@ -940,12 +1051,14 @@ footer .rightfooter {
 .phonetoggle {
   display: none !important;
 }
+
 /* -- */
 
 @media screen and (max-width: 910px) and (min-width: 600px) {
   .logo-title {
     font-size: 20px;
   }
+
   .logo-img {
     width: 35px;
     height: 35px;
@@ -986,17 +1099,21 @@ footer .rightfooter {
     visibility: visible;
     pointer-events: auto;
   }
+
   .nav-item {
     margin: 0 0 20px 0;
   }
+
   .nav-item-btn {
     margin: 0 0 20px 0;
     padding: 6px 10px;
   }
+
   .nav-item-btn:hover {
     background-color: #09b778;
     color: #fff;
   }
+
   nav ul a:hover {
     color: #09b778;
   }
@@ -1006,6 +1123,7 @@ footer .rightfooter {
     width: 40px;
     height: 40px;
   }
+
   .circle img {
     width: 15px;
     height: 15px;
@@ -1022,6 +1140,7 @@ footer .rightfooter {
   .brief-about-us {
     flex-direction: column;
   }
+
   .brief-about-us .left {
     width: 100%;
   }
@@ -1029,15 +1148,19 @@ footer .rightfooter {
   .brief-about-us .right {
     width: 70%;
   }
+
   .brief-about-us .left h2 {
     font-size: 1.2rem;
   }
+
   .brief-about-us .left p {
     font-size: 0.9rem;
   }
+
   .boxes {
     flex-direction: column;
   }
+
   .box {
     width: 100%;
     margin: 10px 0 10px 0;
@@ -1046,6 +1169,7 @@ footer .rightfooter {
   .content h3 {
     font-size: 1rem;
   }
+
   .content h2 {
     font-size: 1.4rem;
   }
@@ -1054,9 +1178,11 @@ footer .rightfooter {
     height: 25px;
     width: auto;
   }
+
   .box-content h3 {
     font-size: 1.1rem;
   }
+
   .box-content p {
     font-size: 0.9rem;
   }
@@ -1072,6 +1198,7 @@ footer .rightfooter {
   .steps {
     flex-direction: column;
   }
+
   .track .details h2 {
     font-size: 1.3rem;
   }
@@ -1105,6 +1232,7 @@ footer .rightfooter {
     height: 3.5rem;
     font-size: 1.2rem;
   }
+
   .product-right h1 {
     font-size: 1.5rem;
   }
@@ -1129,6 +1257,7 @@ footer .rightfooter {
   .feedback .contents h3 {
     font-size: 1rem;
   }
+
   .feedback .contents h2 {
     font-size: 1.3rem;
   }
@@ -1141,6 +1270,7 @@ footer .rightfooter {
   .customername h1 {
     font-size: 1.2rem;
   }
+
   .feedbackdetails p {
     font-size: 0.9rem;
   }
@@ -1148,6 +1278,7 @@ footer .rightfooter {
   #leftbtn {
     padding: 0.6rem 0.6rem;
   }
+
   #rightbtn {
     padding: 0.6rem 0.6rem;
   }
@@ -1163,6 +1294,7 @@ footer .rightfooter {
   .question p {
     font-size: 1rem;
   }
+
   .answer p {
     font-size: 0.9rem;
   }
@@ -1191,6 +1323,7 @@ footer .rightfooter {
   .customerlinks a {
     font-size: 0.8rem;
   }
+
   .facebook,
   .twitter,
   .instagram,
@@ -1198,6 +1331,7 @@ footer .rightfooter {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .l {
     width: 0.8rem;
     height: 0.8rem;
@@ -1206,22 +1340,26 @@ footer .rightfooter {
   .last p {
     font-size: 0.8rem;
   }
+
   .answerexpand button ion-icon {
     font-size: 1.65rem;
   }
+
   .phonetoggle {
     display: none !important;
   }
-  .new-feedbacks
-  {
+
+  .new-feedbacks {
     padding: 5% 0;
   }
 }
+
 /* phone responsive */
 @media screen and (max-width: 600px) {
   .logo-title {
     font-size: 20px;
   }
+
   .logo-img {
     width: 35px;
     height: 35px;
@@ -1262,46 +1400,58 @@ footer .rightfooter {
     visibility: visible;
     pointer-events: auto;
   }
+
   .nav-item {
     margin: 0 0 20px 0;
   }
+
   .nav-item-btn {
     margin: 0 0 20px 0;
     padding: 6px 10px;
   }
+
   .nav-item-btn:hover {
     background-color: #09b778;
     color: #fff;
   }
+
   nav ul a:hover {
     color: #09b778;
   }
+
   .main-content p {
     font-size: 1.2rem;
   }
+
   .main-content h1 {
     font-size: 1.6rem;
   }
+
   .main-content {
     margin-top: 0;
   }
+
   .main-content-btn {
     flex-direction: column;
     width: 70%;
   }
+
   .main-content-btn-1,
   .main-content-btn-2 {
     width: 100%;
   }
+
   .main-content a {
     font-size: 0.9rem;
   }
+
   /* middle content */
   .stats {
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-around;
   }
+
   .stats div {
     padding: 10px 20px;
   }
@@ -1310,6 +1460,7 @@ footer .rightfooter {
     width: 40px;
     height: 40px;
   }
+
   .circle img {
     width: 15px;
     height: 15px;
@@ -1326,12 +1477,15 @@ footer .rightfooter {
   .brief-about-us {
     flex-direction: column;
   }
+
   .brief-about-us .left {
     width: 100%;
   }
+
   .right img {
     width: 100%;
   }
+
   .right {
     margin: 35px 0;
   }
@@ -1339,9 +1493,11 @@ footer .rightfooter {
   .brief-about-us .right {
     width: 70%;
   }
+
   .brief-about-us .left h2 {
     font-size: 1.2rem;
   }
+
   .brief-about-us .left p {
     font-size: 0.9rem;
   }
@@ -1349,12 +1505,15 @@ footer .rightfooter {
   .choose {
     padding: 12%;
   }
+
   .content {
     padding-bottom: 10px;
   }
+
   .boxes {
     flex-direction: column;
   }
+
   .box {
     width: 100%;
     margin: 10px 0 10px 0;
@@ -1363,6 +1522,7 @@ footer .rightfooter {
   .content h3 {
     font-size: 1rem;
   }
+
   .content h2 {
     font-size: 1.2rem;
   }
@@ -1371,11 +1531,13 @@ footer .rightfooter {
     height: 18px;
     width: auto;
   }
+
   .box-content h3 {
     font-size: 0.9rem;
     margin-top: 10px;
     padding-top: 10px;
   }
+
   .box-content p {
     font-size: 0.8rem;
   }
@@ -1387,18 +1549,23 @@ footer .rightfooter {
   .content-works h2 {
     font-size: 1.2rem;
   }
+
   .track .number img {
     width: 40px;
   }
+
   .steps {
     flex-direction: column;
   }
+
   .track .details h2 {
     font-size: 1.1rem;
   }
+
   .works {
     padding: 12%;
   }
+
   .track .details p {
     font-size: 0.9rem;
   }
@@ -1421,15 +1588,18 @@ footer .rightfooter {
   .product-content h2 {
     font-size: 1.2rem;
   }
+
   .product-btns {
     margin: 10px 0;
   }
+
   #transporter,
   #shipper {
     width: 40%;
     height: 3rem;
     font-size: 0.9rem;
   }
+
   .product-right h1 {
     font-size: 1.1rem;
   }
@@ -1442,6 +1612,7 @@ footer .rightfooter {
     font-size: 0.8rem;
     padding: 0.9rem 1.8rem;
   }
+
   .product {
     padding: 5% 12% 5% 12%;
   }
@@ -1453,6 +1624,7 @@ footer .rightfooter {
   .feedback .contents h3 {
     font-size: 1rem;
   }
+
   .feedback .contents h2 {
     font-size: 1.2rem;
   }
@@ -1465,6 +1637,7 @@ footer .rightfooter {
   .customername h1 {
     font-size: 1.1rem;
   }
+
   .feedbackdetails p {
     font-size: 0.7rem;
   }
@@ -1472,6 +1645,7 @@ footer .rightfooter {
   #leftbtn {
     padding: 0.4rem 0.4rem;
   }
+
   #rightbtn {
     padding: 0.4rem 0.4rem;
   }
@@ -1484,13 +1658,16 @@ footer .rightfooter {
     font-size: 1.1rem;
     font-weight: 500;
   }
+
   .faqs {
     padding: 12%;
     margin: 5% 0;
   }
+
   .question p {
     font-size: 0.9rem;
   }
+
   .answer p {
     font-size: 0.75rem;
   }
@@ -1519,6 +1696,7 @@ footer .rightfooter {
   .customerlinks a {
     font-size: 0.7rem;
   }
+
   .facebook,
   .twitter,
   .instagram,
@@ -1526,6 +1704,7 @@ footer .rightfooter {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .l {
     width: 0.8rem;
     height: 0.8rem;
@@ -1534,32 +1713,41 @@ footer .rightfooter {
   .last p {
     font-size: 0.7rem;
   }
+
   .answerexpand button ion-icon {
     font-size: 1.65rem;
   }
+
   footer {
     flex-direction: column;
   }
+
   footer .leftfooter {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
   footer .rightfooter {
     width: 100%;
   }
+
   .main-content {
     padding: 0 10px;
   }
+
   .feedback {
     padding: 0;
   }
+
   .feedback .contents {
     padding: 12% 12% 5% 12%;
   }
+
   .rightfooter {
     flex-direction: column;
   }
+
   .productlinks,
   .quicklinklinks,
   .customerlinks {
@@ -1573,24 +1761,30 @@ footer .rightfooter {
     margin-right: 20px;
     padding: 2px;
   }
+
   .feedbacks {
     padding: 3% 0% 12% 0%;
   }
+
   .product-left {
     display: flex;
     width: 40%;
     align-items: center;
     justify-content: center;
   }
+
   .product-left img {
     width: 120%;
   }
+
   .product-right {
     width: 100%;
   }
+
   .product-left {
     display: none;
   }
+
   .phonetoggle {
     display: block !important;
   }
@@ -1600,6 +1794,7 @@ footer .rightfooter {
     width: 60%;
     height: 60%;
   }
+
   #right-img,
   #left-img {
     display: flex;
@@ -1610,19 +1805,20 @@ footer .rightfooter {
   .active-mobile {
     display: flex !important;
   }
+
   .inactive-mobile {
     display: none !important;
   }
-  .new-feedbacks
-  {
+
+  .new-feedbacks {
     padding: 5% 0;
   }
-  .new-customer-name h1
-  {
+
+  .new-customer-name h1 {
     font-size: 1.1rem;
   }
-  .new-star-rating p
-  {
+
+  .new-star-rating p {
     font-size: 1rem;
   }
 }

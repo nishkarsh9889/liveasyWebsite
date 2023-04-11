@@ -58,3 +58,11 @@ for (let i = 0; i < minus.length; i++) {
         minus[i].style.display = 'none';
     })
 }
+
+
+//loading
+
+const loading = document.querySelector('#loading');
+function loaded() {
+    loading.style.display = 'none';
+}

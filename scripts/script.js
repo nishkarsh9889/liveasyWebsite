@@ -167,3 +167,7 @@ for (let i = 0; i < linkedin.length; i++) {
     })
 }
 
+const loading = document.querySelector('#loading');
+function loaded() {
+    loading.style.display = 'none';
+}

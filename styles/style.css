@@ -2535,3 +2535,50 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/*Blog Page Styles*/ 
+#blog-pg-heading {
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.pagination a.active {
+    background-color: #09B778;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active):not(.arrow-link) {
+    background-color: #09B778;
+    border-radius: 5px;
+}
+
+.pagination a:disabled {
+    color: #aaa;
+    pointer-events: none;
+}
+
+.pagination span {
+    padding: 8px 16px; 
+}
+.pagination .arrow-link {
+    font-size: 20px; 
+    color: #09B778; 
+}
+
+

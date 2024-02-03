@@ -2608,6 +2608,35 @@ body {
 .post4{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog4.jpg') center/cover;
 }
+.post5{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog5.png') center/cover;
+}
+.post6{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog6.png') center/cover;
+}
+.post7{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog7.jpg') center/cover;
+}
+.post8{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog8.png') center/cover;
+}
+.post9{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog9.png') center/cover;
+}
+.post10{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog10.jpg') center/cover;
+}
+.post11{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog11.jpg') center/cover;
+}
+.post12{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog12.jpg') center/cover;
+}
+.post13{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog13.jpg') center/cover;
+}
+
+
 
 .post-title {
     font-size: 36px;

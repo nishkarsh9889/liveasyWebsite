@@ -2595,6 +2595,7 @@ body {
     justify-content: flex-end;
     color: #fff;
 }
+
 /*update post images here*/
 .post1{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog1.jpeg') center/cover;
@@ -2635,8 +2636,6 @@ body {
 .post13{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog13.jpg') center/cover;
 }
-
-
 
 .post-title {
     font-size: 36px;
@@ -2681,5 +2680,50 @@ body {
     }
 }
 
+/*Blog Content CSS*/ 
+.blog-section {
+    margin-bottom: 20px;
+    padding: 1.5% 2% 1.5% 2%; 
+}
+
+.blog-title {
+    font-size: 32px;
+    color: #09B778; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    font-size: 24px;
+}
+.blog-content-image {
+    text-align: center; 
+}
+
+.blog-content-image img {
+    width: 50%; 
+    height: 50%;  
+    display: inline-block; 
+}
+
+/* Blog Content CSS modified for responsiveness */
+@media screen and (max-width: 767px) {
+    .blog-title {
+        font-size: 24px;
+    }
+
+    .blog-content {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .blog-title {
+        font-size: 20px;
+    }
+
+    .blog-content {
+        font-size: 16px;
+    }
+}
 
 

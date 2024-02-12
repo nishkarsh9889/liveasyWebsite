@@ -2607,7 +2607,7 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog3.png') center/cover;
 }
 .post4{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog4.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog4.png') center/cover;
 }
 .post5{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog5.png') center/cover;
@@ -2682,8 +2682,8 @@ body {
 
 /*Blog Content CSS*/ 
 .blog-section {
-    margin-bottom: 20px;
-    padding: 1.5% 2% 1.5% 2%; 
+    margin: 1% 3% 1% 3%; 
+    padding: 2% 4% 2% 4%; 
 }
 
 .blog-title {

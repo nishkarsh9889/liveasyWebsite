@@ -2687,14 +2687,15 @@ body {
 }
 
 .blog-title {
-    font-size: 32px;
+    font-size: 28px;
     color: #09B778; 
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .blog-content {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 .blog-content-image {
     text-align: center; 
@@ -2702,7 +2703,9 @@ body {
 
 .blog-content-image img {
     width: 50%; 
-    height: 50%;  
+    max-height: 50%;  
+    margin-top: 10px; 
+    margin-bottom: 10px; 
     display: inline-block; 
 }
 

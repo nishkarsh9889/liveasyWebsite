@@ -2692,6 +2692,15 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
+.content-title {
+    text-align: center;
+    margin-bottom: 16%;
+    font-size: 52px;
+}
+.image-text h1 {
+    font-size: 24px; 
+    color: #333; 
+}
 
 .blog-content {
     font-size: 22px;
@@ -2718,6 +2727,11 @@ body {
     .blog-content {
         font-size: 16px;
     }
+    .content-title
+    {
+        font-size: 28px; 
+        margin-bottom: 40%; 
+    }
 }
 @media screen and (max-width: 479px) {
     .blog-title {
@@ -2726,6 +2740,11 @@ body {
 
     .blog-content {
         font-size: 12px;
+    }
+    .content-title
+    {
+        font-size: 24px; 
+        margin-bottom: 40%; 
     }
 }
 

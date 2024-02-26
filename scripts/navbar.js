@@ -13,4 +13,3 @@ close.addEventListener('click', () => {
     titleMenuPhoneItems.style.display = 'none';
     menu.style.display = 'block';
 });
-

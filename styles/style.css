@@ -2657,6 +2657,19 @@ body {
 .post20{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog20.png') center/cover;
 }
+.post21{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog21.png') center/cover;
+}
+.post22{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog22.png') center/cover;
+}
+.post23{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog23.png') center/cover;
+}
+.post24{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog24.png') center/cover;
+}
+
 
 .post-title {
     font-size: 36px;

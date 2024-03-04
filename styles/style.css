@@ -2628,13 +2628,70 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog10.jpg') center/cover;
 }
 .post11{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog11.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog11.png') center/cover;
 }
 .post12{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog12.jpg') center/cover;
 }
 .post13{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog13.jpg') center/cover;
+}
+.post14{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog14.png') center/cover;
+}
+.post15{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog15.png') center/cover;
+}
+.post16{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog16.png') center/cover;
+}
+.post17{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog17.png') center/cover;
+}
+.post18{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog18.png') center/cover;
+}
+.post19{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog19.png') center/cover;
+}
+.post20{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog20.png') center/cover;
+}
+.post21{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog21.png') center/cover;
+}
+.post22{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog22.png') center/cover;
+}
+.post23{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog23.png') center/cover;
+}
+.post24{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog24.png') center/cover;
+}
+.post25{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog25.png') center/cover;
+}
+.post26{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog26.png') center/cover;
+}
+.post27{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog27.png') center/cover;
+}
+.post28{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog28.png') center/cover;
+}
+.post29{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog29.png') center/cover;
+}
+.post30{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog30.png') center/cover;
+}
+.post31{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog31.png') center/cover;
+}
+.post32{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog32.png') center/cover;
 }
 
 .post-title {
@@ -2692,6 +2749,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .content-title {
     text-align: center;
     margin-bottom: 16%;
@@ -2718,13 +2776,63 @@ body {
     display: inline-block; 
 }
 
+/*Blof with content-images*/
+.blog-content-w-img-1 {
+    display: flex;
+    align-items: center;
+}
+
+.blog-content-1, .blog-image-1{
+    flex: 1; 
+}
+.blog-content-1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.blog-image-1 {
+    display: flex;
+    justify-content: center; 
+    margin-left: 10px;
+    margin-right: 10px;/* Center the image horizontally */
+}
+
+.blog-image-1 img {
+    width: 100%; 
+    max-width: 250px;
+}
+
+.blog-content-w-img-2 {
+    display: flex;
+    align-items: center;
+}
+
+.blog-content-2{
+    flex: 1; 
+}
+.blog-content-2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.blog-image-2 {
+    display: flex;
+    justify-content: center; 
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.blog-image-2 img {
+    width: 100%; 
+    max-width: 250px;
+}
+
+
 /* Blog Content CSS modified for responsiveness */
 @media screen and (max-width: 767px) {
     .blog-title {
         font-size: 20px;
     }
 
-    .blog-content {
+    .blog-content, .blog-content-1, .blog-content-2 {
         font-size: 16px;
     }
     .content-title
@@ -2732,19 +2840,51 @@ body {
         font-size: 28px; 
         margin-bottom: 40%; 
     }
+    .blog-image-1 {
+        display: flex;
+        justify-content: center; 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .blog-image-2 {
+        display: flex;
+        justify-content: center; 
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    .blog-image-1 img, .blog-image-2 img {
+        width: 100%;
+        max-width: 150px;
+    }
 }
 @media screen and (max-width: 479px) {
     .blog-title {
         font-size: 16px;
     }
 
-    .blog-content {
+    .blog-content, .blog-content-1, .blog-content-2 {
         font-size: 12px;
     }
     .content-title
     {
         font-size: 24px; 
         margin-bottom: 40%; 
+    }
+    .blog-image-1 {
+        display: flex;
+        justify-content: center; 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .blog-image-2 {
+        display: flex;
+        justify-content: center; 
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .blog-image-1 img, .blog-image-2 img {
+        width: 100%;
+        max-width: 120px;
     }
 }
 

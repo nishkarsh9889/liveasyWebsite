@@ -1158,7 +1158,11 @@ body {
 #f4 {
     color: #09B778;
 }
-
+#footer-contact p{
+    font-size: 1rem;
+    color: #09B778;
+    margin-bottom: 1rem;
+}
 #footer-contact p a {
     text-decoration: none;
     color: #09B778;

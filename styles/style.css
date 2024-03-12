@@ -1202,6 +1202,7 @@ body {
 }
 
 #footer-last {
+    text-align: center;
     padding: 0.01rem 8rem;
     background-color: #09B778;
 }

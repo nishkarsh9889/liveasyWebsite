@@ -44,7 +44,7 @@ body {
   .dropdown {
     float: left;
     overflow: hidden;
-border-radius: 5px;
+    border-radius: 5px;
 /* border: #09b778 solid; */
 
   }
@@ -717,4 +717,135 @@ border-radius: 5px;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
+}
+
+@media screen and (max-width: 767px) {
+    .title-menu {
+        display: none;
+    }
+
+    #title-button {
+        display: none;
+    }
+
+    #title-menu-phone {
+        display: flex;
+        align-items: center;
+    }
+    #navbar {
+        padding: 0.6rem;
+    }
+
+    #menu img {
+        width: 2rem;
+    }
+
+    #close img {
+        width: 2rem;
+    }
+
+
+    #close {
+        /* everything of this div should be on the right */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #title-menu-phone-links {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+    #title-menu-phone-links a {
+        margin-bottom: 0.6rem;
+        color: white;
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+    #title-button-phone {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+    #title-button-phone button {
+        margin-bottom: 0.6rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        /* change button color */
+        color: white;
+        background-color: #09B778;
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    #title-button-phone button:hover {
+        cursor: pointer;
+    }
+
+    #title-button-phone a {
+        color: white;
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+    #hero-content-home-left {
+        padding-left: 4rem;
+
+    }
+
+    #hero-content-home-left h1 {
+        font-size: 2.2rem;
+
+    }
+
+    #hero-content-home-left button {
+        padding: 0.8rem 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    #hero-content-home-right {
+        padding-right: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+    
+
+    #hero-content-home {
+        flex-direction: column-reverse;
+    }
+
+    #hero-content-home-left {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    #hero-content-home-left h1 {
+        font-size: 2rem;
+    }
+
+    #hero-content-home-left button {
+        margin-top: 1rem;
+        padding: 0.8rem 1.3rem;
+        font-size: 1rem;
+    }
+
+    #hero-content-home-right {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
 }

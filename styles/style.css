@@ -393,6 +393,7 @@ body {
 .client-item {
     display: flex;
     flex-direction: column;
+    text-align: center; 
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
@@ -1293,11 +1294,13 @@ width: 160px;
 }
 
 #footer-last {
-    padding: 0.01rem 8rem;
+    text-align: center;
+    padding: 0.3rem 8rem;
     background-color: #09B778;
 }
 
 #footer-last p {
+    width: 100%; 
     text-align: center;
     color: white;
     font-size: 1rem;

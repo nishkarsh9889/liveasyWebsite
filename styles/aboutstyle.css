@@ -1,0 +1,373 @@
+.first
+{
+    background: #071645;
+}
+.header-content
+{
+    padding: 5% 12%;
+    text-align: center;
+    
+}
+.header-content h3{
+    color: #09B778;
+    margin-top: 30vh;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.header-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1% 6%;
+}
+.our-story
+{
+    display: flex;
+    padding: 5% 12%;
+}
+.left-os
+{
+    width: 50%;
+}
+.left-os h3
+{
+    color: #09B778;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.left-os h2
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.left-os p
+{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+}
+.right-os
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-os img
+{
+
+    width: 70%;
+    padding: 5%;
+}
+.difference
+{
+    padding: 5% 12%;
+}
+.diff-content h3
+{
+    color: #09B778;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.diff-content h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.diff-items
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 0 0;
+}
+.item
+{
+    background-color: #152968;
+    width:20%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.item-icon
+{
+    background-color: #09B778;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 8px 0;
+}
+.item-icon ion-icon
+{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.item-content h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.item-content p{
+    padding-top: 5px;
+    color: #B4B4B4;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.whoweare
+{
+    padding: 5% 12%;
+    display: flex;
+}
+.wwaleft
+{
+    width: 30%;
+    padding-right: 5%;
+}
+.wwaleft h3{
+    color: #09B778;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.wwaleft span
+{
+    color: #09B778;
+}
+.wwaleft h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.wwaright
+{
+    width: 70%;
+    padding-left: 5%;
+}
+.wwaright p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5% 0 0 0;
+}
+.improve
+{
+    padding: 5% 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.improve h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;   
+}
+.download-btns
+{
+    padding: 10px;
+}
+.download-shipper, .download-trucker
+{
+    background-color: #09B778;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+}
+.download-btns a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.download-btns a:hover
+{
+    text-decoration: underline;
+}
+.improve span
+{
+    color: #09B778;
+}
+
+@media screen and (max-width: 910px) and (min-width: 600px) {
+    .our-story
+    {
+        flex-direction: column-reverse;
+    }
+    .left-os
+    {
+        width: 100%;
+    }
+    .right-os
+    {
+        width: 100%;
+    }
+    .diff-items
+    {
+        flex-wrap: wrap;
+    }
+    .item
+    {
+        width: 45%;
+        margin: 5% 0 5% 0;
+    }
+    .whoweare
+    {
+        flex-direction: column;
+    }
+    .wwaleft
+    {
+        width: 100%;
+    }
+    .wwaright
+    {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .our-story
+    {
+        flex-direction: column-reverse;
+    }
+    .left-os
+    {
+        width: 100%;
+    }
+    .right-os
+    {
+        width: 100%;
+    }
+    .right-os img
+    {
+        width: 100%;
+    }
+    .diff-items
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .item
+    {
+        width: 70%;
+        margin: 5% 0 5% 0;
+        padding: 10px;
+    }
+    .whoweare
+    {
+        flex-direction: column;
+    }
+    .wwaleft
+    {
+        width: 100%;
+    }
+    .wwaright
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .header-content p{
+        font-size: 1.2rem;
+    }
+    .left-os h3
+    {
+        font-size: 0.9rem;
+    }
+    .left-os h2
+    {
+        font-size: 1.3rem;
+    }
+    .left-os p
+    {
+        font-size: 0.9rem;
+    }
+
+    .diff-content h3
+    {
+        font-size: 0.9rem;
+    }
+    .diff-content h2
+    {
+        font-size: 1.3rem;
+    }
+    .item-icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .item-icon ion-icon
+    {
+        font-size: 1.5rem;
+    }
+    .item-content h3
+    {
+        font-size: 0.9rem;
+    }
+    .item-content p
+    {
+        font-size: 0.6rem;
+        align-items: center;
+        padding: 0 5% 5% 5%;
+    }
+    .wwaleft h3
+    {
+        font-size: 0.9rem;
+    }
+    .wwaleft h1
+    {
+        font-size: 1.4rem;
+    }
+    .wwaright p
+    {
+        font-size: 0.9rem;
+    }
+
+    .improve h1
+    {
+        font-size: 1.5rem;
+    }
+    .download-shipper, .download-trucker
+    {
+        font-size: 0.9rem;
+    }
+    .download-btns
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .download-btns a
+    {
+        font-size: 0.9rem;
+    }
+}

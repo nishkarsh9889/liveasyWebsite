@@ -21,30 +21,6 @@ body {
     padding-left: 0.5rem;
 }
 
-/* #title-menu {
-    display: flex;
-    align-items: center;
-}
-
-#title-menu ul {
-    display: flex;
-    list-style: none;
-}
-
-#title-menu ul li {
-    margin-left: 2rem;
-}
-
-#title-menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-}
-
-#title-menu ul li a:hover {
-    color: #09B778;
-} */
-
 .title-menu{
     overflow: hidden;
     font-family: Arial;
@@ -60,7 +36,6 @@ body {
     text-decoration: none;
     margin-right: 1.5rem;
     border-radius:5px ;
-    /* border: white solid; */
   }
   
  /* The dropdown container */

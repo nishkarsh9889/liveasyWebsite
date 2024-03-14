@@ -3,406 +3,239 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About - Liveasy Logistics</title>
+        <title>Tracking</title>
 
-        <meta name="description"
-            content="Learn more about Liveasy Logistics - a company that helps truckers find loads easily and offers cutting-edge logistics solutions for the transportation industry.">
-        <meta name="author" content="Liveasy Logistics">
-        <meta name="publisher" content="https://liveasy.net.in/">
-        <meta name="robots" content="index,follow">
-        <meta name="keywords"
-            content="Liveasy About Us, Liveasy, About us, Logistics, Trucking, Transportation, Solutions, Company">
+        <link rel="stylesheet" href="../styles/style.css">
 
-        <meta property="og:title" content="About Liveasy Logistics - Solutions for the Transportation Industry" />
-        <meta property="og:url" content="https://liveasy.net.in/about" />
-        <meta property="og:description"
-            content="Learn more about Liveasy Logistics - a company that helps truckers find loads easily and offers cutting-edge logistics solutions for the transportation industry." />
-
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:description"
-            content="Learn more about Liveasy Logistics - a company that helps truckers find loads easily and offers cutting-edge logistics solutions for the transportation industry.">
-        <meta name="twitter:title" content="About Liveasy Logistics - Solutions for the Transportation Industry">
-
-
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/aboutstyle.css">
-
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-        <!-- fav icon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_package/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_package/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_package/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicon_package/site.webmanifest">
-        <link rel="mask-icon" href="assets/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Monserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../files/favicon_liveasy.png">
+        <style>
+            body {
+                background-color: #1E1D1D !important;
+            }
+        </style>
 
     </head>
 
-    <body onload="loaded()">
-        <div id="loading">
+    <body>
 
-
-        </div>
-        <main class="first">
-            <header>
-                <nav>
-                    <div class="logo">
-                        <img class="logo-img" src="assets/nav-logo.png" alt="logo">
-                        <h1><a href="index.html" class="logo-title">Liveasy</a></h1>
-                    </div>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="index.html">Home</a></li>
-                        <li class="nav-item"><a href="products.html">Products</a></li>
-                        <li class="nav-item"><a href="blogs.html">Blogs</a></li>
-                        <li class="nav-item"><a href="careers.html">Careers</a></li>
-                        <li class="nav-item"><a href="about.html">About</a></li>
-                        <button class="nav-item-btn">
-                            <a href="contact.html">Contact Us</a>
-                        </button>
-                    </ul>
-                </nav>
-                <div class="mobile-navbar-btn">
-                    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <div id="hero">
+            <div id="navbar">
+                <div id="title-logo">
+                    <img src="../files/title-logo.png" alt="logo">
                 </div>
-            </header>
-            <div class="header-content">
-                <h3>
-                    About Liveasy
-                </h3>
-                <p>
-                    Our mission is to digitize truck booking platform, a highly unorganized sector in India as well as
-                    around the world.
-                </p>
+
+                <div class="title-menu">
+                    <a href="../index.html">Home</a>
+                    <a href="../product.html">Product</a>
+                    <a href="../blogs.html">Blogs</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Company
+                        &#x25BE
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="../about.html">About Us</a>
+                        <a href="../careers.html">Career</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div id="title-menu-phone">
+                    <div id="menu">
+                        <img src="../files/icons8-menu-50.png" alt="Liveasy menu">
+                    </div>
+
+                    <div id="title-menu-phone-items">
+                        <div id="close">
+                            <img src="../files/icons8-close-50.png" alt="Liveasy Close">
+                        </div>
+                        <div id="title-menu-phone-links">
+                            <a href="../index.html">Home</a>
+                            <a href="../product.html">Product</a>
+                            <a href="../blogs.html">Blogs</a>
+                            <a href="../careers.html">Career</a>
+                            <a href="../about.html">About Us</a>
+                        </div>
+
+
+                        <!-- buttons -->
+
+                        <div id="title-button-phone">
+                            <!-- sign up button -->
+                            <button id="sign-up-button-phone">
+                                Sign Up
+                            </button>
+                            <!-- free demo button -->
+                            <button id="free-demo-button-phone">
+                                <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank">Book A Demo</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="title-button">
+                    <!-- sign up button -->
+                    <button id="sign-up-button">
+                        Sign Up
+                    </button>
+                    <!-- free demo button -->
+                    <button id="free-demo-button">
+                        <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank"
+                            style="text-decoration: none; color: white;">Free
+                            Demo</a>
+                    </button>
+                </div>
             </div>
-        </main>
-        <div class="our-story">
-            <div class="left-os">
-                <h3>
-                    Our Story
-                </h3>
+            <div id="hero-content-product-inside">
+                <div id="hcpi-left">
+                    <h1 style="color: #09b778;">
+                        About Us
+                    </h1>
+                    <h2 style="color: white;">
+                        Looking to Automate
+                        your Logistics Operations ?
+                    </h2>
+                    <p>
+                        Managing global supply chains is complex. Multiple fragmented systems, manual processes and data
+                        silos can hinder
+                        visibility and efficiency.
+                    </p>
+                    <button>
+                        <a href="product.html">Get Started</a>
+                    </button>
+                </div>
+                <div id="hcpi-right">
+                    <img src="../files/20945985_1_-removebg-preview 1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="who-we-are">
+            <div id="wwa-left">
+                <img src="../files/Group 9628.png" alt="">
+            </div>
+            <div id="wwa-right">
+                <div id="wwa-right-heading">
+                    <h1>WHO WE ARE?</h1>
+                </div>
+                <div id="wwa-right-p">
+                    <p>
+                        Liveasy is TMS provider that delivers innovative freight and logistics management platforms that
+                        automate, track, and
+                        optimize end-to-end supply chain operations for businesses. Our comprehensive solutions tackle
+                        common business pain
+                        points like freight sourcing, indent management, complex finances, paper invoicing, and outdated
+                        tracking. Liveasy
+                        dashboard integrate planning, execution, settlement, and analysis to boost efficiency,
+                        visibility,
+                        and cost savings
+                        across transportation sourcing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-help">
+            <div id="about-help-heading">
                 <h2>
-                    Making logistics better with <span>modern technology</span>
+                    Want to improve your <span>logistics?</span>
                 </h2>
-                <p>
-                    Pranav Gupta founder of Liveasy belongs to a trucking background, his father told him about what his
-                    father and his
-                    customers were going through, from here he got an idea of building an app. Then he did his research
-                    and
-                    found out that
-                    the problem is big, the market is huge and untapped. He believes this is a great opportunity to
-                    serve
-                    people.
-                </p>
-            </div>
-            <div class="right-os">
-                <img src="assets/truck.jpeg" alt="">
-            </div>
-
-        </div>
-        <div class="difference">
-            <div class="diff-content">
                 <h3>
-                    What makes us different?
-                </h3>
-                <h2>
-                    We offer several services to solve your logistics problem
-                </h2>
-            </div>
-            <div class="diff-items">
-                <div class="item">
-                    <div class="item-icon">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                    </div>
-                    <div class="item-content">
-                        <h3>
-                            Book vehicles </h3>
-                        <p>
-                            Liveasy is an online platform to connect Trasnsporters and Shippers </p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-icon">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </div>
-                    <div class="item-content">
-                        <h3>
-                            Find load for transport </h3>
-                        <p>
-                            In our platform we can find the loads easily for transportation from one place to another
-                            efficiently.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-icon">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
-                    <div class="item-content">
-                        <h3>
-                            Track your vehicle’s location </h3>
-                        <p>
-                            Liveasy also has the option to track your vehicle’s location whenever you need.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-icon">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
-                    <div class="item-content">
-                        <h3>
-                            Check its speed, maintenance </h3>
-                        <p>
-                            We allow the users of Liveasy to check the speeed, maintanence of the vehicle choosen etc.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="whoweare">
-            <div class="wwaleft">
-                <h3>
-                    Who we are?
-                </h3>
-                <h1>
-                    An Online platform to connect <span>truckers</span> and <span>shipper</span>
-                </h1>
-            </div>
-            <div class="wwaright">
-                <p>
-                    Liveasy is an online platform to connect Truckers and Shippers. We aim to make impact and help
-                    ensure
-                    improved
-                    operations and system transparency. <br>
-                    Then we thought as we (INDIA) is moving towards Digitalisation why not Logistic industry should also
-                    move towards
-                    Digitalisation And So we (LIVEASY) were born. <br>LIVEASY = your one step solution for all of your
-                    logistics.
-
-                </p>
-            </div>
-        </div>
-        <div class="improve">
-            <h1>
-                Want to improve your <span>logistics</span>?<br>We can help you with that.
-            </h1>
-            <div class="download-btns">
-                <button class="download-shipper">
-                    <a href="https://play.google.com/store/apps/details?id=com.liveasy.transport">Get Shipper's app</a>
-                </button>
-                <button class="download-trucker">
-                    <a href="https://play.google.com/store/apps/details?id=com.liveasy.transport">Get Trucker's app</a>
-                </button>
-            </div>
-        </div>
-        <div class="faqs">
-            <div class="faqoutline">
-                <h3>
-                    FAQs
-                </h3>
-                <h2>
-                    Have a <span>Question</span>? <br>
                     We are here to help you
-                </h2>
+                </h3>
             </div>
-            <div class="questions">
-                <div class="faq">
-                    <div class="faqquestion">
-                        <div class="question">
-                            <p>
-                                How is Liveasy useful?
-                            </p>
-                            <div class="answerexpand">
-                                <button class="plus">
-                                    <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                                <button class="minus">
-                                    <ion-icon name="remove-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="answer">
-                            <p>
-                                LIVEASY is a startup that is increasing rapidly. Their aim is to organize an unorganized
-                                Logistic Industry. So that
-                                user/transporter can fulfill their needs under one roof which will also help drivers to
-                                generate more income as well as
-                                work as per their time. Through its user-friendly interface, LIVEASY has made the
-                                logistic
-                                problems so simple that
-                                transporter can fulfill their need in just one click. With and 24X7 live tracking
-                                feature
-                                users can track the location
-                                of their goods from anywhere and at any time.
-                            </p>
-                        </div>
-                    </div>
+            <div id="ah-content">
+                <div id="ah-c-left">
+                    <img src="../files/Group 9630.png" alt="">
                 </div>
-                <hr>
-                <div class="faq">
-                    <div class="faqquestion">
-                        <div class="question">
-                            <p>
-                                What services does Liveasy provide?
-                            </p>
-                            <div class="answerexpand">
-                                <button class="plus">
-                                    <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                                <button class="minus">
-                                    <ion-icon name="remove-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="answer">
-                            <p>
-                                • Book vehicles
-                                <br>
-                                • Find loads for transportation
-                                <br>
-                                • Track your vehicle’s location
-                                <br>
-                                • Check its speed, maintenance
-                                <br>
-                                You can book any vehicle as per your requirement in just one click and you can even
-                                track
-                                the vehicle you have booked
-                                for your load through LIVEASY GPS. We work in PAN INDIA because of which you can make
-                                your
-                                goods available to any part
-                                of India. You can even schedule your Booking for the near future. Now you don’t need to
-                                worry about the movement of your
-                                goods as LIVEASY is here to rescue you.
-                            </p>
-                        </div>
+                <div id="ah-c-right">
+                    <div id="ah-c-r-headings">
+                        <h2>
+                            To Automate your logistics operation
+                        </h2>
+                        <h3>
+                            Try our dashboard analytics
+                        </h3>
                     </div>
-                </div>
-                <hr>
-                <div class="faq">
-                    <div class="faqquestion">
-                        <div class="question">
-                            <p>
-                                What are the online payment terms? </p>
-                            <div class="answerexpand">
-                                <button class="plus">
-                                    <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                                <button class="minus">
-                                    <ion-icon name="remove-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="answer">
-                            <p>
-                                Online payments can help businesses provide their customers with a convenient payment
-                                experience.The ease of conducting
-                                financial transactions is probably the biggest motivator to go digital. Our company
-                                provides
-                                all sort of online payment
-                                methods and you will be paid within 24 hrs after pod submission.
-                            </p>
-                        </div>
+                    <div id="ah-c-r-btns">
+                        <button>
+                            <a href="../product/dashboard.html">Dashboard</a>
+                        </button>
+                    </div>
+                    <div id="ah-c-r-points">
+                        <ul>
+                            <li>
+                                Real-time Tracking and Visibility
+                            </li>
+                            <li>
+                                Optimized Route Planning
+                            </li>
+                            <li>
+                                Customer Satisfaction
+                            </li>
+                            <li>
+                                Integrated Communication
+                            </li>
+                            <li>
+                                Analytics and Reporting
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer>
-            <div class="leftfooter">
-                <div class="branding">
-                    <div class="logo">
-                        <img src="assets/nav-logo.png" alt="">
-                        <h2>Liveasy</h2>
+        <div id="footer">
+            <div id="footer-heading">
+                <h2>LIVEASY</h2>
+            </div>
+            <div id="footer-main">
+                <div id="f1">
+                    <img src="../files/Group 654.png" alt="">
+                    <h3>Efficiency At
+                        Your <br>
+                        Fingertips</h3>
+                </div>
+                <div id="f2">
+                    <a href="../index.html">Home</a>
+                    <a href="../product.html">Product</a>
+                    <a href="../blogs.html">Blogs</a>
+                    <a href="../about.html">About</a>
+                </div>
+                <div id="f3">
+                    <a href="../careers.html">Careers</a>
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank">Free Demo</a>
+                </div>
+                <div id="f4">
+                    <div id="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p>+91 89052 46537</p>
+                        <p><a href="mailto:hello@liveasy.net.in">hello@liveasy.net.in</a>
                     </div>
-                    <div class="branddetails">
-                        <p>
-                            Liveasy is an online platform to connect Trucker and Shippers. We aim to make impact and
-                            help ensure improved operations and system transparency.
-                        </p>
-                    </div>
-                    <div class="socialmedias">
-                        <div class="facebook">
-                            <ion-icon name="logo-facebook" class="l"></ion-icon>
-                        </div>
-                        <div class="twitter">
-                            <ion-icon name="logo-twitter" class="l"></ion-icon>
-                        </div>
-                        <div class="instagram">
-                            <ion-icon name="logo-instagram" class="l"></ion-icon>
-                        </div>
-                        <div class="linkedin">
-                            <ion-icon name="logo-linkedin" class="l"></ion-icon>
-                        </div>
+                    <div id="footer-social">
+                        <a href="https://www.linkedin.com/company/liveasy-logistics/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in" style="color: #09b778;"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #09b778;"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color: #09b778;"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram" style="color: #09b778;"></i></a>
+
                     </div>
                 </div>
             </div>
 
-            <div class="rightfooter">
-                <div class="products">
-                    <h3>Products</h3>
-                    <div class="productlinks">
-                        <a href="https://play.google.com/store/apps/details?id=com.liveasy.transport"
-                            target="_blank">Trucker
-                            App</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.liveasy.transport"
-                            target="_blank">Shipper
-                            App</a>
-                    </div>
-                </div>
-                <div class="quicklinks">
-                    <h3>
-                        Quick Links
-                    </h3>
-                    <div class="quicklinklinks">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About us</a>
-                        <a href="contact.html">Contact us</a>
-                    </div>
-                </div>
-                <div class="customers">
-                    <h3>
-                        Customers
-                    </h3>
-                    <div class="customerlinks">
-                        <a href="contact.html">Contact</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-and-conditions.html">Terms & conditions</a>
-                    </div>
-                </div>
-
-        </footer>
-
-
-        <div class="last">
-            <p>
-                &copy; 2021 Liveasy Logistics. All rights reserved.
-            </p>
         </div>
 
-        <!-- scripts -->
-        <!-- main script -->
-        <script src="scripts/navscript.js"></script>
+        <div id="footer-last">
+            <p>© 2023 Liveasy. All Rights Reserved.</p>
+        </div>
 
-        <!-- ionicons script -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+        <script src="../scripts/navbar.js"></script>
+        <script src="https://kit.fontawesome.com/5b8b6a5d60.js" crossorigin="anonymous"></script>
 
     </body>
-
-
-
 
 </html>

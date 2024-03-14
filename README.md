@@ -1,12 +1,8 @@
-# liveasy-new-deployment 
-- Home page: index.html
-- Product page: product.html, product folder contains linked pages
-- Blog pages: Blogs.html is the landing page - blogs folder has all the other landing pages (2-8)
-- Blog content: Blog content folder contains the content for the various blogs
-- Files: Files folder includes all images utilised on the website
-- Career page: careers.html
-- Privacy policy: privacy-policy.html
-- Terms and Conditions: terms-and-conditions.html
-- About us page: about.html 
-- Scripts: navbar.js contains js script for Navbar
-- Styles: style.css is the primary stylesheet; style_career.css includes css for the careers.html page; style_demo.css
+# liveasyWebsite
+This is the folder structure of the code used to built the website.
+![Liveasy (4)](https://user-images.githubusercontent.com/71700319/226700129-340b1dd9-27c8-4823-8adc-652c1f306af7.png)
+
+-The complete code is enclosed in main folder i.e. Project. <br />
+-The code for home page is included here (index.html). <br />
+-Multiple blogs are included in blogs folder. <br />
+-Common faq section and footer is linked to all pages.

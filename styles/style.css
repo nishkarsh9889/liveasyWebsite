@@ -396,9 +396,15 @@ body {
     text-align: center; 
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     width: 30%;
 }
+
+.client-item img{
+    max-width: 70%;
+    height: 65%;
+}
+
 .client-item p{
     font-size: 1.1rem;
     margin-top: 10px;

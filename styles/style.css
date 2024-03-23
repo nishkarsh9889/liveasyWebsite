@@ -2648,6 +2648,7 @@ width: 160px;
     color: white;
     float: left;
     padding: 16px 24px 16px 24px;
+    margin-right: 2px; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.5s;
@@ -2729,7 +2730,7 @@ width: 160px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog12.jpg') center/cover;
 }
 .post13{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog13.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog13.png') center/cover;
 }
 .post14{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('../files/blog14.png') center/cover;

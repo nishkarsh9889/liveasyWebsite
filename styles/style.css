@@ -142,6 +142,11 @@ body {
     -o-border-radius: 0.5rem;
 }
 
+#free-demo-button a {
+    text-decoration: none;
+    color: white;
+}
+
 #hero {
     height: 100vh;
     /* background-image: url(../files/hero-home-bg.png); */

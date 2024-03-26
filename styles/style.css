@@ -1094,7 +1094,7 @@ body {
 
 #footer {
     background-color: #000000; 
-    padding: 3rem 8rem;
+    padding: 3rem 8rem 3rem 6rem;
 }
 
 #footer-heading {
@@ -1118,16 +1118,16 @@ body {
 
 #f1 {
     /* width: 30%; */
-    /* center all contents */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 0;
+    
 }
 
 #f1 img {
-    width: 35%;
+    width: 65%;
 }
 
 #f1 h3 {
@@ -1140,13 +1140,15 @@ body {
 
 #f2,
 #f3 {
-    width: 30%;
-    /* center all contents */
+    width: 13%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
 }
+
+/* #f2 {
+    margin-left: 8rem;
+} */
 
 #f2 a,
 #f3 a {
@@ -1154,6 +1156,7 @@ body {
     color: #09B778;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.5;
     margin-bottom: 0.5rem;
 }
 
@@ -1187,14 +1190,15 @@ width: 160px;
 
 #footer-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 1rem;
+    gap: 2rem; 
 }
 
 #footer-social a {
     text-decoration: none;
     color: #09B778;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -1236,7 +1240,7 @@ width: 160px;
 
     #f2 a,
     #f3 a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         width: 22%;
     }
 
@@ -1300,14 +1304,14 @@ width: 160px;
 }
 
 #footer-last {
-    text-align: center;
-    padding: 0.3rem 8rem;
+    text-align: left;
+    padding: 0.3rem 6rem;
     background-color: #09B778;
 }
 
 #footer-last p {
     width: 100%; 
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -3038,7 +3042,7 @@ width: 160px;
 }
 
 #policy-intro-right,#terms-intro-right {
-width: 46%;
+    width: 46%;
     display: flex;
     justify-content:flex-start;   
 }
@@ -3133,9 +3137,8 @@ p {
             display: flex;
             justify-content: center;
             align-items: center;
-       padding: 0;
+            padding: 0;
             margin: 0;
-
             width: 80%;
 
         }
@@ -3153,8 +3156,15 @@ p {
             justify-content: center;
             align-items: center;
         }
-
-
+        #terms-intro {
+            padding: 2rem;
+        }
+        #terms-intro-left{
+            padding: 2rem; 
+        }
+        #terms-content {
+            padding: 2rem; 
+        }
 }
 
 @media screen and (max-width: 479px) {

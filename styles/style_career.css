@@ -512,17 +512,17 @@ body {
 }
 
 #footer {
-    background-color: black;
-    padding: 3rem 8rem;
+    background-color: #000000; 
+    padding: 3rem 8rem 3rem 6rem;
 }
 
 #footer-heading {
-    color: #09b778;
+    color: #09B778;
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
     /* bottom border - px, color */
-    border-bottom: 2px solid #09b778;
+    border-bottom: 2px solid #09B778;
 }
 
 #footer-heading h2 {
@@ -537,16 +537,16 @@ body {
 
 #f1 {
     /* width: 30%; */
-    /* center all contents */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 0;
+    
 }
 
 #f1 img {
-    width: 35%;
+    width: 65%;
 }
 
 #f1 h3 {
@@ -559,20 +559,23 @@ body {
 
 #f2,
 #f3 {
-    width: 30%;
-    /* center all contents */
+    width: 13%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
 }
+
+/* #f2 {
+    margin-left: 8rem;
+} */
 
 #f2 a,
 #f3 a {
     text-decoration: none;
-    color: #09b778;
+    color: #09B778;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.5;
     margin-bottom: 0.5rem;
 }
 
@@ -582,12 +585,19 @@ body {
 }
 
 #f4 {
-    color: #09b778;
+    color: #09B778;
 }
-
+#footer-contact{
+width: 160px;
+}
+#footer-contact p{
+    font-size: 1rem;
+    color: #09B778;
+    margin-bottom: 1rem;
+}
 #footer-contact p a {
     text-decoration: none;
-    color: #09b778;
+    color: #09B778;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -599,14 +609,15 @@ body {
 
 #footer-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 1rem;
+    gap: 2rem; 
 }
 
 #footer-social a {
     text-decoration: none;
-    color: #09b778;
-    font-size: 1.2rem;
+    color: #09B778;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -720,7 +731,7 @@ body {
 
     #f2 a,
     #f3 a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         width: 22%;
     }
 
@@ -728,6 +739,7 @@ body {
         font-size: 1rem;
     }
 }
+
 
 @media screen and (max-width: 479px) {
     #footer {
@@ -783,16 +795,19 @@ body {
 }
 
 #footer-last {
-    padding: 0.01rem 8rem;
-    background-color: #09b778;
+    text-align: center;
+    padding: 0.3rem 6rem;
+    background-color: #09B778;
 }
 
 #footer-last p {
+    width: 100%; 
     text-align: center;
     color: white;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -801,7 +816,7 @@ body {
     }
 
     #footer-last p {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
 }
 

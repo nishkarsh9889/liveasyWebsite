@@ -1,2 +1,12 @@
-# liveasy-new
- 
+# liveasy-new-deployment 
+- Home page: index.html
+- Product page: product.html, product folder contains linked pages
+- Blog pages: Blogs.html is the landing page - blogs folder has all the other landing pages (2-8)
+- Blog content: Blog content folder contains the content for the various blogs
+- Files: Files folder includes all images utilised on the website
+- Career page: careers.html
+- Privacy policy: privacy-policy.html
+- Terms and Conditions: terms-and-conditions.html
+- About us page: about.html 
+- Scripts: navbar.js contains js script for Navbar
+- Styles: style.css is the primary stylesheet; style_career.css includes css for the careers.html page; style_demo.css

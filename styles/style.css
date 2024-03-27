@@ -1309,14 +1309,14 @@ width: 160px;
 }
 
 #footer-last {
-    text-align: left;
+    text-align: center;
     padding: 0.5rem 6rem;
     background-color: #09B778;
 }
 
 #footer-last p {
     width: 100%; 
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 1rem;
     font-weight: 500;

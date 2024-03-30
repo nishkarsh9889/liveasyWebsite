@@ -2469,7 +2469,7 @@ width: 160px;
     width: 80%;
 }
 
-
+/* About us */
 #about-help {
     padding: 0.5rem 0;
     background-color: black;
@@ -2574,7 +2574,7 @@ width: 160px;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-    width: 40%;
+    width: 70%;
 }
 
 #ah-c-r-btns button a {
@@ -2612,13 +2612,69 @@ width: 160px;
     width: fit-content; /* Make the list width fit its content */
 }
 
+@media screen and (max-width: 1023px) {
+    /* Adjustments for screens up to 1023px wide */
+    #about-us-left {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; /* Center align text */
+    }
 
+    #about-us-left h1 {
+        font-size: 3rem;
+    }
+
+    #about-us-left h2 {
+        font-size: 2rem;
+    }
+
+    #about-us-left p {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-us-left button {
+        font-size: 1rem;
+        text-align: center; /* Center align button text */
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #about-us-right {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 767px) {
+    /* Adjustments for screens up to 767px wide */
+    #about-us-left {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    #about-us-left h1 {
+        font-size: 2.5rem;
+    }
+
+    #about-us-left h2 {
+        font-size: 1.8rem;
+    }
+
+    #about-us-left p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #about-us-left button {
+        width: 60%;
+    }
+
     #who-we-are {
         padding: 3rem 4rem;
         flex-direction: column;
-        margin-top: 6rem;
+        margin-top: 0;
     }
 
     #wwa-left {
@@ -2634,14 +2690,10 @@ width: 160px;
         align-items: center;
     }
 
-    #wwa-right-p {
-        width: 100%;
-        align-items: center;
-    }
-
+    #wwa-right-p,
     #wwa-right-p p {
         width: 100%;
-
+        align-items: center;
     }
 
     #wwa-right-heading h1 {
@@ -2661,7 +2713,7 @@ width: 160px;
         border-radius: 2rem;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-    }
+    } 
 
     #ah-c-left img {
         width: 60%;
@@ -2673,22 +2725,10 @@ width: 160px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-
 }
 
 @media screen and (max-width: 479px) {
-    #hcpi-left h1 {
-        font-size: 1.5rem;
-    }
-
-    #hcpi-left h2 {
-        font-size: 1rem;
-    }
-
-    #hcpi-left p {
-        font-size: 0.9rem;
-    }
-
+    /* Adjustments for screens up to 479px wide */
     #who-we-are {
         padding: 3rem 2rem;
         margin-top: 0;
@@ -2716,13 +2756,15 @@ width: 160px;
 
     #ah-c-r-btns button {
         font-size: 0.9rem;
-        width: auto;
+
     }
 
     #ah-c-r-points li {
         font-size: 0.9rem;
     }
 }
+
+
 
 /*Blog Page Styles*/ 
 #blog-pg-heading {

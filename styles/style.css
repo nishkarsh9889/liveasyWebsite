@@ -2351,11 +2351,87 @@ width: 160px;
 
 /* About Us */
 
+#about-us-product-inside {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    border-bottom: 2px solid #09B778;
+}
+
+#about-us-left {
+    width: 50%;
+    padding: 2rem 2rem 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 8rem;  */
+}
+#about-us-left h1 {
+    color: #09b778;
+    font-size: 3.5rem;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+#about-us-left h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    color: #09B778;
+}
+
+#about-us-left p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: justify;
+    width: 80%;
+}
+
+#about-us-left button {
+    background-color: #09B778;
+    border: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    width: 40%;
+}
+
+#about-us-left button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#about-us-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem 2rem 2rem;
+}
+
+#about-us-right img {
+    width: 85%;
+    /* margin-top: 8rem;  */
+}
+
 
 #who-we-are {
     padding: 3rem 8rem;
-    background-color: #1E1D1D;
+    background-color: black;
     display: flex;
+    padding-bottom: 0;
 }
 
 #wwa-left {
@@ -2374,7 +2450,6 @@ width: 160px;
     width: 60%;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -2385,18 +2460,19 @@ width: 160px;
 }
 
 #wwa-right-p p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
     color: white;
     text-align: justify;
+    line-height: 1.5;
     width: 80%;
 }
 
-
+/* About us */
 #about-help {
-    padding: 3rem 0;
-    background-color: #1E1D1D;
+    padding: 0.5rem 0;
+    background-color: black;
 }
 
 #about-help-heading {
@@ -2405,9 +2481,10 @@ width: 160px;
 }
 
 #about-help-heading h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    margin-top: 0; 
 }
 
 #about-help-heading span {
@@ -2415,7 +2492,7 @@ width: 160px;
 }
 
 #about-help-heading h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
     color: white;
@@ -2423,6 +2500,8 @@ width: 160px;
 
 #ah-content {
     display: flex;
+    padding-left: 4rem; 
+    padding-right: 4rem; 
 }
 
 #ah-c-left {
@@ -2449,7 +2528,7 @@ width: 160px;
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem;
-    background-color: black;
+    background-color: #1E1D1D;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -2457,6 +2536,7 @@ width: 160px;
     -o-border-radius: 2rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    /* justify-content: center; */
 }
 
 #ah-c-r-headings h2 {
@@ -2464,13 +2544,21 @@ width: 160px;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #09B778;
+    text-align: center;
+    margin-top: 0
 }
 
 #ah-c-r-headings h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    margin-top: 0; 
     color: white;
+    text-align: center;
+}
+
+#ah-c-r-btns {
+    text-align: center;
 }
 
 #ah-c-r-btns button {
@@ -2486,7 +2574,7 @@ width: 160px;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-    width: 40%;
+    width: 70%;
 }
 
 #ah-c-r-btns button a {
@@ -2502,20 +2590,91 @@ width: 160px;
 
 #ah-c-r-points {
     margin-top: 2rem;
+    text-align: center;
+}
+
+#ah-c-r-points ul {
+    list-style-position: inside;
+    padding-left: 0; /* Remove default padding */
 }
 
 #ah-c-r-points li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1rem;
     color: white;
+    text-align: left; /* Align text left within centered list */
+}
+
+#ah-c-r-points ul {
+    padding-left: 0; /* Reset padding */
+    margin: 0 auto; /* Center the list */
+    width: fit-content; /* Make the list width fit its content */
+}
+
+@media screen and (max-width: 1023px) {
+    /* Adjustments for screens up to 1023px wide */
+    #about-us-left {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; /* Center align text */
+    }
+
+    #about-us-left h1 {
+        font-size: 3rem;
+    }
+
+    #about-us-left h2 {
+        font-size: 2rem;
+    }
+
+    #about-us-left p {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-us-left button {
+        font-size: 1rem;
+        text-align: center; /* Center align button text */
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #about-us-right {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    /* Adjustments for screens up to 767px wide */
+    #about-us-left {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    #about-us-left h1 {
+        font-size: 2.5rem;
+    }
+
+    #about-us-left h2 {
+        font-size: 1.8rem;
+    }
+
+    #about-us-left p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #about-us-left button {
+        width: 60%;
+    }
+
     #who-we-are {
         padding: 3rem 4rem;
         flex-direction: column;
-        margin-top: 6rem;
+        margin-top: 0;
     }
 
     #wwa-left {
@@ -2531,14 +2690,10 @@ width: 160px;
         align-items: center;
     }
 
-    #wwa-right-p {
-        width: 100%;
-        align-items: center;
-    }
-
+    #wwa-right-p,
     #wwa-right-p p {
         width: 100%;
-
+        align-items: center;
     }
 
     #wwa-right-heading h1 {
@@ -2558,7 +2713,7 @@ width: 160px;
         border-radius: 2rem;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-    }
+    } 
 
     #ah-c-left img {
         width: 60%;
@@ -2570,22 +2725,10 @@ width: 160px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-
 }
 
 @media screen and (max-width: 479px) {
-    #hcpi-left h1 {
-        font-size: 1.5rem;
-    }
-
-    #hcpi-left h2 {
-        font-size: 1rem;
-    }
-
-    #hcpi-left p {
-        font-size: 0.9rem;
-    }
-
+    /* Adjustments for screens up to 479px wide */
     #who-we-are {
         padding: 3rem 2rem;
         margin-top: 0;
@@ -2613,13 +2756,15 @@ width: 160px;
 
     #ah-c-r-btns button {
         font-size: 0.9rem;
-        width: auto;
+
     }
 
     #ah-c-r-points li {
         font-size: 0.9rem;
     }
 }
+
+
 
 /*Blog Page Styles*/ 
 #blog-pg-heading {

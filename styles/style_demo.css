@@ -1,3 +1,4 @@
+/*Global Styles*/
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +6,8 @@ body {
     background-color: black;
     color: white;
 }
+
+/*Overlay Styles*/
 .overlay {
     display: flex;
     flex-direction: row;
@@ -21,10 +24,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     width: 55%;
     padding: 2rem;
 }
+
+/*Container Srtyles*/
 #container {
     text-align: center;
 }
@@ -36,6 +40,8 @@ body {
 
     margin: 0;
 }
+
+/* Form Styles */
 #container form {
     display: flex;
     flex-direction: column;
@@ -57,6 +63,7 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
 }
+
 #social-media-links {
     display: flex;
     /* border: red solid; */

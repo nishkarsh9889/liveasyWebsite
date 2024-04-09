@@ -6,6 +6,7 @@ body {
     color: white;
 }
 
+/*Navbar Styles*/
 #navbar {
     display: flex;
     padding: 0.5rem;
@@ -316,8 +317,6 @@ body {
 
 @media screen and (max-width: 479px) {
 
-    
-
     #hero-content-home {
         flex-direction: column-reverse;
     }
@@ -350,6 +349,7 @@ body {
     }
 
 }
+/*End of Navbar Styles*/
 
 
 #clients-home {
@@ -1318,6 +1318,8 @@ width: 160px;
         font-size: 0.8rem;
     }
 }
+
+/*End of Footer Styles */
 
 .hch {
     background-image: url(../files/hero-home-bg.png) !important;
@@ -2469,7 +2471,6 @@ width: 160px;
     width: 80%;
 }
 
-/* About us */
 #about-help {
     padding: 0.5rem 0;
     background-color: black;

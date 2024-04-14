@@ -1,37 +1,40 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Function to toggle dropdown menu visibility
-    function toggleDropdown(dropdown) {
-        dropdown.classList.toggle("hidden");
-    }
+// Font Awesome Script
+const fontAwesomeScript = document.createElement('script');
+fontAwesomeScript.src = 'https://kit.fontawesome.com/5b8b6a5d60.js';
+fontAwesomeScript.setAttribute('crossorigin', 'anonymous');
+document.head.appendChild(fontAwesomeScript);
 
-    // Function to close all dropdowns except the one being toggled
-    function closeAllDropdowns(idToExclude) {
-        const dropdowns = document.querySelectorAll("[data-dropdown-toggle]");
-        dropdowns.forEach(function(dropdown) {
-            const dropdownId = dropdown.getAttribute("data-dropdown-toggle");
-            if (dropdownId !== idToExclude) {
-                const dropdownMenu = document.getElementById(dropdownId);
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    }
+// Google Analytics Script
+const googleAnalyticsScript = document.createElement('script');
+googleAnalyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-V3YRN5DG5K';
+googleAnalyticsScript.setAttribute('async', '');
+document.head.appendChild(googleAnalyticsScript);
 
-    // Event listeners for dropdown toggles
-    const dropdownToggles = document.querySelectorAll("[data-dropdown-toggle]");
-    dropdownToggles.forEach(function(dropdownToggle) {
-        dropdownToggle.addEventListener("click", function() {
-            const dropdownId = this.getAttribute("data-dropdown-toggle");
-            const dropdownMenu = document.getElementById(dropdownId);
-            toggleDropdown(dropdownMenu);
-            closeAllDropdowns(dropdownId);
-        });
-    });
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
 
-    // Close dropdowns when clicking outside
-    document.addEventListener("click", function(event) {
-        const isClickInsideDropdownToggle = event.target.closest("[data-dropdown-toggle]");
-        if (!isClickInsideDropdownToggle) {
-            closeAllDropdowns();
-        }
-    });
-});
+gtag('config', 'G-V3YRN5DG5K');
+
+// Facebook Pixel Script (Noscript version)
+const facebookPixelImg = document.createElement('img');
+facebookPixelImg.setAttribute('height', '1');
+facebookPixelImg.setAttribute('width', '1');
+facebookPixelImg.style.display = 'none';
+facebookPixelImg.src = 'https://www.facebook.com/tr?id=377693377077017&ev=PageView&noscript=1';
+document.body.appendChild(facebookPixelImg);
+
+//Meta Pixel Code
+!function (f, b, e, v, n, t, s) {
+    if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    n.queue = []; t = b.createElement(e); t.async = !0;
+    t.src = v; s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+}(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '377693377077017');
+fbq('track', 'PageView');

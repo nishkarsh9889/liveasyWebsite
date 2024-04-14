@@ -58,13 +58,34 @@
         </div>
     </nav>
     
-    <div>
-        <img class="h-auto max-w-full" src="/files/hero-img.svg" alt="hero-img-liveasy">
+    <div class="relative min-h-screen">
+        <!-- Background image -->
+        <img class="absolute inset-0 w-full h-full object-cover" src="/files/hero-img.svg" alt="hero-img-liveasy">
+    
+        <div class="flex flex-col md:flex-row items-center justify-center pt-16">
+            <!-- Content div -->
+            <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 pl-8 md:pl-32">
+                <div class="text-left text-white w-full">
+                    <h1 class="text-4xl"><b>Digitalize Your Logistics <br>Operations</b> With Just <br>One Click.</h1>
+                    <p class="mt-4 text-xl py-4">Elevate Your Supply Chain Efficiency: Introducing Intugine's Comprehensive Platform for End-to-End Visibility, Automation, and Optimization of Your Fleet Operations.</p>
+                    <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank" rel="noopener noreferrer" class="inline-block">
+                        <button type="button" class="text-white bg-[#09B778] hover:bg-[#09B778] focus:ring-4 focus:ring-[#09B778] font-medium rounded-lg text-sm px-16 py-2.5 me-2 mb-2 focus:outline-none">
+                            Schedule Demo
+                        </button>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Image div -->
+            <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 px-8">
+                <img class="w-3/4 h-3/4 object-cover pt-6" src="/files/hero-internal-img.svg" alt="hero-internal-img-liveasy">
+            </div>
+        </div>
     </div>
+     
 
     <footer class="bg-[#152968] pt-4 pb-8 px-8 md:px-24">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
-
             <div class="flex flex-col items-center">
                 <img src="../files/liveasy_logo.svg" alt="Liveasy Efficiency" class="w-2/5 md:w-2/6">
                 <h3 class="text-white text-lg font-semibold mt-2 text-center">Efficiency At Your <br> Fingertips</h3>
@@ -92,13 +113,11 @@
                     <p class="text-white text-sm md:text-base mb-2">+91 89052 46537</p>
                     <p><a href="mailto:hello@liveasy.net.in" class="text-white font-semibold text-sm md:text-base hover:text-white">hello@liveasy.net.in</a></p>
                 </div>
-                <div class="flex mt-4 md:mt-0 items-start">
+                <div class="flex mt-4 md:mt-0 justify-center md:justify-start items-center">
                     <a href="https://www.linkedin.com/company/liveasy-logistics/" target="_blank" class="text-white font-semibold text-2xl md:text-3xl hover:text-white mr-8"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://wa.me/+918905246537" target="_blank" class="text-white font-semibold text-2xl md:text-3xl hover:text-white"><i class="fab fa-whatsapp"></i></a>
                 </div>                            
-            </div>
-            
-                      
+            </div>             
         </div>
     </footer>
     

@@ -38,3 +38,27 @@ document.body.appendChild(facebookPixelImg);
     'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '377693377077017');
 fbq('track', 'PageView');
+
+// JavaScript to implement the carousel functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    let currentItemIndex = 0;
+
+    function showItem(index) {
+        // Hide all items
+        carouselItems.forEach(item => item.classList.remove("active"));
+        // Show the item at the specified index
+        carouselItems[index].classList.add("active");
+    }
+
+    function nextItem() {
+        currentItemIndex++;
+        if (currentItemIndex >= carouselItems.length) {
+            currentItemIndex = 0; // Reset index to show the first item again
+        }
+        showItem(currentItemIndex);
+    }
+
+    // Automatically move to the next item every few seconds
+    setInterval(nextItem, 5000); // Change 5000 to adjust the interval (in milliseconds)
+});

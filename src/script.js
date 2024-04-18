@@ -62,3 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Automatically move to the next item every few seconds
     setInterval(nextItem, 5000); // Change 5000 to adjust the interval (in milliseconds)
 });
+
+//Navbar
+document.getElementById("dropdownButton").addEventListener("click", function() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    dropdownContent.classList.toggle("hidden");
+});

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!--Navbar-->
+    <nav class="bg-[--liveasy-blue] text-white dark:bg-[--liveasy-blue] dark:text-white">
+        <div class="max-w-screen flex flex-wrap items-center justify-between ml-2 mr- p-4">
+            <a href="https://liveasy.net.in" class="flex items-center space-x-1 rtl:space-x-reverse">
+                <img src="../../files/liveasy_logo.svg" class="h-8" alt="Liveasy Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Liveasy</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white" aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <button type="button" class="text-[--liveasy-green] border-2 border-[--liveasy-green] hover:border-opacity-100 focus:ring-4 focus:outline-none focus:ring-[--liveasy-green] font-medium rounded-lg text-sm px-4 py-2 text-center dark:text-[--liveasy-green] dark:border-[--liveasy-green]">Contact Us</button>
+            </div>
+            
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 bg-[--liveasy-blue] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[--liveasy-blue] md:dark:bg-[--liveasy-blue]">
+                    <li>
+                        <a href="/src/index.html" class="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-white md:dark:text-white text-lg" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] md:hover:text-white md:dark:text-white dark:text-white dark:hover:text-white md:dark:hover:text-white text-lg md:dark:hover:bg-transparent">Product</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] md:hover:text-white md:dark:text-white dark:text-white dark:hover:text-white md:dark:hover:text-white text-lg md:dark:hover:bg-transparent">Blogs</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white text-lg hover:text-[--liveasy-green] md:hover:text-white md:text-white md:dark:text-white md:p-0 md:w-auto dark:text-white md:dark:hover:text-white dark:focus:text-white md:dark:hover:bg-transparent">Solutions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-[--liveasy-blue] divide-y divide-[--liveasy-blue] rounded-lg shadow w-44 dark:bg-[--liveasy-blue]">
+                            <ul class="py-2 text-lg text-white dark:text-white" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2">Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <div class="relative min-h-screen">
+        <!-- Background image -->
+        <img class="absolute inset-0 w-full h-full object-cover" src="/files/product_freightSourcing.svg" alt="product_freightSourcing">
+    
+        <div class="flex flex-col md:flex-row items-center justify-center pt-16">
+            <!-- Content div -->
+            <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 pl-8 md:pl-32">
+                <div class="text-left text-white w-full">
+                    <h1 class="text-4xl"><b>Freight Sourcing and Reverse Auctions</b></h1>
+                    <p class="mt-4 text-lg py-4"> Whether you're a shipper looking to find the best LSP at competitive rates or a carrier seeking new opportunities, our platform empowers you with cutting-edge tools. Harness the power of reverse auctions to drive efficiency and cost savings in freight procurement.</p>
+                    <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank" rel="noopener noreferrer" class="inline-block">
+                        <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-16 py-2.5 me-2 mb-2 focus:outline-none">
+                            Schedule Demo
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 px-8">
+                <img class="w-3/4 h-3/4 object-cover pt-6" src="/files/product_freightSourcing_hero.svg" alt="freightSourcing">
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions -->
+    <div class="bg-[#F5F8FF] w-full py-4 px-8">
+        <div class="relative min-h-fit flex flex-col items-center justify-center">
+            <h2 class="text-[--liveasy-blue] text-3xl font-bold mb-4">More Solutions</h2>
+            <!--First-->
+            <div class="grid grid-cols-3 gap-1 md:grid-cols-4 md:gap-4">
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_tracking_logo.svg" alt="tracking">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Tracking</h2>
+                            </a>
+                            <a href="../product/Tracking.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_indent_automation_logo.svg" alt="product_indent_automation">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/indent_automation.html" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Indent Automation</h2>
+                            </a>
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_fund_settlement_logo.svg" alt="Fund Settlement">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Fund Settlement</h2>
+                            </a>
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:hidden"></div>
+                <div class="relative w-fit h-fit">
+                    <img class="w-fit h-fit object-cover" src="../../files/product_solution_box.svg" alt="hero-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_invoicing_logo.svg" alt="invoicing">
+                        <div class="mx-auto px-2 py-2 w-9/12 h-fit">
+                            <a href="../product/invoicing.html" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Invoicing</h2>
+                            </a>
+                            <a href="../product/invoicing.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden"></div>
+            </div>
+
+            <!--second-->
+            <div class="grid grid-cols-3 gap-1 md:gap-4 px-auto md:grid-cols-3">
+                <div class="hidden"></div>
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_lastMile_auto.svg" alt="product_lastMile_auto">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Last mile automation solution</h2>
+                            </a>
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_vehicle_logo.svg" alt="In-Plant Vehicle Movement">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/inPlantVehicleMovement.html" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">In-Plant Vehicle Movement and Optimization</h2>
+                            </a>
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-fit h-fit">
+                    <img class="w-full h-full object-cover" src="../../files/product_solution_box.svg" alt="product-solution-box-liveasy">
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_dashboard_logo.svg" alt="Dashboard">
+                        <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
+                            <a href="../product/DashboardNAnalytics.html" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <h2 class="text-xs md:text-xl font-bold text-black pb-4">Dashboards and Analytics<br> <br></h2>
+                            </a>
+                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
+                                    Read More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Trusted by-->
+    <div class="relative min-h-fit">
+        <div class="flex flex-col items-center h-full">
+            <div class="text-center w-full mb-8">
+                <h2 class="text-4xl font-bold py-8"><span class="text-[--liveasy-blue]">Trusted by leaders</span> across Industries</h2>
+                <div class="flex justify-center">
+                    <table class="table-auto">
+                        <tbody>
+                            <tr>
+                                <!-- First row of images -->
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-1.svg" alt="Image 1">
+                                </td>
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-2.svg" alt="Image 2">
+                                </td>
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-3.svg" alt="Image 3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Second row of images -->
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-4.svg" alt="Image 4">
+                                </td>
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-5.svg" alt="Image 5">
+                                </td>
+                                <td class="px-2 py-2">
+                                    <img class="w-32 h-32" src="../../files/logo-6.svg" alt="Image 6">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="relative bg-white flex items-center justify-center">
+        <!-- Background image -->
+        <div class="absolute inset-0 overflow-hidden bg-[#152968] rounded-t-3xl h-auto">
+            <img class="w-full h-full object-cover" src="../../files/footer-image.svg" alt="footer-image">
+        </div>
+        <!-- Content container -->
+        <div class="text-white text-center relative pt-12 pb-24 z-10">
+            <h2 class="text-3xl font-bold mb-4">Experience the Power of Liveasy Logistics!</h2>
+            <p class="text-lg mb-6">Unlock Seamless Real-Time Insights Across Your Business with Our Unified Platform</p>
+            <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank" rel="noopener noreferrer" class="inline-block">
+                <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-16 py-2.5 me-2 mb-2 focus:outline-none">
+                    Schedule Your Demo Now!
+                </button>
+            </a>
+        </div>
+    </footer>
+    <footer class="bg-[#152968] pt-4 pb-8 px-8 md:px-24">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+            <div class="flex flex-col items-center">
+                <img src="../../files/liveasy_logo.svg" alt="Liveasy Efficiency" class="w-1/5 md:w-2/6">
+                <h3 class="text-white text-lg font-semibold mt-2 text-center">Efficiency At Your <br> Fingertips</h3>
+            </div>
+
+            <div class="flex flex-row md:flex-col justify-center space-x-4 md:space-x-0 md:space-y-2">
+                <a href="../index.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Home</a>
+                <a href="../product.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Our Solutions</a>
+                <a href="../blogs.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Blogs</a>
+                <a href="about.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">About</a>
+                <a href="#" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Testimonials</a>
+            </div>
+                            
+            <div class="flex flex-row md:flex-col justify-center space-x-4 md:space-x-0 md:space-y-2">
+                <a href="../careers.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Careers</a>
+                <a href="../privacy-policy.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Privacy Policy</a>
+                <a href="../terms-and-conditions.html" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Terms and Conditions</a>
+                <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Free Demo</a>
+                <a href="#" class="text-white font-semibold text-sm md:text-base hover:text-white mb-2 md:mb-0">Terms of Service</a>
+            </div>
+                        
+            <div class="flex flex-row md:flex-col justify-center md:items-center space-x-4 md:space-x-0 md:space-y-2">
+                <div class="w-40">
+                    <h3 class="text-white font-semibold text-sm md:text-base mb-2">Contact Us</h3>
+                    <p class="text-white text-sm md:text-base mb-2">+91 89052 46537</p>
+                    <p><a href="mailto:hello@liveasy.net.in" class="text-white font-semibold text-sm md:text-base hover:text-white">hello@liveasy.net.in</a></p>
+                </div>
+                <div class="flex mt-4 md:mt-0 justify-center md:justify-start items-center">
+                    <a href="https://www.linkedin.com/company/liveasy-logistics/" target="_blank" class="text-white font-semibold text-2xl md:text-3xl hover:text-white mr-8"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+918905246537" target="_blank" class="text-white font-semibold text-2xl md:text-3xl hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>                            
+            </div>             
+        </div>
+    </footer>
+    
+    <footer class="bg-[#CACACA] py-2 px-12 text-center">
+        <p class="text-black font-semibold">&copy; 2023 Liveasy. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../script.js" rel="script"></script>
+
+</body>

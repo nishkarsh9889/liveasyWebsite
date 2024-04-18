@@ -59,7 +59,7 @@
     </nav>
 
     <!--Hero-->
-    <div class="relative min-h-screen">
+    <div class="relative md:min-h-fit min-h-screen">
         <!-- Background image -->
         <img class="absolute inset-0 w-full h-full object-cover" src="/files/product_indent_automation.svg" alt="product_indent_automation">
     
@@ -67,8 +67,8 @@
             <!-- Content div -->
             <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 pl-8 md:pl-32">
                 <div class="text-left text-white w-full">
-                    <h1 class="text-4xl"><b>Digitalize Your Logistics <br>Operations</b> With Just <br>One Click.</h1>
-                    <p class="mt-4 text-xl py-4">Elevate Your Supply Chain Efficiency: Introducing Intugine's Comprehensive Platform for End-to-End Visibility, Automation, and Optimization of Your Fleet Operations.</p>
+                    <h1 class="text-4xl"><b>Indent Automation</b></h1>
+                    <p class="mt-4 text-lg py-4">Streamline procurement workflows. Automate indent management, approval routing, and PO generation. Reduce manual work and errors through our intuitive indent platform. Complete visibility and control of your procurement process.</p>
                     <a href="https://calendly.com/pranav_in/liveasy-demo" target="_blank" rel="noopener noreferrer" class="inline-block">
                         <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-16 py-2.5 me-2 mb-2 focus:outline-none">
                             Schedule Demo
@@ -78,9 +78,35 @@
             </div>
 
             <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 px-8">
-                <img class="w-3/4 h-3/4 object-cover pt-6" src="/files/hero-internal-img.svg" alt="hero-internal-img-liveasy">
+                <img class="w-3/4 h-3/4 object-cover pt-6" src="/files/product_indent_automation_hero.svg" alt="indent_automation">
             </div>
         </div>
+    </div>
+
+    <!--carousel-->
+    <div class="max-w-screen h-fit px-auto">
+        <h2 class="text-[--liveasy-blue] text-center text-3xl font-bold py-4">How does it work?</h2>
+        <div class="max-w-screen px-4 md:px-32 py-4 md:py-4 flex flex-col md:flex-row items-center justify-center">
+            <!-- Image -->
+            <div class="w-full md:w-1/3 mb-8 md:mb-0 order-1 md:order-1 text-right">
+                <img src="/files/product_indent_automation_carousel.svg" alt="Carousel-1-img" class="w-1/2 h-1/2 rounded-lg">
+            </div>
+            
+            <!-- Text Carousel -->
+            <div class="w-full md:w-2/3 order-2 md:order-2">
+                <div id="text-carousel" class="relative">
+                    <!-- Carousel wrapper -->
+                    <div class="h-auto">
+                        <!-- Item 1 -->
+                        <div class="carousel-item active md:text-center">
+                            <h2 class="text-black text-left text-2xl font-bold mb-2 md:text-center">Indent With Just Simple Steps!</h2>
+                            <p class="text-left text-lg md:text-center">Our advanced algorithm automates the assignment of multiple orders to vendors based on provided rates, ensuring efficient and cost-effective vendor selection. This streamlined approach optimizes order management and enhances overall procurement operations.</p>
+                        </div>
+                        <!-- Item 2, Item 3, etc. -->
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 
     <!-- Solutions -->
@@ -94,10 +120,10 @@
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_tracking_logo.svg" alt="tracking">
                         <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                            <a href="../product/Tracking.html" target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <h2 class="text-xs md:text-xl font-bold text-black pb-4">Tracking</h2>
                             </a>
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                            <a href="../product/Tracking.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
                                 <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
                                     Read More
                                 </button>
@@ -111,10 +137,10 @@
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_indent_automation_logo.svg" alt="product_indent_automation">
                         <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                            <a href="../product/indent_automation.html" target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <h2 class="text-xs md:text-xl font-bold text-black pb-4">Indent Automation</h2>
                             </a>
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                            <a href="../product/indent_automation.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
                                 <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
                                     Read More
                                 </button>
@@ -147,10 +173,10 @@
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_invoicing_logo.svg" alt="invoicing">
                         <div class="mx-auto px-2 py-2 w-9/12 h-fit">
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                            <a href="../product/invoicing.html" target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <h2 class="text-xs md:text-xl font-bold text-black pb-4">Invoicing</h2>
                             </a>
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                            <a href="../product/invoicing.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
                                 <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
                                     Read More
                                 </button>
@@ -186,10 +212,10 @@
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_vehicle_logo.svg" alt="In-Plant Vehicle Movement">
                         <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                            <a href="../product/inPlantVehicleMovement.html" target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <h2 class="text-xs md:text-xl font-bold text-black pb-4">In-Plant Vehicle Movement and Optimization</h2>
                             </a>
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                            <a href="../product/inPlantVehicleMovement.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
                                 <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
                                     Read More
                                 </button>
@@ -203,10 +229,10 @@
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-12 h-12 md:w-20 md:h-20 pt-4" src="/files/product_dashboard_logo.svg" alt="Dashboard">
                         <div class="mx-auto px-2 md:py-2 w-9/12 h-fit">
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                            <a href="../product/DashboardNAnalytics.html" target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <h2 class="text-xs md:text-xl font-bold text-black pb-4">Dashboards and Analytics<br> <br></h2>
                             </a>
-                            <a href="../product/" target="_blank" rel="noopener noreferrer" class="hidden md:block">
+                            <a href="../product/DashboardNAnalytics.html" target="_blank" rel="noopener noreferrer" class="hidden md:block">
                                 <button type="button" class="text-white text-lg bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg px-4 py-2 me-2 mb-2 focus:outline-none">
                                     Read More
                                 </button>
@@ -280,7 +306,7 @@
     <footer class="bg-[#152968] pt-4 pb-8 px-8 md:px-24">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
             <div class="flex flex-col items-center">
-                <img src="../../files/liveasy_logo.svg" alt="Liveasy Efficiency" class="w-2/5 md:w-2/6">
+                <img src="../../files/liveasy_logo.svg" alt="Liveasy Efficiency" class="w-1/5 md:w-2/6">
                 <h3 class="text-white text-lg font-semibold mt-2 text-center">Efficiency At Your <br> Fingertips</h3>
             </div>
 

@@ -39,32 +39,77 @@ document.body.appendChild(facebookPixelImg);
 fbq('init', '377693377077017');
 fbq('track', 'PageView');
 
-// JavaScript to implement the carousel functionality
-document.addEventListener("DOMContentLoaded", function() {
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    let currentItemIndex = 0;
+// Carousel Code - Index.html 
+let currentImageIndex = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+const totalItems = carouselItems.length;
+const indicators = document.querySelectorAll('.flex button');
+const autoplayInterval = 5000; 
+let autoplayTimer = null;
 
-    function showItem(index) {
-        // Hide all items
-        carouselItems.forEach(item => item.classList.remove("active"));
-        // Show the item at the specified index
-        carouselItems[index].classList.add("active");
-    }
+function showItem(index) {
+    // Hide all items and show the current one
+    carouselItems.forEach((item, i) => {
+        item.classList.toggle('hidden', i !== index);
+    });
+    
+    // Update indicators
+    updateIndicators(index);
+    
+    // Restart autoplay
+    restartAutoplay();
+}
 
-    function nextItem() {
-        currentItemIndex++;
-        if (currentItemIndex >= carouselItems.length) {
-            currentItemIndex = 0; // Reset index to show the first item again
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % totalItems;
+    showItem(currentImageIndex);
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + totalItems) % totalItems;
+    showItem(currentImageIndex);
+}
+
+function goToImage(index) {
+    currentImageIndex = index;
+    showItem(currentImageIndex);
+}
+
+function updateIndicators(index) {
+    indicators.forEach((indicator, i) => {
+        if (i === index) {
+            indicator.classList.add('bg-blue-500');
+        } else {
+            indicator.classList.remove('bg-blue-500');
         }
-        showItem(currentItemIndex);
-    }
+    });
+}
 
-    // Automatically move to the next item every few seconds
-    setInterval(nextItem, 5000); // Change 5000 to adjust the interval (in milliseconds)
+function startAutoplay() {
+    // Start autoplay timer
+    autoplayTimer = setInterval(nextImage, autoplayInterval);
+}
+
+function stopAutoplay() {
+    // Stop autoplay timer
+    clearInterval(autoplayTimer);
+}
+
+function restartAutoplay() {
+    // Restart autoplay timer
+    stopAutoplay();
+    startAutoplay();
+}
+
+// Initialize the carousel and start autoplay
+showItem(currentImageIndex);
+startAutoplay();
+
+// Add event listeners to stop autoplay on user interaction
+document.querySelectorAll('.carousel button').forEach(button => {
+    button.addEventListener('click', stopAutoplay);
 });
 
-//Navbar
-document.getElementById("dropdownButton").addEventListener("click", function() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    dropdownContent.classList.toggle("hidden");
+document.querySelectorAll('.flex button').forEach(button => {
+    button.addEventListener('click', stopAutoplay);
 });

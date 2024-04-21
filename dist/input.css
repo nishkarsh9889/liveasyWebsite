@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root {
-    --liveasy-green: #09B778; 
-    --liveasy-blue: #000066; 
-  }
+  --liveasy-green: #09B778; 
+  --liveasy-blue: #000066; 
+}

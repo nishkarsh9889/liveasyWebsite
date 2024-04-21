@@ -44,7 +44,7 @@ let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 const indicators = document.querySelectorAll('.flex button');
-const autoplayInterval = 5000; 
+const autoplayInterval = 8000; 
 let autoplayTimer = null;
 
 function showItem(index) {
@@ -113,3 +113,32 @@ document.querySelectorAll('.carousel button').forEach(button => {
 document.querySelectorAll('.flex button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
+
+//Blog Carousel 
+// let slideIndex = 0;
+
+// const sliderContainer = document.getElementById('slider-content');
+
+// function showCurrentSlide(index) {
+//     const slideWidth = sliderContainer.clientWidth / 6; // Adjusted for 6 different displays
+//     sliderContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+// }
+
+// function nextSlideHandler() {
+//     slideIndex++;
+//     if (slideIndex >= 6) {
+//         slideIndex = 5; // Ensure the index does not go beyond the total number of slides
+//     }
+//     showCurrentSlide(slideIndex);
+// }
+
+// function prevSlideHandler() {
+//     slideIndex--;
+//     if (slideIndex < 0) {
+//         slideIndex = 0;
+//     }
+//     showCurrentSlide(slideIndex);
+// }
+
+// // Initialize the carousel
+// showCurrentSlide(slideIndex);

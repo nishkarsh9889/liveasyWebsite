@@ -39,6 +39,29 @@ document.body.appendChild(facebookPixelImg);
 fbq('init', '377693377077017');
 fbq('track', 'PageView');
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the dropdown button and content elements
+    const dropdownButton = document.querySelector('#dropdownButton');
+    const dropdownContent = document.querySelector('#dropdownContent');
+
+    // Add click event listener to the dropdown button
+    dropdownButton.addEventListener('click', function() {
+        // Toggle the visibility of the dropdown content
+        dropdownContent.classList.toggle('hidden');
+    });
+
+    // Add click event listener to the document to hide dropdown content when clicking outside of the dropdown
+    document.addEventListener('click', function(event) {
+        // Check if the click was outside the dropdown button and content
+        const isClickOutside = !dropdownButton.contains(event.target) && !dropdownContent.contains(event.target);
+        if (isClickOutside) {
+            // Hide the dropdown content
+            dropdownContent.classList.add('hidden');
+        }
+    });
+});
+
+
 // Carousel Code - Index.html 
 let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
@@ -75,15 +98,15 @@ function goToImage(index) {
     showItem(currentImageIndex);
 }
 
-function updateIndicators(index) {
-    indicators.forEach((indicator, i) => {
-        if (i === index) {
-            indicator.classList.add('bg-blue-500');
-        } else {
-            indicator.classList.remove('bg-blue-500');
-        }
-    });
-}
+// function updateIndicators(index) {
+//     indicators.forEach((indicator, i) => {
+//         if (i === index) {
+//             indicator.classList.add('bg-blue-500');
+//         } else {
+//             indicator.classList.remove('bg-blue-500');
+//         }
+//     });
+// }
 
 function startAutoplay() {
     // Start autoplay timer
@@ -110,35 +133,9 @@ document.querySelectorAll('.carousel button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
 
-document.querySelectorAll('.flex button').forEach(button => {
-    button.addEventListener('click', stopAutoplay);
-});
+// document.querySelectorAll('.flex button').forEach(button => {
+//     button.addEventListener('click', stopAutoplay);
+// });
 
 //Blog Carousel 
-// let slideIndex = 0;
 
-// const sliderContainer = document.getElementById('slider-content');
-
-// function showCurrentSlide(index) {
-//     const slideWidth = sliderContainer.clientWidth / 6; // Adjusted for 6 different displays
-//     sliderContainer.style.transform = `translateX(${-index * slideWidth}px)`;
-// }
-
-// function nextSlideHandler() {
-//     slideIndex++;
-//     if (slideIndex >= 6) {
-//         slideIndex = 5; // Ensure the index does not go beyond the total number of slides
-//     }
-//     showCurrentSlide(slideIndex);
-// }
-
-// function prevSlideHandler() {
-//     slideIndex--;
-//     if (slideIndex < 0) {
-//         slideIndex = 0;
-//     }
-//     showCurrentSlide(slideIndex);
-// }
-
-// // Initialize the carousel
-// showCurrentSlide(slideIndex);

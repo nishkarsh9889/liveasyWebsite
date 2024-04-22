@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Carousel Code - Index.html 
+// Carousel Code - Main Carousel
 let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 const indicators = document.querySelectorAll('.flex button');
-const autoplayInterval = 5000; 
+const autoplayInterval = 3000;
 let autoplayTimer = null;
 
 function showItem(index) {
@@ -75,10 +75,10 @@ function showItem(index) {
     carouselItems.forEach((item, i) => {
         item.classList.toggle('hidden', i !== index);
     });
-    
+
     // Update indicators
     updateIndicators(index);
-    
+
     // Restart autoplay
     restartAutoplay();
 }
@@ -98,16 +98,6 @@ function goToImage(index) {
     showItem(currentImageIndex);
 }
 
-function updateIndicators(index) {
-    indicators.forEach((indicator, i) => {
-        if (i === index) {
-            indicator.classList.add('bg-blue-500');
-        } else {
-            indicator.classList.remove('bg-blue-500');
-        }
-    });
-}
-
 function startAutoplay() {
     // Start autoplay timer
     autoplayTimer = setInterval(nextImage, autoplayInterval);
@@ -116,12 +106,7 @@ function startAutoplay() {
 function stopAutoplay() {
     // Stop autoplay timer
     clearInterval(autoplayTimer);
-}
-
-function restartAutoplay() {
-    // Restart autoplay timer
-    stopAutoplay();
-    startAutoplay();
+    autoplayTimer = null;
 }
 
 // Initialize the carousel and start autoplay
@@ -129,13 +114,10 @@ showItem(currentImageIndex);
 startAutoplay();
 
 // Add event listeners to stop autoplay on user interaction
-document.querySelectorAll('.carousel button').forEach(button => {
+document.querySelectorAll('.carousel button, .flex button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
 
-document.querySelectorAll('.flex button').forEach(button => {
-    button.addEventListener('click', stopAutoplay);
-});
 
 //Blog Carousel 
 // JavaScript to handle the carousel navigation

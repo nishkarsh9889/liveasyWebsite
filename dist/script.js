@@ -67,7 +67,7 @@ let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 const indicators = document.querySelectorAll('.flex button');
-const autoplayInterval = 8000; 
+const autoplayInterval = 5000; 
 let autoplayTimer = null;
 
 function showItem(index) {
@@ -98,15 +98,15 @@ function goToImage(index) {
     showItem(currentImageIndex);
 }
 
-// function updateIndicators(index) {
-//     indicators.forEach((indicator, i) => {
-//         if (i === index) {
-//             indicator.classList.add('bg-blue-500');
-//         } else {
-//             indicator.classList.remove('bg-blue-500');
-//         }
-//     });
-// }
+function updateIndicators(index) {
+    indicators.forEach((indicator, i) => {
+        if (i === index) {
+            indicator.classList.add('bg-blue-500');
+        } else {
+            indicator.classList.remove('bg-blue-500');
+        }
+    });
+}
 
 function startAutoplay() {
     // Start autoplay timer
@@ -133,9 +133,61 @@ document.querySelectorAll('.carousel button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
 
-// document.querySelectorAll('.flex button').forEach(button => {
-//     button.addEventListener('click', stopAutoplay);
-// });
+document.querySelectorAll('.flex button').forEach(button => {
+    button.addEventListener('click', stopAutoplay);
+});
 
 //Blog Carousel 
+// JavaScript to handle the carousel navigation
 
+// Number of blogs to display at a time
+const blogsPerPage = 5;
+// Current start index of the blogs being displayed
+let currentBlogStartIndex = 0;
+
+// Function to update the visibility of blog divs
+function updateCarousel() {
+    // Get all the blog divs
+    const blogDivs = document.querySelectorAll('#blog-carousel > div');
+    
+    // Hide all blog divs
+    blogDivs.forEach((div, index) => {
+        div.style.display = 'none';
+    });
+    
+    // Show only the divs in the current range
+    for (let i = currentBlogStartIndex; i < currentBlogStartIndex + blogsPerPage && i < blogDivs.length; i++) {
+        blogDivs[i].style.display = 'block';
+    }
+}
+
+// Event listener for the "Next" button
+document.getElementById('next-blog-btn').addEventListener('click', () => {
+    // Increment the start index by the number of blogs per page
+    currentBlogStartIndex += blogsPerPage;
+
+    // Wrap around if we reach the end of the list
+    if (currentBlogStartIndex >= document.querySelectorAll('#blog-carousel > div').length) {
+        currentBlogStartIndex = 0;
+    }
+
+    // Update the carousel to show the current range of blogs
+    updateCarousel();
+});
+
+// Event listener for the "Previous" button
+document.getElementById('prev-blog-btn').addEventListener('click', () => {
+    // Decrement the start index by the number of blogs per page
+    currentBlogStartIndex -= blogsPerPage;
+
+    // Wrap around if we go before the start of the list
+    if (currentBlogStartIndex < 0) {
+        currentBlogStartIndex = document.querySelectorAll('#blog-carousel > div').length - blogsPerPage;
+    }
+
+    // Update the carousel to show the current range of blogs
+    updateCarousel();
+});
+
+// Initial update of the carousel
+updateCarousel();

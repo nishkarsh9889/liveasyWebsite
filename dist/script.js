@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Carousel Code - Main Carousel
+// Carousel Code - Index.html 
 let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 const indicators = document.querySelectorAll('.flex button');
-const autoplayInterval = 3000;
+const autoplayInterval = 5000; 
 let autoplayTimer = null;
 
 function showItem(index) {
@@ -75,10 +75,10 @@ function showItem(index) {
     carouselItems.forEach((item, i) => {
         item.classList.toggle('hidden', i !== index);
     });
-
+    
     // Update indicators
     updateIndicators(index);
-
+    
     // Restart autoplay
     restartAutoplay();
 }
@@ -98,6 +98,24 @@ function goToImage(index) {
     showItem(currentImageIndex);
 }
 
+function updateIndicators(index) {
+    // Iterate through all indicators
+    indicators.forEach((indicator, i) => {
+        // Here you can add other visual changes you want to apply to the indicators based on the index
+        // without changing the colors
+
+        // For example, you might want to change the active indicator to bold text style or apply an underline
+        if (i === index) {
+            // Add visual changes to the active indicator
+            indicator.classList.add('active-indicator');
+        } else {
+            // Remove the visual changes from non-active indicators
+            indicator.classList.remove('active-indicator');
+        }
+    });
+}
+
+
 function startAutoplay() {
     // Start autoplay timer
     autoplayTimer = setInterval(nextImage, autoplayInterval);
@@ -106,7 +124,12 @@ function startAutoplay() {
 function stopAutoplay() {
     // Stop autoplay timer
     clearInterval(autoplayTimer);
-    autoplayTimer = null;
+}
+
+function restartAutoplay() {
+    // Restart autoplay timer
+    stopAutoplay();
+    startAutoplay();
 }
 
 // Initialize the carousel and start autoplay
@@ -114,13 +137,15 @@ showItem(currentImageIndex);
 startAutoplay();
 
 // Add event listeners to stop autoplay on user interaction
-document.querySelectorAll('.carousel button, .flex button').forEach(button => {
+document.querySelectorAll('.carousel button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
 
+document.querySelectorAll('.flex button').forEach(button => {
+    button.addEventListener('click', stopAutoplay);
+});
 
-//Blog Carousel 
-// JavaScript to handle the carousel navigation
+// Blog Carousel
 
 // Number of blogs to display at a time
 const blogsPerPage = 5;
@@ -143,13 +168,41 @@ function updateCarousel() {
     }
 }
 
+// Initial update of the carousel
+updateCarousel();
+
+
+// Calculate the total number of pages
+const totalBlogs = document.querySelectorAll('#blog-carousel > div').length;
+const totalPages = Math.ceil(totalBlogs / blogsPerPage);
+
+// Create pagination buttons as blue circles
+const paginationDiv = document.getElementById('pagination');
+for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+    const button = document.createElement('button');
+    button.className = 'mx-1 p-2 bg-[--liveasy-blue] rounded-full'; // Blue circles
+    button.id = `page${pageIndex + 1}-btn`;
+
+    // Add event listener to navigate to the specified page
+    button.addEventListener('click', () => {
+        // Set the current start index to the start of the selected page
+        currentBlogStartIndex = pageIndex * blogsPerPage;
+
+        // Update the carousel to show the current range of blogs
+        updateCarousel();
+    });
+
+    // Add the button to the pagination div
+    paginationDiv.appendChild(button);
+}
+
 // Event listener for the "Next" button
 document.getElementById('next-blog-btn').addEventListener('click', () => {
     // Increment the start index by the number of blogs per page
     currentBlogStartIndex += blogsPerPage;
 
     // Wrap around if we reach the end of the list
-    if (currentBlogStartIndex >= document.querySelectorAll('#blog-carousel > div').length) {
+    if (currentBlogStartIndex >= totalBlogs) {
         currentBlogStartIndex = 0;
     }
 
@@ -164,7 +217,7 @@ document.getElementById('prev-blog-btn').addEventListener('click', () => {
 
     // Wrap around if we go before the start of the list
     if (currentBlogStartIndex < 0) {
-        currentBlogStartIndex = document.querySelectorAll('#blog-carousel > div').length - blogsPerPage;
+        currentBlogStartIndex = totalBlogs - blogsPerPage;
     }
 
     // Update the carousel to show the current range of blogs

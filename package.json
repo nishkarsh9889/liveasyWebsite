@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"

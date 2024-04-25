@@ -7,41 +7,62 @@ const itemsPerPage = 6;
 // Define the current page variable
 let currentPage = 1;
 
-// Sample data array
-const data = [
-    // Add your data objects here (at least 24 items for 4 pages)
-    {
-        image: 'https://placekitten.com/200/300',
-        title: 'Title 1',
-        description: 'This is the description of the first item.',
-    },
-    {
-        image: 'https://placekitten.com/200/301',
-        title: 'Title 2',
-        description: 'This is the description of the second item.',
-    },
-    {
-        image: 'https://placekitten.com/200/302',
-        title: 'Title 3',
-        description: 'This is the description of the third item.',
-    },
-    {
-        image: 'https://placekitten.com/200/303',
-        title: 'Title 4',
-        description: 'This is the description of the fourth item.',
-    },
-    {
-        image: 'https://placekitten.com/200/304',
-        title: 'Title 5',
-        description: 'This is the description of the fifth item.',
-    },
-    {
-        image: 'https://placekitten.com/200/305',
-        title: 'Title 6',
-        description: 'This is the description of the sixth item.',
-    },
-    // Add more items as needed...
+//Add blog titles here: 
+const titles = [
+    'How digitization helps in cutting down Freight cost?',
+    'The Future of Logistics',
+    'Optimizing Routes with AI',
+    'Paperless Processes in Logistics',
+    'Real-Time Tracking Benefits',
+    'Cost-Effective Transportation Solutions',
+    'Impact of Technology on Freight',
+    'Improving Supply Chain Efficiency',
+    'Sustainable Logistics Practices',
+    'Digital Transformation in Logistics',
+    'Innovative Freight Solutions',
+    'The Rise of Smart Logistics',
+    'Enhancing Warehouse Management',
+    'Digitization and Cost Savings',
+    'Revolutionizing Freight Management',
+    'Real-Time Insights in Logistics',
+    'The Power of Freight Analytics',
+    'Efficient Route Planning',
 ];
+//Add Blog Descriptions here: 
+const descriptions = [
+    'Liveasy revolutionizes logistics with digitization, cutting freight costs via real-time tracking, route optimization, and paperless processes.',
+    'Discover the latest trends and innovations shaping the future of the logistics industry.',
+    'Learn how AI-driven route optimization is changing the logistics landscape.',
+    'Explore the benefits of paperless processes for streamlining logistics operations.',
+    'Understand the advantages of real-time tracking for efficient freight management.',
+    'Find out how cost-effective transportation solutions can benefit your business.',
+    'Examine the impact of technology on modern freight operations.',
+    'Learn how to improve supply chain efficiency through strategic planning.',
+    'Discover sustainable logistics practices for a greener future.',
+    'Explore the digital transformation of the logistics industry.',
+    'Get insights into innovative freight solutions that can drive success.',
+    'Learn about the rise of smart logistics and its benefits.',
+    'Discover how to enhance warehouse management with technology.',
+    'Learn about the cost savings achieved through digitization in logistics.',
+    'Find out how to revolutionize freight management with modern approaches.',
+    'Get real-time insights for effective logistics decision-making.',
+    'Explore the power of freight analytics for data-driven strategies.',
+    'Learn how efficient route planning can lead to successful logistics.',
+];
+
+const data = [];
+//modify i for additional blogs 
+for (let i = 1; i <= 18; i++) {
+    const imageURL = `../files/blog_${i}_carousel.png`; //retain image format as blog_[num]_carousel
+
+    data.push({
+        image: imageURL,
+        title: titles[i - 1],
+        description: descriptions[i - 1],
+    });
+}
+
+console.log(data);
 
 // Function to render content based on the current page
 function renderContent() {
@@ -55,31 +76,31 @@ function renderContent() {
     // Loop through the data items for the current page and create internal divs
     data.slice(startIndex, endIndex).forEach(item => {
         const div = document.createElement('div');
-        div.classList.add('border', 'rounded-lg', 'p-4');
+        div.classList.add('rounded-xl', 'lg:mx-4', 'my-4', 'shadow-lg');
 
         // Create and append image
         const img = document.createElement('img');
         img.src = item.image;
         img.alt = item.title;
-        img.classList.add('w-full', 'h-auto', 'rounded-md');
+        img.classList.add('w-full', 'h-48');
         div.appendChild(img);
 
         // Create and append title
         const title = document.createElement('h3');
         title.innerText = item.title;
-        title.classList.add('mt-2', 'text-lg', 'font-semibold');
+        title.classList.add('px-4','py-2','mt-2', 'text-lg','text-[--liveasy-blue]', 'font-semibold');
         div.appendChild(title);
 
         // Create and append paragraph
         const paragraph = document.createElement('p');
         paragraph.innerText = item.description;
-        paragraph.classList.add('mt-2', 'text-gray-700');
+        paragraph.classList.add('px-4','py-2','mt-2', 'text-gray-700','hidden','lg:block');
         div.appendChild(paragraph);
 
         // Create and append read more button
         const button = document.createElement('button');
         button.innerText = 'Read More';
-        button.classList.add('mt-2', 'px-3', 'py-2', 'bg-blue-500', 'text-white', 'rounded');
+        button.classList.add('ml-4','mt-2','mb-4', 'px-3', 'py-2', 'bg-[--liveasy-green]', 'text-white', 'rounded');
         div.appendChild(button);
 
         // Append the internal div to the content container
@@ -100,8 +121,9 @@ function renderPagination() {
             'py-2', 
             'rounded-full', 
             'mx-1', 
-            i === currentPage ? 'bg-blue-500' : 'bg-gray-300',
-            'text-white'
+            'font-semibold',
+            i === currentPage ? 'bg-[--liveasy-blue]' : 'bg-gray-300',
+            i === currentPage ? 'text-white' : 'text-black',
         );
         button.addEventListener('click', () => changePage(i - currentPage));
         paginationButtons.appendChild(button);
@@ -124,3 +146,27 @@ function changePage(delta) {
 // Initial rendering
 renderContent();
 renderPagination();
+
+
+//Sign Up - Navbar - Critical for Navbar Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the dropdown button and content elements
+    const dropdownButton = document.querySelector('#dropdownButton');
+    const dropdownContent = document.querySelector('#dropdownContent');
+
+    // Add click event listener to the dropdown button
+    dropdownButton.addEventListener('click', function() {
+        // Toggle the visibility of the dropdown content
+        dropdownContent.classList.toggle('hidden');
+    });
+
+    // Add click event listener to the document to hide dropdown content when clicking outside of the dropdown
+    document.addEventListener('click', function(event) {
+        // Check if the click was outside the dropdown button and content
+        const isClickOutside = !dropdownButton.contains(event.target) && !dropdownContent.contains(event.target);
+        if (isClickOutside) {
+            // Hide the dropdown content
+            dropdownContent.classList.add('hidden');
+        }
+    });
+});

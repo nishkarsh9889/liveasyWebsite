@@ -170,17 +170,17 @@
 
     <div class="container mx-auto p-4">
         <!-- Container div for the internal divs -->
-        <div id="content-container" class="grid grid-cols-3 gap-4">
+        <div id="content-container" class="grid grid-cols-2 md:grid-cols-3 gap-4 px-2">
             <!-- Internal divs will be generated here dynamically -->
         </div>
         
         <!-- Pagination controls -->
         <div class="flex justify-center mt-4">
-            <button id="prev-page" class="px-3 py-2 rounded-full bg-gray-300 mx-2" onclick="changePage(-1)">‹</button>
+            <!-- <button id="prev-page" class="px-3 py-2 rounded-full bg-gray-300 mx-2" onclick="changePage(-1)">&lsaquo;</button> -->
             <div id="pagination-buttons" class="flex">
                 <!-- Pagination buttons will be generated here dynamically -->
             </div>
-            <button id="next-page" class="px-3 py-2 rounded-full bg-gray-300 mx-2" onclick="changePage(1)">›</button>
+            <button id="next-page" class="px-3 py-2 rounded-full bg-gray-300 mx-2" onclick="changePage(1)">&rsaquo;</button>
         </div>
     </div>
 

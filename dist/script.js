@@ -39,6 +39,7 @@ document.body.appendChild(facebookPixelImg);
 fbq('init', '377693377077017');
 fbq('track', 'PageView');
 
+//Sign Up - Navbar
 document.addEventListener('DOMContentLoaded', function() {
     // Get the dropdown button and content elements
     const dropdownButton = document.querySelector('#dropdownButton');

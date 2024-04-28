@@ -9,51 +9,81 @@ let currentPage = 1;
 
 //Add blog titles here: 
 const titles = [
-    'How digitization helps in cutting down Freight cost?',
-    'The Future of Logistics',
-    'Optimizing Routes with AI',
-    'Paperless Processes in Logistics',
-    'Real-Time Tracking Benefits',
-    'Cost-Effective Transportation Solutions',
-    'Impact of Technology on Freight',
-    'Improving Supply Chain Efficiency',
-    'Sustainable Logistics Practices',
-    'Digital Transformation in Logistics',
-    'Innovative Freight Solutions',
-    'The Rise of Smart Logistics',
-    'Enhancing Warehouse Management',
-    'Digitization and Cost Savings',
-    'Revolutionizing Freight Management',
-    'Real-Time Insights in Logistics',
-    'The Power of Freight Analytics',
-    'Efficient Route Planning',
+    "Streamlining Procurement and Indent Management: The Power of Automated Solution",
+    "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
+    "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
+    "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions",
+    "Digital Transformation Strategies for Logistics Company",
+    "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement",
+    "How Digitization Helps in Cutting Down Freight Cost?",
+    "How to Choose the Right TMS: A Buyer's Guide",
+    "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
+    "Why Freight Cost is More in Steel Industries?",
+    "National Logistics Policy 2022",
+    "Efficiency at Every Step: Automated Invoicing and Simplifying Logistics Company",
+    "The Benefits of Automated Indent Management for Procurement",
+    "How to Streamline Yard Management with In-Plant Optimization",
+    "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+    "The Power of Data-Driven Logistics Analytics and Insights",
+    "How to Leverage Digital Proof of Delivery for Faster Invoicing",
+    "Top Techniques for Optimizing Last Mile Delivery Logistics",
+    "Elevating Warehouse Efficiency: The Path to Digital Transformation",
+    "Ways to Seamlessly Integrate Transportation and Warehouse Management Systems",
+
 ];
-//Add Blog Descriptions here: 
+
 const descriptions = [
-    'Liveasy revolutionizes logistics with digitization, cutting freight costs via real-time tracking, route optimization, and paperless processes.',
-    'Discover the latest trends and innovations shaping the future of the logistics industry.',
-    'Learn how AI-driven route optimization is changing the logistics landscape.',
-    'Explore the benefits of paperless processes for streamlining logistics operations.',
-    'Understand the advantages of real-time tracking for efficient freight management.',
-    'Find out how cost-effective transportation solutions can benefit your business.',
-    'Examine the impact of technology on modern freight operations.',
-    'Learn how to improve supply chain efficiency through strategic planning.',
-    'Discover sustainable logistics practices for a greener future.',
-    'Explore the digital transformation of the logistics industry.',
-    'Get insights into innovative freight solutions that can drive success.',
-    'Learn about the rise of smart logistics and its benefits.',
-    'Discover how to enhance warehouse management with technology.',
-    'Learn about the cost savings achieved through digitization in logistics.',
-    'Find out how to revolutionize freight management with modern approaches.',
-    'Get real-time insights for effective logistics decision-making.',
-    'Explore the power of freight analytics for data-driven strategies.',
-    'Learn how efficient route planning can lead to successful logistics.',
+    "Experience the efficiency of Liveasy's automated procurement and indent management solutions.",
+    "Revolutionize logistics with Liveasy: optimized routes, efficient fleet management, and sustainable practices. Experience a greener future.",
+    "Transform logistics with Liveasy's invoicing automation, streamlining processes, ensuring accuracy, and enhancing customer experience.",
+    "Navigate digital logistics with Liveasy, addressing costs, change resistance, and data security.",
+    "Transform logistics with Liveasy's digital solutions—data-driven decisions, intelligent automation, seamless collaboration, and sustainability.",
+    "Revolutionize in-plant vehicle movement with Liveasy's automation, ensuring efficiency, safety, and cost reduction.",
+    "Liveasy revolutionizes logistics with digitization, cutting freight costs via real-time tracking, route optimization, and paperless processes.",
+    "Liveasy guides you through the intricate process of selecting the ideal Transportation Management System (TMS).",
+    "Liveasy's analytics provide powerful insights for efficient logistics and supply chain management.",
+    "Elevated freight costs in the steel industry result from factors like weight, specialized handling, and raw material distribution.",
+    "The National Logistics Policy 2022 targets cutting logistics costs, fostering digital transformation, and driving economic development.",
+    "Liveasy's automated invoicing boosts accuracy and efficiency, ensuring prompt payments.",
+    "Elevate procurement efficiency with Liveasy's automated indent management.",
+    "Liveasy's in-plant optimization revolutionizes yard management, ensuring real-time visibility.",
+    "Liveasy Logistics' advanced tracking solutions offer real-time precision, optimized resource allocation.",
+    "Liveasy's data-driven logistics analytics optimize routes, manage inventory, detect fraud, and mitigate risks.",
+    "Liveasy streamlines logistics invoicing through digital proof of delivery, ensuring accuracy.",
+    "Liveasy Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
+    "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
+    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency."
 ];
+
+// Define an array of links for the "Read More" buttons in the renderContent() function
+const readMoreLinks = [
+    'https://example.com/blog1',
+    'https://example.com/blog2',
+    'https://example.com/blog3',
+    'https://example.com/blog4',
+    'https://example.com/blog5',
+    'https://example.com/blog6',
+    'https://example.com/blog7',
+    'https://example.com/blog8',
+    'https://example.com/blog9',
+    'https://example.com/blog10',
+    'https://example.com/blog11',
+    'https://example.com/blog12',
+    'https://example.com/blog13',
+    'https://example.com/blog14',
+    'https://example.com/blog15',
+    'https://example.com/blog16',
+    'https://example.com/blog17',
+    'https://example.com/blog18',
+    'https://example.com/blog19',
+    'https://example.com/blog20',
+];
+
 
 const data = [];
 //modify i for additional blogs 
-for (let i = 1; i <= 18; i++) {
-    const imageURL = `../files/blog_${i}_carousel.png`; //retain image format as blog_[num]_carousel
+for (let i = 1; i <= 20; i++) {
+    const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
 
     data.push({
         image: imageURL,
@@ -64,17 +94,113 @@ for (let i = 1; i <= 18; i++) {
 
 console.log(data);
 
+// Define an array of data for the additional div
+const additionalDivData = [
+    {
+        image: '../files/blog_header_1.png',
+        title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
+        description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
+        link: 'https://example.com/read-more1',
+    },
+    {
+        image: '../files/blog_header_2.png',
+        title: 'Streamlining logistics operations: the benefits of automated indent management',
+        description: 'Revolutionize logistics with Liveasys Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
+        link: 'https://example.com/read-more2',
+    },
+    {
+        image: '../files/blog_header_3.png',
+        title: 'How Freight Sourcing and Reverse Auctions Cut Transportation Spending',
+        description: 'Liveasy Logistics redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
+        link: 'https://example.com/read-more2',
+    },
+    {
+        image: '../files/blog_header_4.png',
+        title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
+        description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
+        link: 'https://example.com/read-more2',
+    },
+];
+
+// Function to render additional div above the content container
+function renderAdditionalDiv() {
+    const containerDiv = document.getElementById('content-container').parentNode; // Get the container div
+    let additionalDiv = document.getElementById('additional-div'); // Try to get the existing additional div
+
+    // If an existing additional div is present, remove it
+    if (additionalDiv) {
+        additionalDiv.remove();
+    }
+
+    // Create a new additional div element
+    additionalDiv = document.createElement('div');
+    additionalDiv.id = 'additional-div'; // Assign an ID for easy access in the future
+
+    // Customize the additional div with classes for styling
+    additionalDiv.classList.add('flex', 'flex-col','md:flex-row','items-center', 'mt-4','mb-16', 'p-8', 'rounded-lg');
+
+    // Get the data for the additional div for the current page
+    const currentData = additionalDivData[currentPage - 1];
+
+    // Create an image element for the left side
+    const img = document.createElement('img');
+    img.src = currentData.image; // Use the image URL from the additional div data
+    img.alt = currentData.title; // Use the title as the alt text
+    img.classList.add('md:w-2/3', 'w-full','h-auto', 'rounded-lg', 'mx-4', 'my-4'); // Add classes for styling
+    additionalDiv.appendChild(img);
+
+    // Create a div for the right side content
+    const rightSideDiv = document.createElement('div');
+    rightSideDiv.classList.add('flex', 'flex-col','px-4');
+
+    // Create and append title
+    const title = document.createElement('h3');
+    title.innerText = currentData.title; // Use the title from the additional div data
+    title.classList.add('text-2xl', 'text-[--liveasy-blue]', 'font-semibold', 'mb-2');
+    rightSideDiv.appendChild(title);
+
+    // Create and append paragraph
+    const paragraph = document.createElement('p');
+    paragraph.innerText = currentData.description; // Use the description from the additional div data
+    paragraph.classList.add('text-gray-700', 'text-lg', 'mb-2');
+    rightSideDiv.appendChild(paragraph);
+
+    // Create an anchor element for the "Read More" button
+    const anchor = document.createElement('a');
+    anchor.href = currentData.link; // Set the link to the current data's URL
+
+    // Create and append read more button
+    const button = document.createElement('button');
+    button.innerText = 'Read More';
+    button.classList.add('px-3', 'py-2', 'bg-[--liveasy-green]', 'text-white', 'rounded');
+
+    // Append the button to the anchor
+    anchor.appendChild(button);
+
+    // Append the anchor to the right side div
+    rightSideDiv.appendChild(anchor);
+
+    // Append the right side div to the additional div
+    additionalDiv.appendChild(rightSideDiv);
+
+    // Insert the additional div before the content container
+    containerDiv.insertBefore(additionalDiv, containerDiv.firstChild);
+}
+
 // Function to render content based on the current page
 function renderContent() {
     const contentContainer = document.getElementById('content-container');
     contentContainer.innerHTML = ''; // Clear the existing content
+
+    // Call the function to render the additional div
+    renderAdditionalDiv();
 
     // Calculate the start and end index of data to display
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
     // Loop through the data items for the current page and create internal divs
-    data.slice(startIndex, endIndex).forEach(item => {
+    data.slice(startIndex, endIndex).forEach((item, index) => {
         const div = document.createElement('div');
         div.classList.add('rounded-xl', 'lg:mx-4', 'my-4', 'shadow-lg');
 
@@ -88,25 +214,39 @@ function renderContent() {
         // Create and append title
         const title = document.createElement('h3');
         title.innerText = item.title;
-        title.classList.add('px-4','py-2','mt-2', 'text-lg','text-[--liveasy-blue]', 'font-semibold');
+        title.classList.add('px-4', 'py-2', 'mt-2', 'text-lg', 'text-[--liveasy-blue]', 'font-semibold');
         div.appendChild(title);
 
         // Create and append paragraph
         const paragraph = document.createElement('p');
         paragraph.innerText = item.description;
-        paragraph.classList.add('px-4','py-2','mt-2', 'text-gray-700','hidden','lg:block');
+        paragraph.classList.add('px-4', 'py-2', 'mt-2', 'text-gray-700', 'hidden', 'lg:block');
         div.appendChild(paragraph);
+
+        // Create an anchor element for the "Read More" button
+        const anchor = document.createElement('a');
+        anchor.href = readMoreLinks[startIndex + index]; // Set the link for the current item
 
         // Create and append read more button
         const button = document.createElement('button');
         button.innerText = 'Read More';
-        button.classList.add('ml-4','mt-2','mb-4', 'px-3', 'py-2', 'bg-[--liveasy-green]', 'text-white', 'rounded');
-        div.appendChild(button);
+        button.classList.add('ml-4', 'mt-2', 'mb-4', 'px-3', 'py-2', 'bg-[--liveasy-green]', 'text-white', 'rounded');
+        
+        // Append the button to the anchor
+        anchor.appendChild(button);
+        
+        // Append the anchor to the div
+        div.appendChild(anchor);
 
         // Append the internal div to the content container
         contentContainer.appendChild(div);
     });
 }
+
+// Initial rendering
+renderContent();
+renderPagination();
+
 
 // Function to render pagination buttons
 function renderPagination() {

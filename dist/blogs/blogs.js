@@ -29,7 +29,8 @@ const titles = [
     "Top Techniques for Optimizing Last Mile Delivery Logistics",
     "Elevating Warehouse Efficiency: The Path to Digital Transformation",
     "Ways to Seamlessly Integrate Transportation and Warehouse Management Systems",
-    "Streamlining logistics operations: the benefits of automated indent management"
+    "Streamlining logistics operations: the benefits of automated indent management",
+    "How Freight Sourcing and Reverse Auctions Cut Transportation Spending"
 
 ];
 
@@ -54,7 +55,8 @@ const descriptions = [
     "Liveasy Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
     "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
     "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
-    "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate."
+    "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate.",
+    "In the intricate dance of business operations, the rhythm of efficient transportation is paramount to keep supply chains moving seamlessly."
 ];
 
 // Define an array of links for the "Read More" buttons in the renderContent() function
@@ -66,11 +68,11 @@ const readMoreLinks = [
     '../blogs/blog5_digitalTransformationStrategies.html',
     '../blogs/blog6_optimizingResources.html',
     '../blogs/blog7_cuttingFreightCosts.html',
-    'https://example.com/blog8',
-    'https://example.com/blog9',
-    'https://example.com/blog10',
-    'https://example.com/blog11',
-    'https://example.com/blog12',
+    '../blogs/blog8_choosetheRightTMS.html',
+    '../blogs/blog9_bigDataNAnalysis.html',
+    '../blogs/blog10_FreightCost.html',
+    '../blogs/blog11_policy.html',
+    '../blogs/blog12_automatedInvoice.html',
     'https://example.com/blog13',
     'https://example.com/blog14',
     'https://example.com/blog15',
@@ -79,13 +81,14 @@ const readMoreLinks = [
     'https://example.com/blog18',
     'https://example.com/blog19',
     'https://example.com/blog20',
-    'https://example.com/blog21',
+    '../blogs/blog21_StreamliningOperations.html',
+    '../blogs/blog22_FreightSourcing.html',
 ];
 
 
 const data = [];
 //modify i for additional blogs 
-for (let i = 1; i <= 21; i++) {
+for (let i = 1; i <= 22; i++) {
     const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
 
     data.push({
@@ -109,13 +112,13 @@ const additionalDivData = [
         image: '../files/blog_header_2.png',
         title: 'Streamlining logistics operations: the benefits of automated indent management',
         description: 'Revolutionize logistics with Liveasys Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog21_StreamliningOperations.html',
     },
     {
         image: '../files/blog_header_3.png',
         title: 'How Freight Sourcing and Reverse Auctions Cut Transportation Spending',
         description: 'Liveasy Logistics redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog22_FreightSourcing.html',
     },
     {
         image: '../files/blog_header_4.png',
@@ -313,3 +316,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Font Awesome Script
+const fontAwesomeScript = document.createElement('script');
+fontAwesomeScript.src = 'https://kit.fontawesome.com/5b8b6a5d60.js';
+fontAwesomeScript.setAttribute('crossorigin', 'anonymous');
+document.head.appendChild(fontAwesomeScript);

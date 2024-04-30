@@ -29,6 +29,7 @@ const titles = [
     "Top Techniques for Optimizing Last Mile Delivery Logistics",
     "Elevating Warehouse Efficiency: The Path to Digital Transformation",
     "Ways to Seamlessly Integrate Transportation and Warehouse Management Systems",
+    "Streamlining logistics operations: the benefits of automated indent management"
 
 ];
 
@@ -52,17 +53,18 @@ const descriptions = [
     "Liveasy streamlines logistics invoicing through digital proof of delivery, ensuring accuracy.",
     "Liveasy Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
     "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
-    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency."
+    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
+    "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate."
 ];
 
 // Define an array of links for the "Read More" buttons in the renderContent() function
 const readMoreLinks = [
     '../blogs/blog1_StreamliningProcurement.html',
-    '../blogs/blog2_EcoFriendly',
-    '../blogs/blog3_invoicingHassle',
-    'https://example.com/blog4',
-    'https://example.com/blog5',
-    'https://example.com/blog6',
+    '../blogs/blog2_EcoFriendly.html',
+    '../blogs/blog3_invoicingHassle.html',
+    '../blogs/blog4_breakingBarriers.html',
+    '../blogs/blog5_digitalTransformationStrategies.html',
+    '../blogs/blog6_optimizingResources.html',
     'https://example.com/blog7',
     'https://example.com/blog8',
     'https://example.com/blog9',
@@ -77,12 +79,13 @@ const readMoreLinks = [
     'https://example.com/blog18',
     'https://example.com/blog19',
     'https://example.com/blog20',
+    'https://example.com/blog21',
 ];
 
 
 const data = [];
 //modify i for additional blogs 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 21; i++) {
     const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
 
     data.push({

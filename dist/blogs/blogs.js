@@ -30,7 +30,9 @@ const titles = [
     "Elevating Warehouse Efficiency: The Path to Digital Transformation",
     "Ways to Seamlessly Integrate Transportation and Warehouse Management Systems",
     "Streamlining logistics operations: the benefits of automated indent management",
-    "How Freight Sourcing and Reverse Auctions Cut Transportation Spending"
+    "How Freight Sourcing and Reverse Auctions Cut Transportation Spending",
+    "Mastering Multi-Carrier Shipments and Orders: Best Practices",
+    "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry"
 
 ];
 
@@ -56,7 +58,9 @@ const descriptions = [
     "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
     "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
     "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate.",
-    "In the intricate dance of business operations, the rhythm of efficient transportation is paramount to keep supply chains moving seamlessly."
+    "In the intricate dance of business operations, the rhythm of efficient transportation is paramount to keep supply chains moving seamlessly.",
+    "In the dynamic realm of modern logistics, mastering shipments and orders across multiple carriers is a puzzle that demands innovative solutions",
+    "The freight transportation industry is undergoing a major transformation thanks to automation."
 ];
 
 // Define an array of links for the "Read More" buttons in the renderContent() function
@@ -77,18 +81,20 @@ const readMoreLinks = [
     '../blogs/blog14_streamlineYard.html',
     '../blogs/blog15_EndToEnd.html',
     '../blogs/blog16_dataDriven.html',
-    'https://example.com/blog17',
-    'https://example.com/blog18',
-    'https://example.com/blog19',
-    'https://example.com/blog20',
+    '../blogs/blog17_digitalProof.html',
+    '../blogs/blog18_optimizingDelivery.html',
+    '../blogs/blog19_warehouseEfficiency.html',
+    '../blogs/blog20_integrateTransportation.html',
     '../blogs/blog21_StreamliningOperations.html',
     '../blogs/blog22_FreightSourcing.html',
+    '../blogs/blog23_multiCarrier.html',
+    '../blogs/blog24_revolutionizingLogistics.html'
 ];
 
 
 const data = [];
 //modify i for additional blogs 
-for (let i = 1; i <= 22; i++) {
+for (let i = 1; i <= 24; i++) {
     const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
 
     data.push({
@@ -104,9 +110,9 @@ console.log(data);
 const additionalDivData = [
     {
         image: '../files/blog_header_1.png',
-        title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
-        description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
-        link: 'https://example.com/read-more1',
+        title: 'Revolutionizing logistics: how automation is transforming the freight transport industry',
+        description: 'Discover the game-changing impact of Liveasys automation on freight transportation. From boosting efficiency and cutting costs to elevating customer satisfaction, our technology.',
+        link: '../blogs/blog24_revolutionizingLogistics.html',
     },
     {
         image: '../files/blog_header_2.png',
@@ -124,7 +130,7 @@ const additionalDivData = [
         image: '../files/blog_header_4.png',
         title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
         description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog23_multiCarrier.html',
     },
 ];
 

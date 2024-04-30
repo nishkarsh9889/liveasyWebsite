@@ -1,8 +1,4 @@
-Here's a more extensive README file for your Tailwind project on GitHub, covering installation, building, project structure, scripts, CSS, JavaScript, and various other details:
-
----
-
-# Tailwind Project
+# Liveasy Website
 
 Welcome to your Tailwind project repository! This project is designed to provide a modern, responsive website utilizing Tailwind CSS for styling and layout, Flowbite for UI components, and custom JavaScript for dynamic content and functionality.
 

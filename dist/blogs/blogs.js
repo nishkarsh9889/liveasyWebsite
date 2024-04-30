@@ -65,7 +65,7 @@ const readMoreLinks = [
     '../blogs/blog4_breakingBarriers.html',
     '../blogs/blog5_digitalTransformationStrategies.html',
     '../blogs/blog6_optimizingResources.html',
-    'https://example.com/blog7',
+    '../blogs/blog7_cuttingFreightCosts.html',
     'https://example.com/blog8',
     'https://example.com/blog9',
     'https://example.com/blog10',

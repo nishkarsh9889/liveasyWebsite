@@ -57,7 +57,7 @@ const descriptions = [
 
 // Define an array of links for the "Read More" buttons in the renderContent() function
 const readMoreLinks = [
-    'https://example.com/blog1',
+    '../blogs/blog1_StreamliningProcurement.html',
     'https://example.com/blog2',
     'https://example.com/blog3',
     'https://example.com/blog4',

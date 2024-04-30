@@ -29,6 +29,10 @@ const titles = [
     "Top Techniques for Optimizing Last Mile Delivery Logistics",
     "Elevating Warehouse Efficiency: The Path to Digital Transformation",
     "Ways to Seamlessly Integrate Transportation and Warehouse Management Systems",
+    "Streamlining logistics operations: the benefits of automated indent management",
+    "How Freight Sourcing and Reverse Auctions Cut Transportation Spending",
+    "Mastering Multi-Carrier Shipments and Orders: Best Practices",
+    "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry"
 
 ];
 
@@ -52,37 +56,45 @@ const descriptions = [
     "Liveasy streamlines logistics invoicing through digital proof of delivery, ensuring accuracy.",
     "Liveasy Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
     "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
-    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency."
+    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
+    "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate.",
+    "In the intricate dance of business operations, the rhythm of efficient transportation is paramount to keep supply chains moving seamlessly.",
+    "In the dynamic realm of modern logistics, mastering shipments and orders across multiple carriers is a puzzle that demands innovative solutions",
+    "The freight transportation industry is undergoing a major transformation thanks to automation."
 ];
 
 // Define an array of links for the "Read More" buttons in the renderContent() function
 const readMoreLinks = [
-    'https://example.com/blog1',
-    'https://example.com/blog2',
-    'https://example.com/blog3',
-    'https://example.com/blog4',
-    'https://example.com/blog5',
-    'https://example.com/blog6',
-    'https://example.com/blog7',
-    'https://example.com/blog8',
-    'https://example.com/blog9',
-    'https://example.com/blog10',
-    'https://example.com/blog11',
-    'https://example.com/blog12',
-    'https://example.com/blog13',
-    'https://example.com/blog14',
-    'https://example.com/blog15',
-    'https://example.com/blog16',
-    'https://example.com/blog17',
-    'https://example.com/blog18',
-    'https://example.com/blog19',
-    'https://example.com/blog20',
+    '../blogs/blog1_StreamliningProcurement.html',
+    '../blogs/blog2_EcoFriendly.html',
+    '../blogs/blog3_invoicingHassle.html',
+    '../blogs/blog4_breakingBarriers.html',
+    '../blogs/blog5_digitalTransformationStrategies.html',
+    '../blogs/blog6_optimizingResources.html',
+    '../blogs/blog7_cuttingFreightCosts.html',
+    '../blogs/blog8_choosetheRightTMS.html',
+    '../blogs/blog9_bigDataNAnalysis.html',
+    '../blogs/blog10_FreightCost.html',
+    '../blogs/blog11_policy.html',
+    '../blogs/blog12_automatedInvoice.html',
+    '../blogs/blog13_benefits.html',
+    '../blogs/blog14_streamlineYard.html',
+    '../blogs/blog15_EndToEnd.html',
+    '../blogs/blog16_dataDriven.html',
+    '../blogs/blog17_digitalProof.html',
+    '../blogs/blog18_optimizingDelivery.html',
+    '../blogs/blog19_warehouseEfficiency.html',
+    '../blogs/blog20_integrateTransportation.html',
+    '../blogs/blog21_StreamliningOperations.html',
+    '../blogs/blog22_FreightSourcing.html',
+    '../blogs/blog23_multiCarrier.html',
+    '../blogs/blog24_revolutionizingLogistics.html'
 ];
 
 
 const data = [];
 //modify i for additional blogs 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 24; i++) {
     const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
 
     data.push({
@@ -98,27 +110,27 @@ console.log(data);
 const additionalDivData = [
     {
         image: '../files/blog_header_1.png',
-        title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
-        description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
-        link: 'https://example.com/read-more1',
+        title: 'Revolutionizing logistics: how automation is transforming the freight transport industry',
+        description: 'Discover the game-changing impact of Liveasys automation on freight transportation. From boosting efficiency and cutting costs to elevating customer satisfaction, our technology.',
+        link: '../blogs/blog24_revolutionizingLogistics.html',
     },
     {
         image: '../files/blog_header_2.png',
         title: 'Streamlining logistics operations: the benefits of automated indent management',
         description: 'Revolutionize logistics with Liveasys Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog21_StreamliningOperations.html',
     },
     {
         image: '../files/blog_header_3.png',
         title: 'How Freight Sourcing and Reverse Auctions Cut Transportation Spending',
         description: 'Liveasy Logistics redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog22_FreightSourcing.html',
     },
     {
         image: '../files/blog_header_4.png',
         title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
         description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
-        link: 'https://example.com/read-more2',
+        link: '../blogs/blog23_multiCarrier.html',
     },
 ];
 
@@ -310,3 +322,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Font Awesome Script
+const fontAwesomeScript = document.createElement('script');
+fontAwesomeScript.src = 'https://kit.fontawesome.com/5b8b6a5d60.js';
+fontAwesomeScript.setAttribute('crossorigin', 'anonymous');
+document.head.appendChild(fontAwesomeScript);

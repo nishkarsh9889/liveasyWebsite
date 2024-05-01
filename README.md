@@ -10,7 +10,7 @@ Welcome to your Tailwind project repository! This project is designed to provide
 - [CSS](#css)
 - [JavaScript](#javascript)
 - [Files](#files)
-- [Credits](#credits)
+
 
 ## Installation
 

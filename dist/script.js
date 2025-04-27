@@ -40,19 +40,19 @@ fbq('init', '377693377077017');
 fbq('track', 'PageView');
 
 //Sign Up - Navbar
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get the dropdown button and content elements
     const dropdownButton = document.querySelector('#dropdownButton');
     const dropdownContent = document.querySelector('#dropdownContent');
 
     // Add click event listener to the dropdown button
-    dropdownButton.addEventListener('click', function() {
+    dropdownButton.addEventListener('click', function () {
         // Toggle the visibility of the dropdown content
         dropdownContent.classList.toggle('hidden');
     });
 
     // Add click event listener to the document to hide dropdown content when clicking outside of the dropdown
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         // Check if the click was outside the dropdown button and content
         const isClickOutside = !dropdownButton.contains(event.target) && !dropdownContent.contains(event.target);
         if (isClickOutside) {
@@ -68,7 +68,7 @@ let currentImageIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 const indicators = document.querySelectorAll('.flex button');
-const autoplayInterval = 5000; 
+const autoplayInterval = 5000;
 let autoplayTimer = null;
 
 function showItem(index) {
@@ -76,10 +76,10 @@ function showItem(index) {
     carouselItems.forEach((item, i) => {
         item.classList.toggle('hidden', i !== index);
     });
-    
+
     // Update indicators
     updateIndicators(index);
-    
+
     // Restart autoplay
     restartAutoplay();
 }
@@ -157,12 +157,12 @@ let currentBlogStartIndex = 0;
 function updateCarousel() {
     // Get all the blog divs
     const blogDivs = document.querySelectorAll('#blog-carousel > div');
-    
+
     // Hide all blog divs
     blogDivs.forEach((div, index) => {
         div.style.display = 'none';
     });
-    
+
     // Show only the divs in the current range
     for (let i = currentBlogStartIndex; i < currentBlogStartIndex + blogsPerPage && i < blogDivs.length; i++) {
         blogDivs[i].style.display = 'block';

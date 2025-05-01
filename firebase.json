@@ -1,12 +1,18 @@
+
 {
   "hosting": {
-    "public": "public",
-    "target": "cargopro",
+    "site": "cargopro",
+    "public": ".",
     "ignore": [
       "firebase.json",
-      "/node_modules/"
+      "**/.*",
+      "**/node_modules/**"
     ],
-    "cleanUrls": true
-    
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }

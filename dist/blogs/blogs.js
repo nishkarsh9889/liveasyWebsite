@@ -37,27 +37,27 @@ const titles = [
 ];
 
 const descriptions = [
-    "Experience the efficiency of Liveasy's automated procurement and indent management solutions.",
-    "Revolutionize logistics with Liveasy: optimized routes, efficient fleet management, and sustainable practices. Experience a greener future.",
-    "Transform logistics with Liveasy's invoicing automation, streamlining processes, ensuring accuracy, and enhancing customer experience.",
-    "Navigate digital logistics with Liveasy, addressing costs, change resistance, and data security.",
-    "Transform logistics with Liveasy's digital solutions—data-driven decisions, intelligent automation, seamless collaboration, and sustainability.",
-    "Revolutionize in-plant vehicle movement with Liveasy's automation, ensuring efficiency, safety, and cost reduction.",
-    "Liveasy revolutionizes logistics with digitization, cutting freight costs via real-time tracking, route optimization, and paperless processes.",
-    "Liveasy guides you through the intricate process of selecting the ideal Transportation Management System (TMS).",
-    "Liveasy's analytics provide powerful insights for efficient logistics and supply chain management.",
+    "Experience the efficiency of CargoPro's automated procurement and indent management solutions.",
+    "Revolutionize logistics with CargoPro: optimized routes, efficient fleet management, and sustainable practices. Experience a greener future.",
+    "Transform logistics with CargoPro's invoicing automation, streamlining processes, ensuring accuracy, and enhancing customer experience.",
+    "Navigate digital logistics with CargoPro, addressing costs, change resistance, and data security.",
+    "Transform logistics with CargoPro's digital solutions—data-driven decisions, intelligent automation, seamless collaboration, and sustainability.",
+    "Revolutionize in-plant vehicle movement with CargoPro's automation, ensuring efficiency, safety, and cost reduction.",
+    "CargoPro revolutionizes logistics with digitization, cutting freight costs via real-time tracking, route optimization, and paperless processes.",
+    "CargoPro guides you through the intricate process of selecting the ideal Transportation Management System (TMS).",
+    "CargoPro's analytics provide powerful insights for efficient logistics and supply chain management.",
     "Elevated freight costs in the steel industry result from factors like weight, specialized handling, and raw material distribution.",
     "The National Logistics Policy 2022 targets cutting logistics costs, fostering digital transformation, and driving economic development.",
-    "Liveasy's automated invoicing boosts accuracy and efficiency, ensuring prompt payments.",
-    "Elevate procurement efficiency with Liveasy's automated indent management.",
-    "Liveasy's in-plant optimization revolutionizes yard management, ensuring real-time visibility.",
-    "Liveasy Logistics' advanced tracking solutions offer real-time precision, optimized resource allocation.",
-    "Liveasy's data-driven logistics analytics optimize routes, manage inventory, detect fraud, and mitigate risks.",
-    "Liveasy streamlines logistics invoicing through digital proof of delivery, ensuring accuracy.",
-    "Liveasy Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
-    "Liveasy Logistics transforms warehouses with digitization, automation, and strategic layouts.",
-    "Liveasy Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
-    "Revolutionize logistics with Liveasy's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate.",
+    "CargoPro's automated invoicing boosts accuracy and efficiency, ensuring prompt payments.",
+    "Elevate procurement efficiency with CargoPro's automated indent management.",
+    "CargoPro's in-plant optimization revolutionizes yard management, ensuring real-time visibility.",
+    "CargoPro Logistics' advanced tracking solutions offer real-time precision, optimized resource allocation.",
+    "CargoPro's data-driven logistics analytics optimize routes, manage inventory, detect fraud, and mitigate risks.",
+    "CargoPro streamlines logistics invoicing through digital proof of delivery, ensuring accuracy.",
+    "CargoPro Logistics transforms last-mile delivery with real-time route efficiency, dynamic capacity adjustments.",
+    "CargoPro Logistics transforms warehouses with digitization, automation, and strategic layouts.",
+    "CargoPro Logistics transforms logistics by integrating TMS and WMS, ensuring real-time efficiency.",
+    "Revolutionize logistics with CargoPro's Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate.",
     "In the intricate dance of business operations, the rhythm of efficient transportation is paramount to keep supply chains moving seamlessly.",
     "In the dynamic realm of modern logistics, mastering shipments and orders across multiple carriers is a puzzle that demands innovative solutions",
     "The freight transportation industry is undergoing a major transformation thanks to automation."
@@ -111,13 +111,13 @@ const additionalDivData = [
     {
         image: '../files/blog_header_1.png',
         title: 'Revolutionizing logistics: how automation is transforming the freight transport industry',
-        description: 'Discover the game-changing impact of Liveasys automation on freight transportation. From boosting efficiency and cutting costs to elevating customer satisfaction, our technology.',
+        description: 'Discover the game-changing impact of CargoPro automation on freight transportation. From boosting efficiency and cutting costs to elevating customer satisfaction, our technology.',
         link: '../blogs/blog24_revolutionizingLogistics.html',
     },
     {
         image: '../files/blog_header_2.png',
         title: 'Streamlining logistics operations: the benefits of automated indent management',
-        description: 'Revolutionize logistics with Liveasys Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
+        description: 'Revolutionize logistics with CargoPro Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
         link: '../blogs/blog21_StreamliningOperations.html',
     },
     {
@@ -149,7 +149,7 @@ function renderAdditionalDiv() {
     additionalDiv.id = 'additional-div'; // Assign an ID for easy access in the future
 
     // Customize the additional div with classes for styling
-    additionalDiv.classList.add('flex', 'flex-col','md:flex-row','items-center', 'mt-4','mb-16', 'p-8', 'rounded-lg');
+    additionalDiv.classList.add('flex', 'flex-col', 'md:flex-row', 'items-center', 'mt-4', 'mb-16', 'p-8', 'rounded-lg');
 
     // Get the data for the additional div for the current page
     const currentData = additionalDivData[currentPage - 1];
@@ -158,12 +158,12 @@ function renderAdditionalDiv() {
     const img = document.createElement('img');
     img.src = currentData.image; // Use the image URL from the additional div data
     img.alt = currentData.title; // Use the title as the alt text
-    img.classList.add('md:w-2/3', 'w-full','h-auto', 'rounded-lg', 'mx-4', 'my-4'); // Add classes for styling
+    img.classList.add('md:w-2/3', 'w-full', 'h-auto', 'rounded-lg', 'mx-4', 'my-4'); // Add classes for styling
     additionalDiv.appendChild(img);
 
     // Create a div for the right side content
     const rightSideDiv = document.createElement('div');
-    rightSideDiv.classList.add('flex', 'flex-col','px-4');
+    rightSideDiv.classList.add('flex', 'flex-col', 'px-4');
 
     // Create and append title
     const title = document.createElement('h3');
@@ -243,10 +243,10 @@ function renderContent() {
         const button = document.createElement('button');
         button.innerText = 'Read More';
         button.classList.add('ml-4', 'mt-2', 'mb-4', 'px-3', 'py-2', 'bg-[--liveasy-green]', 'text-white', 'rounded');
-        
+
         // Append the button to the anchor
         anchor.appendChild(button);
-        
+
         // Append the anchor to the div
         div.appendChild(anchor);
 
@@ -269,10 +269,10 @@ function renderPagination() {
         const button = document.createElement('button');
         button.innerText = i;
         button.classList.add(
-            'px-3', 
-            'py-2', 
-            'rounded-full', 
-            'mx-1', 
+            'px-3',
+            'py-2',
+            'rounded-full',
+            'mx-1',
             'font-semibold',
             i === currentPage ? 'bg-[--liveasy-blue]' : 'bg-gray-300',
             i === currentPage ? 'text-white' : 'text-black',
@@ -301,19 +301,19 @@ renderPagination();
 
 
 //Sign Up - Navbar - Critical for Navbar Functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get the dropdown button and content elements
     const dropdownButton = document.querySelector('#dropdownButton');
     const dropdownContent = document.querySelector('#dropdownContent');
 
     // Add click event listener to the dropdown button
-    dropdownButton.addEventListener('click', function() {
+    dropdownButton.addEventListener('click', function () {
         // Toggle the visibility of the dropdown content
         dropdownContent.classList.toggle('hidden');
     });
 
     // Add click event listener to the document to hide dropdown content when clicking outside of the dropdown
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         // Check if the click was outside the dropdown button and content
         const isClickOutside = !dropdownButton.contains(event.target) && !dropdownContent.contains(event.target);
         if (isClickOutside) {

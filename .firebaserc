@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "shipperprod"
+  },
+  "targets": {
+    "shipperprod": {
+      "hosting": {
+        "cargopro": [
+          "cargopro"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

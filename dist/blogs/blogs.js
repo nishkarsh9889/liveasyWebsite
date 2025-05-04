@@ -123,13 +123,13 @@ const additionalDivData = [
     {
         image: '../files/blog_header_3.png',
         title: 'How Freight Sourcing and Reverse Auctions Cut Transportation Spending',
-        description: 'Liveasy Logistics redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
+        description: 'CargoPro redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
         link: '../blogs/blog22_FreightSourcing.html',
     },
     {
         image: '../files/blog_header_4.png',
         title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
-        description: 'Liveasy revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
+        description: 'CargoPro revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
         link: '../blogs/blog23_multiCarrier.html',
     },
 ];

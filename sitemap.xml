@@ -1,202 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://cargopro.ai/</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/index.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/FreightSourcing.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/indent_automation.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/invoicing.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/inPlantVehicleMovement.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/DashboardNAnalytics.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/product/Tracking.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/industries/industries.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blogs.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/company/about.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/company/career.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/company/privacypolicy.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/company/termsncondition.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog24_revolutionizingLogistics.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog1_StreamliningProcurement.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog2_EcoFriendly.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog22_FreightSourcing.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog8_choosetheRightTMS.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog4_breakingBarriers.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog5_digitalTransformationStrategies.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog9_bigDataNAnalysis.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog7_cuttingFreightCosts.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog16_dataDriven.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog20_integrateTransportation.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog15_EndToEnd.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog17_digitalProof.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog23_multiCarrier.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog3_invoicingHassle.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog12_automatedInvoice.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog10_FreightCost.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog13_benefits.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog14_streamlineYard.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog11_policy.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog6_optimizingResources.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog21_StreamliningOperations.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog18_optimizingDelivery.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cargopro.ai/blogs/blog19_warehouseEfficiency.html</loc>
-  <lastmod>2025-05-01T08:52:03+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://www.cargopro.ai/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/FreightSourcing.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/indentautomation.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/invoicing.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/inPlantVehicleMovement.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/DashboardNAnalytics.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/product/Tracking.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/industries/industries.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blogs.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/company/about.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/company/career.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/company/privacypolicy.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/company/termsncondition.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog24_revolutionizingLogistics.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog1_StreamliningProcurement.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog2_EcoFriendly.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog22_FreightSourcing.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog8_choosetheRightTMS.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog4_breakingBarriers.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog5_digitalTransformationStrategies.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog9_bigDataNAnalysis.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog7_cuttingFreightCosts.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog16_dataDriven.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog20_integrateTransportation.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog15_EndToEnd.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog17_digitalProof.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog23_multiCarrier.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog3_invoicingHassle.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog12_automatedInvoice.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog10_FreightCost.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog13_benefits.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog14_streamlineYard.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog11_policy.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog6_optimizingResources.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog21_StreamliningOperations.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog18_optimizingDelivery.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://www.cargopro.ai/blogs/blog19_warehouseEfficiency.html</loc>
+    <lastmod>2025-05-04T08:01:40+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.51</priority>
+  </url>
 </urlset>

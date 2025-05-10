@@ -99,15 +99,15 @@
 
 <body class="bg-white">
     <!-- Navbar -->
-    <nav class="bg-[--liveasy-blue] text-white dark:bg-[--liveasy-blue] dark:text-white">
+    <nav class="bg-[--liveasy-blue] text-white">
         <div class="max-w-screen flex flex-wrap items-center justify-between ml-2 mr- p-4">
             <a href="index.html" class="flex items-center space-x-1 rtl:space-x-reverse">
                 <img src="./images/logo.webp" class="h-8" alt="CargoPro TMS Logo" loading="lazy" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CargoPro</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">CargoPro</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-cta" aria-expanded="false" aria-label="Toggle navigation menu">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -118,7 +118,7 @@
                 </button>
                 <div class="relative inline-block text-[--liveasy-green]">
                     <button id="dropdownButton" type="button"
-                        class="text-[--liveasy-green] border-2 border-[--liveasy-green] hover:border-opacity-100 focus:ring-4 focus:outline-none focus:ring-[--liveasy-green] font-medium rounded-lg text-sm px-6 py-2 text-center dark:text-[--liveasy-green] dark:border-[--liveasy-green] flex items-center"
+                        class="text-[--liveasy-green] border-2 border-[--liveasy-green] hover:border-opacity-100 focus:ring-4 focus:outline-none focus:ring-[--liveasy-green] font-medium rounded-lg text-sm px-6 py-2 text-center flex items-center"
                         aria-label="Sign Up Options">
                         <span>Sign Up</span>
                         <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -137,19 +137,18 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                 <ul
-                    class="flex flex-col font-medium p-4 md:p-0 mt-4 bg-[--liveasy-blue] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[--liveasy-blue] md:dark:bg-[--liveasy-blue]">
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 bg-[--liveasy-blue] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <li>
                         <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
-                            class="flex items-center justify-between w-full py-2 px-3 text-white text-lg hover:text-[--liveasy-green] md:hover:text-white md:text-white md:dark:text-white md:p-0 md:w-auto dark:text-white md:dark:hover:text-white dark:focus:text-white md:dark:hover:bg-transparent"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-[--liveasy-green] md:p-0 md:w-auto text-lg"
                             aria-label="Solution Dropdown">Solution<svg class="w-2.5 h-2.5 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
-                        <div id="dropdownNavbar1"
-                            class="z-20 hidden font-normal bg-white rounded-lg shadow-md dark:bg-white">
-                            <ul class="py-2 text-lg text-black dark:text-black" aria-labelledby="dropdownNavbarLink1">
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                        <div id="dropdownNavbar1" class="z-20 hidden font-normal bg-white rounded-lg shadow-md">
+                            <ul class="py-2 text-lg text-black" aria-labelledby="dropdownNavbarLink1">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_freightSourcing.svg" alt="Freight Sourcing Icon"
                                         loading="lazy" class="w-8 h-6 mr-4">
                                     <a href="product/FreightSourcing.html" class="block flex-grow">Freight Sourcing And
@@ -160,7 +159,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_indentAutomation.svg" alt="Indent Automation Icon"
                                         loading="lazy" class="w-8 h-6 mr-4">
                                     <a href="product/indentautomation.html" class="block flex-grow">Indent
@@ -171,7 +170,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_invoicing.svg" alt="Invoicing Icon" loading="lazy"
                                         class="w-8 h-6 mr-4">
                                     <a href="product/invoicing.html" class="block flex-grow">Invoicing</a>
@@ -181,7 +180,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_inPlant.svg" alt="In-Plant Vehicle Movement Icon"
                                         loading="lazy" class="w-8 h-6 mr-4">
                                     <a href="product/inPlantVehicleMovement.html" class="block flex-grow">In-Plant
@@ -192,7 +191,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_dashboard.svg" alt="Dashboard and Analytics Icon"
                                         loading="lazy" class="w-8 h-6 mr-4">
                                     <a href="product/DashboardNAnalytics.html" class="block flex-grow">Dashboard and
@@ -203,7 +202,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/navbar_tracking.svg" alt="Real-Time Tracking Icon" loading="lazy"
                                         class="w-8 h-6 mr-4">
                                     <a href="product/Tracking.html" class="block flex-grow">Tracking</a>
@@ -218,24 +217,23 @@
                     </li>
                     <li>
                         <a href="industries/industries.html"
-                            class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] md:hover:text-white md:dark:text-white dark:text-white dark:hover:text-white md:dark:hover:text-white text-lg md:dark:hover:bg-transparent">Industries</a>
+                            class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] text-lg">Industries</a>
                     </li>
                     <li>
                         <a href="blogs/blogs.html"
-                            class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] md:hover:text-white md:dark:text-white dark:text-white dark:hover:text-white md:dark:hover:text-white text-lg md:dark:hover:bg-transparent">Blogs</a>
+                            class="block py-2 px-3 md:p-0 text-white rounded hover:text-[--liveasy-green] text-lg">Blogs</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                            class="flex items-center justify-between w-full py-2 px-3 text-white text-lg hover:text-[--liveasy-green] md:hover:text-white md:text-white md:dark:text-white md:p-0 md:w-auto dark:text-white md:dark:hover:text-white dark:focus:text-white md:dark:hover:bg-transparent"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-[--liveasy-green] md:p-0 md:w-auto text-lg"
                             aria-label="Company Dropdown">Company<svg class="w-2.5 h-2.5 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
-                        <div id="dropdownNavbar2"
-                            class="z-20 hidden font-normal bg-white rounded-lg shadow-md dark:bg-white">
-                            <ul class="py-2 text-lg text-black dark:text-black" aria-labelledby="dropdownNavbarLink2">
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                        <div id="dropdownNavbar2" class="z-20 hidden font-normal bg-white rounded-lg shadow-md">
+                            <ul class="py-2 text-lg text-black" aria-labelledby="dropdownNavbarLink2">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/aboutUs_logo.svg" alt="About CargoPro Icon" loading="lazy"
                                         class="w-8 h-6 mr-4">
                                     <a href="company/about.html" class="block flex-grow">About Us</a>
@@ -245,7 +243,7 @@
                                             d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </li>
-                                <li class="flex items-center px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-100">
+                                <li class="flex items-center px-4 py-4 hover:bg-gray-100">
                                     <img src="files/career_logo.svg" alt="Careers at CargoPro Icon" loading="lazy"
                                         class="w-8 h-6 mr-4">
                                     <a href="company/career.html" class="block flex-grow">Careers</a>
@@ -270,7 +268,7 @@
         <div class="flex flex-col md:flex-row items-center justify-center pt-16">
             <div class="relative z-10 flex flex-col justify-center items-center w-full md:w-1/2 pl-8 md:pl-32">
                 <div class="text-left text-white w-full">
-                    <h1 class="text-4xl"><b>Digitize Your Logistics <br>Operations</b> With Just <br>One Click.</h1>
+                    <h1 class="text-4xl"><b> Putting Your Logistics<br> on Autopilot </b></h1>
                     <p class="mt-4 text-xl py-4">Elevate Your Supply Chain Efficiency: Introducing CargoPro's
                         Comprehensive Platform for End-to-End Visibility, Automation, and Optimization of Your Fleet
                         Operations.</p>
@@ -332,12 +330,16 @@
         <div class="md:w-1/2">
             <div class="pt-4 px-16">
                 <h2 class="text-4xl text-[--liveasy-blue] font-bold mb-4">About Us</h2>
-                <p class="pb-4 text-xl">CargoPro is TMS provider that delivers innovative freight and logistics
-                    management platforms that automate, track, and optimize end-to-end supply chain operations for
-                    businesses. Our comprehensive solutions tackle common business pain points like freight sourcing,
-                    indent management, complex finances, paper invoicing, and outdated tracking. CargoPro dashboard
-                    integrate planning, execution, settlement, and analysis to boost efficiency, visibility, and cost
-                    savings across transportation sourcing.</p>
+                <p class="pb-4 text-xl">At CargoPro, we are committed to transforming the freight and logistics industry
+                    with intelligent technology. As a modern Transportation Management System (TMS) provider, CargoPro
+                    helps businesses across industries automate and optimize their end-to-end logistics operations. Our
+                    platform covers everything from freight sourcing to final delivery, ensuring that logistics
+                    operations run smoothly with enhanced speed, visibility, and control.
+                    <br>CargoPro is built on powerful AI, real-time tracking, and an intuitive interface, all designed
+                    to
+                    simplify complex logistics challenges. Our platform offers everything from freight sourcing, invoice
+                    reconciliation, automated indent approval, live tracking, and more.
+                </p>
                 <a href="company/about.html">
                     <button type="button"
                         class="text-white bg-[--liveasy-green] hover:bg-[--liveasy-green] focus:ring-4 focus:ring-[--liveasy-green] font-medium rounded-lg text-base px-8 py-2 me-2 mb-2 focus:outline-none">More
@@ -484,11 +486,10 @@
                     <img src="files/carousel_img_1.png" alt="Intelligent TMS Platform"
                         class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" loading="lazy">
                     <div class="w-full lg:w-1/2 px-4 lg:pl-8">
-                        <h3 class="text-2xl font-bold mb-2">Intelligent TMS Platform</h3>
-                        <p class="text-lg">Manage all your shipments efficiently across rail, road, air, and sea with
-                            our Intelligent Transportation Management System (TMS) platform. Our centralized dashboard
-                            provides real-time visibility into shipment status, routes, and performance metrics,
-                            streamlining logistics operations.</p>
+                        <h3 class="text-2xl font-bold mb-2">Unified Logistics Platform:</h3>
+                        <p class="text-lg"> Whether it’s road, air, or sea freight, manage all your shipments on one
+                            powerful, easy-to-use platform. No need for multiple systems to handle different transport
+                            modes.</p>
                     </div>
                 </div>
                 <!-- Carousel Item 2 -->
@@ -496,12 +497,10 @@
                     <img src="files/carousel_img_2.png" alt="All-in-One Logistics Platform"
                         class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" loading="lazy">
                     <div class="w-full lg:w-1/2 px-4 lg:pl-8">
-                        <h3 class="text-2xl font-bold mb-2">One Platform for all your needs</h3>
-                        <p class="text-lg">CargoPro is your all-in-one solution for streamlined logistics management
-                            across road, air, and sea shipments. Our unified platform offers real-time visibility into
-                            shipment status and routes, optimizing efficiency and reducing costs. With intelligent
-                            routing and proactive alerts, CargoPro empowers you to make informed decisions and propel
-                            your operations.</p>
+                        <h3 class="text-2xl font-bold mb-2">Smart Automation</h3>
+                        <p class="text-lg"> CargoPro automates time-consuming tasks like indent approvals, invoice
+                            validation, and fund disbursement, allowing your team to focus on what really matters.
+                        </p>
                     </div>
                 </div>
                 <!-- Carousel Item 3 -->
@@ -509,10 +508,11 @@
                     <img src="files/carousel_img_3.png" alt="Industry Expertise in Logistics"
                         class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" loading="lazy">
                     <div class="w-full lg:w-1/2 px-4 lg:pl-8">
-                        <h3 class="text-2xl font-bold mb-2">Industry Expertise</h3>
-                        <p class="text-lg">CargoPro serves Transporters, Carriers, and Shippers, offering streamlined
-                            logistics solutions to tackle industry challenges. Our platform empowers logistics teams to
-                            optimize processes and overcome common hurdles in the transportation sector.</p>
+                        <h3 class="text-2xl font-bold mb-2">Real-Time Control Center</h3>
+                        <p class="text-lg">Gain complete visibility of your shipments at every point in the journey.
+                            Real-time alerts, SIM/GPS-based tracking, and proactive notifications keep you in the loop
+                            at all times.
+                        </p>
                     </div>
                 </div>
             </div>
